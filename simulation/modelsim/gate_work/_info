@@ -1,0 +1,89 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/anagha/Desktop/Superscalar/superscalar/simulation/modelsim
+Einstrmem
+Z1 w1430424143
+Z2 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 JXN2=2dBmk60UUeC1Ud>;1
+Z3 DPx10 cycloneive 21 cycloneive_components 0 22 IlzlMe[@YjW3?h4::UWnM2
+Z4 DPx4 ieee 16 vital_primitives 0 22 9W@YP9_VCb?_GCJ8e:;YQ0
+Z5 DPx6 altera 11 dffeas_pack 0 22 oY7WPe2I:Taj0>HV`A`AH0
+Z6 DPx4 ieee 12 vital_timing 0 22 7h8zz2S4HVg:a;2TBMI[j1
+Z7 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z8 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z9 DPx6 altera 28 altera_primitives_components 0 22 H[E=U;zSVlD;ca@gnkzIO0
+Z10 d/home/anagha/Desktop/Superscalar/superscalar/simulation/modelsim
+Z11 8InstrMem_6_1200mv_85c_slow.vho
+Z12 FInstrMem_6_1200mv_85c_slow.vho
+l0
+L36
+Vj_M=4BnSF_VC_TMmeMXh?2
+Z13 OV;C;10.1d;51
+31
+Z14 !s108 1430424250.421410
+Z15 !s90 -reportprogress|300|-93|-work|work|InstrMem_6_1200mv_85c_slow.vho|
+Z16 !s107 InstrMem_6_1200mv_85c_slow.vho|
+Z17 o-93 -work work -O0
+Z18 tExplicit 1
+!s100 VYZh44VGz@@eD3UkYRjco1
+!i10b 1
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+DEx4 work 8 instrmem 0 22 j_M=4BnSF_VC_TMmeMXh?2
+l290
+L110
+Vf6fbObWVTEO^G:31WmXo^3
+R13
+31
+R14
+R15
+R16
+R17
+R18
+!s100 Rok0JolPB:L3BYb2`X7RP1
+!i10b 1
+Etestbench
+Z19 w1430422418
+Z20 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+R7
+R8
+R10
+Z21 8/home/anagha/Desktop/Superscalar/superscalar/InstrMem/testbench.vhdl
+Z22 F/home/anagha/Desktop/Superscalar/superscalar/InstrMem/testbench.vhdl
+l0
+L10
+VBo8[PVARRiX=U=^A3_8If1
+!s100 f]PU<zJ`_U5S@b?FgQ;On2
+R13
+31
+!i10b 1
+Z23 !s108 1430424250.585818
+Z24 !s90 -reportprogress|300|-93|-work|work|/home/anagha/Desktop/Superscalar/superscalar/InstrMem/testbench.vhdl|
+Z25 !s107 /home/anagha/Desktop/Superscalar/superscalar/InstrMem/testbench.vhdl|
+R17
+R18
+Abehave
+R20
+R7
+R8
+DEx4 work 9 testbench 0 22 Bo8[PVARRiX=U=^A3_8If1
+l33
+L14
+VbzdP2MF:j@VYgbBgRHAKN3
+!s100 <KVnS;A:PEz_PSEoL]eJM3
+R13
+31
+!i10b 1
+R23
+R24
+R25
+R17
+R18

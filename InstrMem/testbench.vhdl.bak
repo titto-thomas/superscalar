@@ -46,7 +46,7 @@ begin  -- behave
   Main : process	-- Main testbench process
   begin
 	address <= x"00";
-	data_in <= x"0000";
+	data_in <= x"00";
 	write <= '0';
 	read <= '0';
 	wait for 10 ns;
