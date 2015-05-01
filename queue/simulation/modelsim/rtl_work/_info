@@ -1,0 +1,79 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/anagha/Desktop/Superscalar/queue/simulation/modelsim
+Equeue
+Z1 w1430478436
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 d/home/anagha/Desktop/Superscalar/queue/simulation/modelsim
+Z6 8/home/anagha/Desktop/Superscalar/queue/queue.vhd
+Z7 F/home/anagha/Desktop/Superscalar/queue/queue.vhd
+l0
+L5
+V:ZI4?zi;TlFg7=0M_kIaj1
+Z8 OV;C;10.1d;51
+31
+Z9 !s108 1430479710.685600
+Z10 !s90 -reportprogress|300|-93|-work|work|/home/anagha/Desktop/Superscalar/queue/queue.vhd|
+Z11 !s107 /home/anagha/Desktop/Superscalar/queue/queue.vhd|
+Z12 o-93 -work work -O0
+Z13 tExplicit 1
+!s100 >>HW:>0dKJa50dO[:e4g@2
+!i10b 1
+Artl
+R2
+R3
+R4
+DEx4 work 5 queue 0 22 :ZI4?zi;TlFg7=0M_kIaj1
+l31
+L24
+V<79T4Z6GA@A;96?W=eXla0
+R8
+31
+R9
+R10
+R11
+R12
+R13
+!s100 E9dO`VI6COPi^`ZTTM7@j3
+!i10b 1
+Etb_queue
+Z14 w1430476849
+R2
+R3
+R4
+R5
+Z15 8/home/anagha/Desktop/Superscalar/queue/tb_queue.vhd
+Z16 F/home/anagha/Desktop/Superscalar/queue/tb_queue.vhd
+l0
+L5
+VFFPIN8kaJ`C<AVlZ@M@=k1
+!s100 4Z>bIXE4XoMVK?FkLFW]L0
+R8
+31
+!i10b 1
+Z17 !s108 1430479710.749429
+Z18 !s90 -reportprogress|300|-93|-work|work|/home/anagha/Desktop/Superscalar/queue/tb_queue.vhd|
+Z19 !s107 /home/anagha/Desktop/Superscalar/queue/tb_queue.vhd|
+R12
+R13
+Abehave
+R2
+R3
+R4
+DEx4 work 8 tb_queue 0 22 FFPIN8kaJ`C<AVlZ@M@=k1
+l34
+L8
+VO^Z9SIz[>7lXX:U@FLD:g0
+!s100 fn0KOl9khgXNmj2U4iENU0
+R8
+31
+!i10b 1
+R17
+R18
+R19
+R12
+R13

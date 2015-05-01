@@ -1,19 +1,19 @@
 v 3
-file . "testbench.vhdl" "20150501113655.000" "20150501120247.978":
-  entity testbench at 6( 203) + 0 on 165;
-  architecture behave of testbench at 14( 312) + 0 on 166;
-file . "reg.vhdl" "20150501104134.000" "20150501120247.885":
-  entity reg at 6( 180) + 0 on 161;
-  architecture behave of reg at 25( 609) + 0 on 162;
-file . "InstrMem.vhdl" "20150501113350.000" "20150501120247.815":
-  entity instrmem at 6( 191) + 0 on 157;
-  architecture ram of instrmem at 22( 756) + 0 on 158;
-file . "Decoder.vhdl" "20150501103123.000" "20150501120247.651":
-  entity decoder at 6( 179) + 0 on 155;
-  architecture decode_instr of decoder at 18( 505) + 0 on 156;
-file . "mux2to1.vhdl" "20150501113745.000" "20150501120247.859":
-  entity mux2to1 at 4( 65) + 0 on 159;
-  architecture behave of mux2to1 at 18( 373) + 0 on 160;
-file . "superscalar.vhdl" "20150501120242.000" "20150501120247.910":
-  entity superscalar at 6( 192) + 0 on 163;
-  architecture processor of superscalar at 21( 651) + 0 on 164;
+file . "testbench.vhdl" "20150501124540.000" "20150501174605.061":
+  entity testbench at 6( 203) + 0 on 177;
+  architecture behave of testbench at 14( 312) + 0 on 178;
+file . "reg.vhdl" "20150501124540.000" "20150501174604.888":
+  entity reg at 6( 180) + 0 on 173;
+  architecture behave of reg at 25( 609) + 0 on 174;
+file . "InstrMem.vhdl" "20150501124540.000" "20150501174604.761":
+  entity instrmem at 6( 191) + 0 on 169;
+  architecture ram of instrmem at 22( 756) + 0 on 170;
+file . "Decoder.vhdl" "20150501124540.000" "20150501174603.909":
+  entity decoder at 6( 179) + 0 on 167;
+  architecture decode_instr of decoder at 18( 505) + 0 on 168;
+file . "mux2to1.vhdl" "20150501124540.000" "20150501174604.835":
+  entity mux2to1 at 4( 65) + 0 on 171;
+  architecture behave of mux2to1 at 18( 373) + 0 on 172;
+file . "superscalar.vhdl" "20150501124540.000" "20150501174604.936":
+  entity superscalar at 6( 192) + 0 on 175;
+  architecture processor of superscalar at 21( 651) + 0 on 176;

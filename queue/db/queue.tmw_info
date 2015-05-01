@@ -1,0 +1,6 @@
+start_analysis_synthesis:s:00:00:16
+start_analysis_elaboration:s
+start_fitter:s:00:00:27
+start_timing_analyzer:s:00:00:11
+start_eda_netlist_writer:s:00:00:10
+start_eda_gate_simulation:s:01:09:01

@@ -1,0 +1,225 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/anagha/Desktop/Superscalar/superscalar/superscalar/simulation/modelsim
+Edecoder
+Z1 w1430484340
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 d/home/anagha/Desktop/Superscalar/superscalar/superscalar/simulation/modelsim
+Z6 8/home/anagha/Desktop/Superscalar/superscalar/Fetch, Decode/Decoder.vhdl
+Z7 F/home/anagha/Desktop/Superscalar/superscalar/Fetch, Decode/Decoder.vhdl
+l0
+L10
+VcjI^iM:7RB8Ae^iAbBSGb0
+Z8 OV;C;10.1d;51
+31
+Z9 !s108 1430484845.432407
+Z10 !s90 -reportprogress|300|-93|-work|work|/home/anagha/Desktop/Superscalar/superscalar/Fetch, Decode/Decoder.vhdl|
+Z11 !s107 /home/anagha/Desktop/Superscalar/superscalar/Fetch, Decode/Decoder.vhdl|
+Z12 o-93 -work work -O0
+Z13 tExplicit 1
+!s100 d`K[CzAaPCU;a40HhbnVA3
+!i10b 1
+Adecode_instr
+R2
+R3
+R4
+DEx4 work 7 decoder 0 22 cjI^iM:7RB8Ae^iAbBSGb0
+l27
+L18
+V;S9Ri_CW_K<j8GDJ`B@9F1
+R8
+31
+R9
+R10
+R11
+R12
+R13
+!s100 PXkm5P=`Bb3f72;_ASK;b1
+!i10b 1
+Einstrmem
+R1
+R2
+R3
+R4
+R5
+Z14 8/home/anagha/Desktop/Superscalar/superscalar/Fetch, Decode/InstrMem.vhdl
+Z15 F/home/anagha/Desktop/Superscalar/superscalar/Fetch, Decode/InstrMem.vhdl
+l0
+L10
+Voo7LmEYcEGah]bM7ac^Ea3
+R8
+31
+Z16 !s108 1430484845.366313
+Z17 !s90 -reportprogress|300|-93|-work|work|/home/anagha/Desktop/Superscalar/superscalar/Fetch, Decode/InstrMem.vhdl|
+Z18 !s107 /home/anagha/Desktop/Superscalar/superscalar/Fetch, Decode/InstrMem.vhdl|
+R12
+R13
+!s100 ?eR>j51k9GX>Y``@V9_Hf2
+!i10b 1
+Aram
+R2
+R3
+R4
+DEx4 work 8 instrmem 0 22 oo7LmEYcEGah]bM7ac^Ea3
+l27
+L22
+V=iFl[g:GEVH``d1WKanB73
+R8
+31
+R16
+R17
+R18
+R12
+R13
+!s100 HHckSA7Xei8d2MC>Gfo[E2
+!i10b 1
+Emux2to1
+R1
+R3
+R4
+R5
+Z19 8/home/anagha/Desktop/Superscalar/superscalar/Fetch, Decode/mux2to1.vhdl
+Z20 F/home/anagha/Desktop/Superscalar/superscalar/Fetch, Decode/mux2to1.vhdl
+l0
+L6
+V28<nk4Y_CUUN?6QcMU4Xg1
+R8
+31
+Z21 !s108 1430484845.311095
+Z22 !s90 -reportprogress|300|-93|-work|work|/home/anagha/Desktop/Superscalar/superscalar/Fetch, Decode/mux2to1.vhdl|
+Z23 !s107 /home/anagha/Desktop/Superscalar/superscalar/Fetch, Decode/mux2to1.vhdl|
+R12
+R13
+!s100 UW?Z6T[kHT@R0EaAYHS@k2
+!i10b 1
+Abehave
+R3
+R4
+DEx4 work 7 mux2to1 0 22 28<nk4Y_CUUN?6QcMU4Xg1
+l20
+L18
+VThV8BJJYJ<QJ0F:GG1j`@1
+R8
+31
+R21
+R22
+R23
+R12
+R13
+!s100 Z6e<;WiZDcaPGHRJGZ=<D3
+!i10b 1
+Ereg
+R1
+R2
+R3
+R4
+R5
+Z24 8/home/anagha/Desktop/Superscalar/superscalar/Fetch, Decode/reg.vhdl
+Z25 F/home/anagha/Desktop/Superscalar/superscalar/Fetch, Decode/reg.vhdl
+l0
+L10
+VMX2U[>Q`@zA>alJA]2dDh1
+R8
+31
+Z26 !s108 1430484845.115257
+Z27 !s90 -reportprogress|300|-93|-work|work|/home/anagha/Desktop/Superscalar/superscalar/Fetch, Decode/reg.vhdl|
+Z28 !s107 /home/anagha/Desktop/Superscalar/superscalar/Fetch, Decode/reg.vhdl|
+R12
+R13
+!s100 YdAlk9a4E;zYPP>TPOn9g3
+!i10b 1
+Abehave
+R2
+R3
+R4
+DEx4 work 3 reg 0 22 MX2U[>Q`@zA>alJA]2dDh1
+l27
+L25
+VcVFbmd0zJB1h=h_TP@g9D3
+R8
+31
+R26
+R27
+R28
+R12
+R13
+!s100 0Q=ooiN9CE1=`TEn3;J?o3
+!i10b 1
+Esuperscalar
+R1
+R2
+R3
+R4
+R5
+Z29 8/home/anagha/Desktop/Superscalar/superscalar/Fetch, Decode/superscalar.vhdl
+Z30 F/home/anagha/Desktop/Superscalar/superscalar/Fetch, Decode/superscalar.vhdl
+l0
+L10
+VDLKS3TTBb]LbML_gBde2h1
+R8
+31
+Z31 !s108 1430484845.042623
+Z32 !s90 -reportprogress|300|-93|-work|work|/home/anagha/Desktop/Superscalar/superscalar/Fetch, Decode/superscalar.vhdl|
+Z33 !s107 /home/anagha/Desktop/Superscalar/superscalar/Fetch, Decode/superscalar.vhdl|
+R12
+R13
+!s100 fNz?K_9]GgbQnd2QB=Xhe0
+!i10b 1
+Aprocessor
+R2
+R3
+R4
+DEx4 work 11 superscalar 0 22 DLKS3TTBb]LbML_gBde2h1
+l75
+L21
+VeD;SnoUcH?=7nV^TDCJT41
+R8
+31
+R31
+R32
+R33
+R12
+R13
+!s100 =61FEYFlW3m@?fPlaGVmK2
+!i10b 1
+Etestbench
+R1
+R2
+R3
+R4
+R5
+Z34 8/home/anagha/Desktop/Superscalar/superscalar/superscalar/../Fetch, Decode/testbench.vhdl
+Z35 F/home/anagha/Desktop/Superscalar/superscalar/superscalar/../Fetch, Decode/testbench.vhdl
+l0
+L10
+VBo8[PVARRiX=U=^A3_8If1
+!s100 f]PU<zJ`_U5S@b?FgQ;On2
+R8
+31
+!i10b 1
+Z36 !s108 1430484845.517203
+Z37 !s90 -reportprogress|300|-93|-work|work|/home/anagha/Desktop/Superscalar/superscalar/superscalar/../Fetch, Decode/testbench.vhdl|
+Z38 !s107 /home/anagha/Desktop/Superscalar/superscalar/superscalar/../Fetch, Decode/testbench.vhdl|
+R12
+R13
+Abehave
+R2
+R3
+R4
+DEx4 work 9 testbench 0 22 Bo8[PVARRiX=U=^A3_8If1
+l31
+L14
+V_o3hF:SFFCZFgRJ2QH1If0
+!s100 G@be1bJcMF8M0a=<Kk2aM3
+R8
+31
+!i10b 1
+R36
+R37
+R38
+R12
+R13

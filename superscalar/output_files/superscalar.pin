@@ -1,0 +1,326 @@
+ -- Copyright (C) 1991-2013 Altera Corporation
+ -- Your use of Altera Corporation's design tools, logic functions 
+ -- and other software and tools, and its AMPP partner logic 
+ -- functions, and any output files from any of the foregoing 
+ -- (including device programming or simulation files), and any 
+ -- associated documentation or information are expressly subject 
+ -- to the terms and conditions of the Altera Program License 
+ -- Subscription Agreement, Altera MegaCore Function License 
+ -- Agreement, or other applicable license agreement, including, 
+ -- without limitation, that your use is for the sole purpose of 
+ -- programming logic devices manufactured by Altera and sold by 
+ -- Altera or its authorized distributors.  Please refer to the 
+ -- applicable agreement for further details.
+ -- 
+ -- This is a Quartus II output file. It is for reporting purposes only, and is
+ -- not intended for use as a Quartus II input file. This file cannot be used
+ -- to make Quartus II pin assignments - for instructions on how to make pin
+ -- assignments, please see Quartus II help.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- NC            : No Connect. This pin has no internal connection to the device.
+ -- DNU           : Do Not Use. This pin MUST NOT be connected.
+ -- VCCINT        : Dedicated power pin, which MUST be connected to VCC  (1.2V).
+ -- VCCIO         : Dedicated power pin, which MUST be connected to VCC
+ --                 of its bank.
+ --					Bank 1:		2.5V
+ --					Bank 2:		2.5V
+ --					Bank 3:		2.5V
+ --					Bank 4:		2.5V
+ --					Bank 5:		2.5V
+ --					Bank 6:		2.5V
+ --					Bank 7:		2.5V
+ --					Bank 8:		2.5V
+ -- GND           : Dedicated ground pin. Dedicated GND pins MUST be connected to GND.
+ --					It can also be used to report unused dedicated pins. The connection
+ --					on the board for unused dedicated pins depends on whether this will
+ --					be used in a future design. One example is device migration. When
+ --					using device migration, refer to the device pin-tables. If it is a
+ --					GND pin in the pin table or if it will not be used in a future design
+ --					for another purpose the it MUST be connected to GND. If it is an unused
+ --					dedicated pin, then it can be connected to a valid signal on the board
+ --					(low, high, or toggling) if that signal is required for a different
+ --					revision of the design.
+ -- GND+          : Unused input pin. It can also be used to report unused dual-purpose pins.
+ --					This pin should be connected to GND. It may also be connected  to a
+ --					valid signal  on the board  (low, high, or toggling)  if that signal
+ --					is required for a different revision of the design.
+ -- GND*          : Unused  I/O  pin. Connect each pin marked GND* directly to GND
+ --           	    or leave it unconnected.
+ -- RESERVED      : Unused I/O pin, which MUST be left unconnected.
+ -- RESERVED_INPUT    : Pin is tri-stated and should be connected to the board.
+ -- RESERVED_INPUT_WITH_WEAK_PULLUP    : Pin is tri-stated with internal weak pull-up resistor.
+ -- RESERVED_INPUT_WITH_BUS_HOLD       : Pin is tri-stated with bus-hold circuitry.
+ -- RESERVED_OUTPUT_DRIVEN_HIGH        : Pin is output driven high.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- Pin directions (input, output or bidir) are based on device operating in user mode.
+ ---------------------------------------------------------------------------------
+
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+CHIP  "superscalar"  ASSIGNED TO AN: EP4CE22F17C6
+
+Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
+-------------------------------------------------------------------------------------------------------------
+VCCIO8                       : A1        : power  :                   : 2.5V    : 8         :                
+instr_address[15]            : A2        : input  : 2.5 V             :         : 8         : N              
+decoder_output[78]           : A3        : output : 2.5 V             :         : 8         : N              
+instr_data[1]                : A4        : input  : 2.5 V             :         : 8         : N              
+decoder_output[57]           : A5        : output : 2.5 V             :         : 8         : N              
+decoder_output[28]           : A6        : output : 2.5 V             :         : 8         : N              
+decoder_output[37]           : A7        : output : 2.5 V             :         : 8         : N              
+instr_address[8]             : A8        : input  : 2.5 V             :         : 8         : N              
+GND+                         : A9        :        :                   :         : 7         :                
+instr_data[2]                : A10       : input  : 2.5 V             :         : 7         : N              
+decoder_output[91]           : A11       : output : 2.5 V             :         : 7         : N              
+decoder_output[4]            : A12       : output : 2.5 V             :         : 7         : N              
+instr_data[6]                : A13       : input  : 2.5 V             :         : 7         : N              
+decoder_output[62]           : A14       : output : 2.5 V             :         : 7         : N              
+decoder_output[85]           : A15       : output : 2.5 V             :         : 7         : N              
+VCCIO7                       : A16       : power  :                   : 2.5V    : 7         :                
+decoder_output[22]           : B1        : output : 2.5 V             :         : 1         : N              
+GND                          : B2        : gnd    :                   :         :           :                
+decoder_output[42]           : B3        : output : 2.5 V             :         : 8         : N              
+instr_address[6]             : B4        : input  : 2.5 V             :         : 8         : N              
+decoder_output[7]            : B5        : output : 2.5 V             :         : 8         : N              
+decoder_output[18]           : B6        : output : 2.5 V             :         : 8         : N              
+decoder_output[9]            : B7        : output : 2.5 V             :         : 8         : N              
+instr_address[9]             : B8        : input  : 2.5 V             :         : 8         : N              
+GND+                         : B9        :        :                   :         : 7         :                
+instr_data[5]                : B10       : input  : 2.5 V             :         : 7         : N              
+decoder_output[93]           : B11       : output : 2.5 V             :         : 7         : N              
+decoder_output[11]           : B12       : output : 2.5 V             :         : 7         : N              
+decoder_output[61]           : B13       : output : 2.5 V             :         : 7         : N              
+instr_data[0]                : B14       : input  : 2.5 V             :         : 7         : N              
+GND                          : B15       : gnd    :                   :         :           :                
+instr_address[2]             : B16       : input  : 2.5 V             :         : 6         : N              
+~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP : C1        : input  : 2.5 V             :         : 1         : N              
+decoder_output[32]           : C2        : output : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : C3        :        :                   :         : 8         :                
+VCCIO8                       : C4        : power  :                   : 2.5V    : 8         :                
+GND                          : C5        : gnd    :                   :         :           :                
+decoder_output[16]           : C6        : output : 2.5 V             :         : 8         : N              
+VCCIO8                       : C7        : power  :                   : 2.5V    : 8         :                
+instr_data[13]               : C8        : input  : 2.5 V             :         : 8         : N              
+instr_data[3]                : C9        : input  : 2.5 V             :         : 7         : N              
+VCCIO7                       : C10       : power  :                   : 2.5V    : 7         :                
+decoder_output[52]           : C11       : output : 2.5 V             :         : 7         : N              
+GND                          : C12       : gnd    :                   :         :           :                
+VCCIO7                       : C13       : power  :                   : 2.5V    : 7         :                
+decoder_output[84]           : C14       : output : 2.5 V             :         : 7         : N              
+decoder_output[60]           : C15       : output : 2.5 V             :         : 6         : N              
+decoder_output[87]           : C16       : output : 2.5 V             :         : 6         : N              
+decoder_output[1]            : D1        : output : 2.5 V             :         : 1         : N              
+~ALTERA_FLASH_nCE_nCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : D2        : input  : 2.5 V             :         : 1         : N              
+decoder_output[82]           : D3        : output : 2.5 V             :         : 8         : N              
+VCCD_PLL3                    : D4        : power  :                   : 1.2V    :           :                
+decoder_output[2]            : D5        : output : 2.5 V             :         : 8         : N              
+decoder_output[58]           : D6        : output : 2.5 V             :         : 8         : N              
+GND                          : D7        : gnd    :                   :         :           :                
+decoder_output[36]           : D8        : output : 2.5 V             :         : 8         : N              
+reset                        : D9        : input  : 2.5 V             :         : 7         : N              
+GND                          : D10       : gnd    :                   :         :           :                
+decoder_output[67]           : D11       : output : 2.5 V             :         : 7         : N              
+decoder_output[65]           : D12       : output : 2.5 V             :         : 7         : N              
+VCCD_PLL2                    : D13       : power  :                   : 1.2V    :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D14       :        :                   :         : 7         :                
+decoder_output[66]           : D15       : output : 2.5 V             :         : 6         : N              
+decoder_output[26]           : D16       : output : 2.5 V             :         : 6         : N              
+clock                        : E1        : input  : 2.5 V             :         : 1         : N              
+GND                          : E2        : gnd    :                   :         :           :                
+VCCIO1                       : E3        : power  :                   : 2.5V    : 1         :                
+GND                          : E4        : gnd    :                   :         :           :                
+GNDA3                        : E5        : gnd    :                   :         :           :                
+decoder_output[46]           : E6        : output : 2.5 V             :         : 8         : N              
+decoder_output[30]           : E7        : output : 2.5 V             :         : 8         : N              
+decoder_output[41]           : E8        : output : 2.5 V             :         : 8         : N              
+decoder_output[53]           : E9        : output : 2.5 V             :         : 7         : N              
+decoder_output[83]           : E10       : output : 2.5 V             :         : 7         : N              
+instr_data[4]                : E11       : input  : 2.5 V             :         : 7         : N              
+GNDA2                        : E12       : gnd    :                   :         :           :                
+GND                          : E13       : gnd    :                   :         :           :                
+VCCIO6                       : E14       : power  :                   : 2.5V    : 6         :                
+GND+                         : E15       :        :                   :         : 6         :                
+GND+                         : E16       :        :                   :         : 6         :                
+decoder_output[44]           : F1        : output : 2.5 V             :         : 1         : N              
+decoder_output[34]           : F2        : output : 2.5 V             :         : 1         : N              
+program                      : F3        : input  : 2.5 V             :         : 1         : N              
+nSTATUS                      : F4        :        :                   :         : 1         :                
+VCCA3                        : F5        : power  :                   : 2.5V    :           :                
+GND                          : F6        : gnd    :                   :         :           :                
+VCCINT                       : F7        : power  :                   : 1.2V    :           :                
+decoder_output[24]           : F8        : output : 2.5 V             :         : 8         : N              
+decoder_output[72]           : F9        : output : 2.5 V             :         : 7         : N              
+GND                          : F10       : gnd    :                   :         :           :                
+VCCINT                       : F11       : power  :                   : 1.2V    :           :                
+VCCA2                        : F12       : power  :                   : 2.5V    :           :                
+decoder_output[15]           : F13       : output : 2.5 V             :         : 6         : N              
+decoder_output[45]           : F14       : output : 2.5 V             :         : 6         : N              
+decoder_output[49]           : F15       : output : 2.5 V             :         : 6         : N              
+~ALTERA_nCEO~ / RESERVED_OUTPUT_OPEN_DRAIN : F16       : output : 2.5 V             :         : 6         : N              
+decoder_output[14]           : G1        : output : 2.5 V             :         : 1         : N              
+decoder_output[43]           : G2        : output : 2.5 V             :         : 1         : N              
+VCCIO1                       : G3        : power  :                   : 2.5V    : 1         :                
+GND                          : G4        : gnd    :                   :         :           :                
+decoder_output[89]           : G5        : output : 2.5 V             :         : 1         : N              
+VCCINT                       : G6        : power  :                   : 1.2V    :           :                
+VCCINT                       : G7        : power  :                   : 1.2V    :           :                
+VCCINT                       : G8        : power  :                   : 1.2V    :           :                
+VCCINT                       : G9        : power  :                   : 1.2V    :           :                
+VCCINT                       : G10       : power  :                   : 1.2V    :           :                
+GND                          : G11       : gnd    :                   :         :           :                
+MSEL2                        : G12       :        :                   :         : 6         :                
+GND                          : G13       : gnd    :                   :         :           :                
+VCCIO6                       : G14       : power  :                   : 2.5V    : 6         :                
+decoder_output[17]           : G15       : output : 2.5 V             :         : 6         : N              
+decoder_output[92]           : G16       : output : 2.5 V             :         : 6         : N              
+~ALTERA_DCLK~                : H1        : output : 2.5 V             :         : 1         : N              
+~ALTERA_DATA0~ / RESERVED_INPUT_WITH_WEAK_PULLUP : H2        : input  : 2.5 V             :         : 1         : N              
+TCK                          : H3        : input  :                   :         : 1         :                
+TDI                          : H4        : input  :                   :         : 1         :                
+nCONFIG                      : H5        :        :                   :         : 1         :                
+VCCINT                       : H6        : power  :                   : 1.2V    :           :                
+GND                          : H7        : gnd    :                   :         :           :                
+GND                          : H8        : gnd    :                   :         :           :                
+GND                          : H9        : gnd    :                   :         :           :                
+GND                          : H10       : gnd    :                   :         :           :                
+VCCINT                       : H11       : power  :                   : 1.2V    :           :                
+MSEL1                        : H12       :        :                   :         : 6         :                
+MSEL0                        : H13       :        :                   :         : 6         :                
+CONF_DONE                    : H14       :        :                   :         : 6         :                
+GND                          : H15       : gnd    :                   :         :           :                
+GND                          : H16       : gnd    :                   :         :           :                
+instr_address[0]             : J1        : input  : 2.5 V             :         : 2         : N              
+decoder_output[56]           : J2        : output : 2.5 V             :         : 2         : N              
+nCE                          : J3        :        :                   :         : 1         :                
+TDO                          : J4        : output :                   :         : 1         :                
+TMS                          : J5        : input  :                   :         : 1         :                
+VCCINT                       : J6        : power  :                   : 1.2V    :           :                
+GND                          : J7        : gnd    :                   :         :           :                
+GND                          : J8        : gnd    :                   :         :           :                
+GND                          : J9        : gnd    :                   :         :           :                
+GND                          : J10       : gnd    :                   :         :           :                
+GND                          : J11       : gnd    :                   :         :           :                
+VCCINT                       : J12       : power  :                   : 1.2V    :           :                
+decoder_output[70]           : J13       : output : 2.5 V             :         : 5         : N              
+decoder_output[69]           : J14       : output : 2.5 V             :         : 5         : N              
+decoder_output[81]           : J15       : output : 2.5 V             :         : 5         : N              
+decoder_output[8]            : J16       : output : 2.5 V             :         : 5         : N              
+decoder_output[20]           : K1        : output : 2.5 V             :         : 2         : N              
+instr_data[15]               : K2        : input  : 2.5 V             :         : 2         : N              
+VCCIO2                       : K3        : power  :                   : 2.5V    : 2         :                
+GND                          : K4        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : K5        :        :                   :         : 2         :                
+GND                          : K6        : gnd    :                   :         :           :                
+VCCINT                       : K7        : power  :                   : 1.2V    :           :                
+GND                          : K8        : gnd    :                   :         :           :                
+VCCINT                       : K9        : power  :                   : 1.2V    :           :                
+VCCINT                       : K10       : power  :                   : 1.2V    :           :                
+VCCINT                       : K11       : power  :                   : 1.2V    :           :                
+GND                          : K12       : gnd    :                   :         :           :                
+GND                          : K13       : gnd    :                   :         :           :                
+VCCIO5                       : K14       : power  :                   : 2.5V    : 5         :                
+decoder_output[80]           : K15       : output : 2.5 V             :         : 5         : N              
+decoder_output[75]           : K16       : output : 2.5 V             :         : 5         : N              
+decoder_output[50]           : L1        : output : 2.5 V             :         : 2         : N              
+decoder_output[48]           : L2        : output : 2.5 V             :         : 2         : N              
+decoder_output[55]           : L3        : output : 2.5 V             :         : 2         : N              
+decoder_output[39]           : L4        : output : 2.5 V             :         : 2         : N              
+VCCA1                        : L5        : power  :                   : 2.5V    :           :                
+VCCINT                       : L6        : power  :                   : 1.2V    :           :                
+decoder_output[23]           : L7        : output : 2.5 V             :         : 3         : N              
+decoder_output[6]            : L8        : output : 2.5 V             :         : 3         : N              
+GND                          : L9        : gnd    :                   :         :           :                
+GND                          : L10       : gnd    :                   :         :           :                
+GND                          : L11       : gnd    :                   :         :           :                
+VCCA4                        : L12       : power  :                   : 2.5V    :           :                
+instr_data[7]                : L13       : input  : 2.5 V             :         : 5         : N              
+decoder_output[0]            : L14       : output : 2.5 V             :         : 5         : N              
+decoder_output[77]           : L15       : output : 2.5 V             :         : 5         : N              
+instr_address[7]             : L16       : input  : 2.5 V             :         : 5         : N              
+instr_data[14]               : M1        : input  : 2.5 V             :         : 2         : N              
+instr_data[12]               : M2        : input  : 2.5 V             :         : 2         : N              
+VCCIO2                       : M3        : power  :                   : 2.5V    : 2         :                
+GND                          : M4        : gnd    :                   :         :           :                
+GNDA1                        : M5        : gnd    :                   :         :           :                
+decoder_output[40]           : M6        : output : 2.5 V             :         : 3         : N              
+decoder_output[27]           : M7        : output : 2.5 V             :         : 3         : N              
+decoder_output[25]           : M8        : output : 2.5 V             :         : 3         : N              
+VCCINT                       : M9        : power  :                   : 1.2V    :           :                
+decoder_output[5]            : M10       : output : 2.5 V             :         : 4         : N              
+VCCINT                       : M11       : power  :                   : 1.2V    :           :                
+GNDA4                        : M12       : gnd    :                   :         :           :                
+GND                          : M13       : gnd    :                   :         :           :                
+VCCIO5                       : M14       : power  :                   : 2.5V    : 5         :                
+GND+                         : M15       :        :                   :         : 5         :                
+GND+                         : M16       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : N1        :        :                   :         : 2         :                
+instr_address[5]             : N2        : input  : 2.5 V             :         : 2         : N              
+instr_address[10]            : N3        : input  : 2.5 V             :         : 3         : N              
+VCCD_PLL1                    : N4        : power  :                   : 1.2V    :           :                
+decoder_output[86]           : N5        : output : 2.5 V             :         : 3         : N              
+instr_address[12]            : N6        : input  : 2.5 V             :         : 3         : N              
+GND                          : N7        : gnd    :                   :         :           :                
+decoder_output[3]            : N8        : output : 2.5 V             :         : 3         : N              
+decoder_output[10]           : N9        : output : 2.5 V             :         : 4         : N              
+GND                          : N10       : gnd    :                   :         :           :                
+decoder_output[79]           : N11       : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : N12       :        :                   :         : 4         :                
+VCCD_PLL4                    : N13       : power  :                   : 1.2V    :           :                
+instr_address[4]             : N14       : input  : 2.5 V             :         : 5         : N              
+decoder_output[64]           : N15       : output : 2.5 V             :         : 5         : N              
+decoder_output[68]           : N16       : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : P1        :        :                   :         : 2         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : P2        :        :                   :         : 2         :                
+decoder_output[47]           : P3        : output : 2.5 V             :         : 3         : N              
+VCCIO3                       : P4        : power  :                   : 2.5V    : 3         :                
+GND                          : P5        : gnd    :                   :         :           :                
+decoder_output[29]           : P6        : output : 2.5 V             :         : 3         : N              
+VCCIO3                       : P7        : power  :                   : 2.5V    : 3         :                
+instr_data[11]               : P8        : input  : 2.5 V             :         : 3         : N              
+decoder_output[63]           : P9        : output : 2.5 V             :         : 4         : N              
+VCCIO4                       : P10       : power  :                   : 2.5V    : 4         :                
+decoder_output[13]           : P11       : output : 2.5 V             :         : 4         : N              
+GND                          : P12       : gnd    :                   :         :           :                
+VCCIO4                       : P13       : power  :                   : 2.5V    : 4         :                
+decoder_output[74]           : P14       : output : 2.5 V             :         : 4         : N              
+decoder_output[31]           : P15       : output : 2.5 V             :         : 5         : N              
+decoder_output[12]           : P16       : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : R1        :        :                   :         : 2         :                
+GND                          : R2        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : R3        :        :                   :         : 3         :                
+decoder_output[35]           : R4        : output : 2.5 V             :         : 3         : N              
+instr_data[9]                : R5        : input  : 2.5 V             :         : 3         : N              
+decoder_output[54]           : R6        : output : 2.5 V             :         : 3         : N              
+decoder_output[33]           : R7        : output : 2.5 V             :         : 3         : N              
+GND+                         : R8        :        :                   :         : 3         :                
+GND+                         : R9        :        :                   :         : 4         :                
+decoder_output[73]           : R10       : output : 2.5 V             :         : 4         : N              
+instr_address[1]             : R11       : input  : 2.5 V             :         : 4         : N              
+decoder_output[59]           : R12       : output : 2.5 V             :         : 4         : N              
+decoder_output[38]           : R13       : output : 2.5 V             :         : 4         : N              
+decoder_output[76]           : R14       : output : 2.5 V             :         : 4         : N              
+GND                          : R15       : gnd    :                   :         :           :                
+instr_data[8]                : R16       : input  : 2.5 V             :         : 5         : N              
+VCCIO3                       : T1        : power  :                   : 2.5V    : 3         :                
+instr_address[14]            : T2        : input  : 2.5 V             :         : 3         : N              
+instr_address[13]            : T3        : input  : 2.5 V             :         : 3         : N              
+instr_address[11]            : T4        : input  : 2.5 V             :         : 3         : N              
+instr_data[10]               : T5        : input  : 2.5 V             :         : 3         : N              
+decoder_output[19]           : T6        : output : 2.5 V             :         : 3         : N              
+decoder_output[21]           : T7        : output : 2.5 V             :         : 3         : N              
+GND+                         : T8        :        :                   :         : 3         :                
+GND+                         : T9        :        :                   :         : 4         :                
+instr_address[3]             : T10       : input  : 2.5 V             :         : 4         : N              
+decoder_output[51]           : T11       : output : 2.5 V             :         : 4         : N              
+decoder_output[88]           : T12       : output : 2.5 V             :         : 4         : N              
+decoder_output[90]           : T13       : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : T14       :        :                   :         : 4         :                
+decoder_output[71]           : T15       : output : 2.5 V             :         : 4         : N              
+VCCIO4                       : T16       : power  :                   : 2.5V    : 4         :                

@@ -1,0 +1,98 @@
+Info: Start Nativelink Simulation process
+
+========= EDA Simulation Settings =====================
+
+Sim Mode              :  Gate
+Family                :  cycloneive
+Quartus root          :  /home/anagha/altera/13.1/quartus/linux64/
+Quartus sim root      :  /home/anagha/altera/13.1/quartus/eda/sim_lib
+Simulation Tool       :  modelsim-altera
+Simulation Language   :  vhdl
+Version               :  93
+Simulation Mode       :  GUI
+Sim Output File       :  queue.vho
+Sim SDF file          :  queue__vhdl.sdo
+Sim dir               :  simulation/modelsim
+
+=======================================================
+
+Info: Starting NativeLink simulation with ModelSim-Altera software
+Sourced NativeLink script /home/anagha/altera/13.1/quartus/common/tcl/internal/nativelink/modelsim.tcl
+Warning: File queue_run_msim_gate_vhdl.do already exists - backing up current file as queue_run_msim_gate_vhdl.do.bak
+Probing transcript
+ModelSim-Altera Info: # do queue_run_msim_gate_vhdl.do 
+ModelSim-Altera Info: # if {[file exists gate_work]} {
+ModelSim-Altera Info: # 	vdel -lib gate_work -all
+ModelSim-Altera Info: # }
+ModelSim-Altera Info: # vlib gate_work
+ModelSim-Altera Info: # vmap work gate_work
+ModelSim-Altera Info: # Copying /home/anagha/altera/13.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+ModelSim-Altera Info: # Modifying modelsim.ini
+ModelSim-Altera Warning: # ** Warning: Copied /home/anagha/altera/13.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini.
+ModelSim-Altera Info: #          Updated modelsim.ini.
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # vcom -93 -work work {queue.vho}
+ModelSim-Altera Info: # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+ModelSim-Altera Info: # -- Loading package STANDARD
+ModelSim-Altera Info: # -- Loading package TEXTIO
+ModelSim-Altera Info: # -- Loading package std_logic_1164
+ModelSim-Altera Info: # -- Loading package VITAL_Timing
+ModelSim-Altera Info: # -- Loading package VITAL_Primitives
+ModelSim-Altera Info: # -- Loading package dffeas_pack
+ModelSim-Altera Info: # -- Loading package altera_primitives_components
+ModelSim-Altera Info: # -- Loading package cycloneive_atom_pack
+ModelSim-Altera Info: # -- Loading package cycloneive_components
+ModelSim-Altera Info: # -- Compiling entity queue
+ModelSim-Altera Info: # -- Compiling architecture structure of queue
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # vcom -93 -work work {/home/anagha/Desktop/Superscalar/queue/tb_queue.vhd}
+ModelSim-Altera Info: # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+ModelSim-Altera Info: # -- Loading package STANDARD
+ModelSim-Altera Info: # -- Loading package TEXTIO
+ModelSim-Altera Info: # -- Loading package std_logic_1164
+ModelSim-Altera Info: # -- Loading package NUMERIC_STD
+ModelSim-Altera Info: # -- Compiling entity tb_queue
+ModelSim-Altera Info: # -- Compiling architecture behave of tb_queue
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # vsim -t 1ps +transport_int_delays +transport_path_delays -sdftyp /fifo1=queue_vhd.sdo -L altera -L cycloneive -L gate_work -L work -voptargs="+acc"  tb_queue
+ModelSim-Altera Info: # vsim +transport_int_delays +transport_path_delays -L altera -L cycloneive -L gate_work -L work -voptargs=\"+acc\" -sdftyp /fifo1=queue_vhd.sdo -t 1ps tb_queue 
+ModelSim-Altera Info: # Loading std.standard
+ModelSim-Altera Info: # Loading std.textio(body)
+ModelSim-Altera Info: # Loading ieee.std_logic_1164(body)
+ModelSim-Altera Info: # Loading ieee.numeric_std(body)
+ModelSim-Altera Info: # Loading work.tb_queue(behave)
+ModelSim-Altera Info: # SDF 10.1d Compiler 2012.11 Nov  2 2012
+ModelSim-Altera Info: # Loading ieee.vital_timing(body)
+ModelSim-Altera Info: # Loading ieee.vital_primitives(body)
+ModelSim-Altera Info: # Loading altera.dffeas_pack
+ModelSim-Altera Info: # Loading altera.altera_primitives_components
+ModelSim-Altera Info: # Loading cycloneive.cycloneive_atom_pack(body)
+ModelSim-Altera Info: # Loading cycloneive.cycloneive_components
+ModelSim-Altera Info: # Loading work.queue(structure)
+ModelSim-Altera Warning: # ** Warning: (vsim-8713) /home/anagha/Desktop/Superscalar/queue/tb_queue.vhd(37): Suspect default binding for component instance 'fifo1'.
+ModelSim-Altera Info: #    Entity has no generics at all; the component has generics:
+ModelSim-Altera Info: #           ADDR_WIDTH
+ModelSim-Altera Info: #           DATA_WIDTH
+ModelSim-Altera Info: #         Region: /tb_queue/fifo1
+ModelSim-Altera Info: # Loading ieee.std_logic_arith(body)
+ModelSim-Altera Info: # Loading cycloneive.cycloneive_io_obuf(arch)
+ModelSim-Altera Info: # Loading cycloneive.cycloneive_io_ibuf(arch)
+ModelSim-Altera Info: # Loading cycloneive.cycloneive_clkctrl(vital_clkctrl)
+ModelSim-Altera Info: # Loading cycloneive.cycloneive_ena_reg(behave)
+ModelSim-Altera Info: # Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)
+ModelSim-Altera Info: # Loading altera.dffeas(vital_dffeas)
+ModelSim-Altera Info: # Loading instances from queue_vhd.sdo
+ModelSim-Altera Info: # Loading timing data from queue_vhd.sdo
+ModelSim-Altera Warning: # ** Warning: Design size of 4 instances exceeds ModelSim ALTERA recommended capacity.
+ModelSim-Altera Info: # This may because you are loading cell libraries which are not recommended with
+ModelSim-Altera Info: # the ModelSim Altera version. Expect performance to be adversely affected.
+ModelSim-Altera Info: # ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+ModelSim-Altera Info: #    Time: 0 ps  Iteration: 0  Instance: /tb_queue File: /home/anagha/Desktop/Superscalar/queue/tb_queue.vhd
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # add wave *
+ModelSim-Altera Info: # view structure
+ModelSim-Altera Info: # .main_pane.structure.interior.cs.body.struct
+ModelSim-Altera Info: # view signals
+ModelSim-Altera Info: # .main_pane.objects.interior.cs.body.tree
+ModelSim-Altera Info: # run 600 ns
+Info: NativeLink simulation flow was successful
