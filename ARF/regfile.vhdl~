@@ -309,7 +309,7 @@ readB2: process(InB2, reset)
 			outB2(16) <= busy2(6);
 			outB2(19 downto 17) <= tag2(6);
 		when others => 
-			outB2(19 downto 0) <= X"00000";
+			null;
 	end case;
 	end if;
 end process readB2;

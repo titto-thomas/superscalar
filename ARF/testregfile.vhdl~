@@ -52,7 +52,7 @@ signal WritEn_ROB : std_logic;
 signal tag_in1, tag_in2 : std_logic_vector(2 downto 0);
 signal dest_addr1, dest_addr2 : std_logic_vector(2 downto 0);
 signal tag_en1, tag_en2 : std_logic;
-
+signal busy_renamer1, busy_renamer2 : std_logic;
 begin
 
 clock<= not clock after 5 ns;
