@@ -56,6 +56,9 @@
 # Loading altera.dffeas(vital_dffeas)
 # Loading instances from Renamer_6_1200mv_85c_vhd_slow.sdo
 # Loading timing data from Renamer_6_1200mv_85c_vhd_slow.sdo
+# ** Warning: Design size of 4 instances exceeds ModelSim ALTERA recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim Altera version. Expect performance to be adversely affected.
 # ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
 #    Time: 0 ps  Iteration: 0  Instance: /testbench File: /home/anagha/Desktop/Superscalar/superscalar/Renamer/testbench.vhdl
 # 
@@ -64,4 +67,4 @@
 # .main_pane.structure.interior.cs.body.struct
 # view signals
 # .main_pane.objects.interior.cs.body.tree
-# run 500 ns
+# run 130 ns
