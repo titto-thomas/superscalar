@@ -14,4 +14,4 @@ vsim -t 1ps +transport_int_delays +transport_path_delays -sdftyp /DUT=Renamer_6_
 add wave *
 view structure
 view signals
-run 130 ns
+run 500 ns

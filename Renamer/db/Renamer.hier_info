@@ -1,9 +1,13 @@
 |Renamer
 clock => no_tag_left~reg0.CLK
-clock => tag_out_en~reg0.CLK
-clock => tag_out[0]~reg0.CLK
-clock => tag_out[1]~reg0.CLK
-clock => tag_out[2]~reg0.CLK
+clock => tag_out_en2~reg0.CLK
+clock => tag_out2[0]~reg0.CLK
+clock => tag_out2[1]~reg0.CLK
+clock => tag_out2[2]~reg0.CLK
+clock => tag_out_en1~reg0.CLK
+clock => tag_out1[0]~reg0.CLK
+clock => tag_out1[1]~reg0.CLK
+clock => tag_out1[2]~reg0.CLK
 clock => \RR:tag_status[0].CLK
 clock => \RR:tag_status[1].CLK
 clock => \RR:tag_status[2].CLK
@@ -20,18 +24,29 @@ reset => tag_status.OUTPUTSELECT
 reset => tag_status.OUTPUTSELECT
 reset => tag_status.OUTPUTSELECT
 reset => tag_status.OUTPUTSELECT
-reset => tag_out.OUTPUTSELECT
-reset => tag_out.OUTPUTSELECT
-reset => tag_out.OUTPUTSELECT
-reset => tag_out_en.OUTPUTSELECT
+reset => tag_out1.OUTPUTSELECT
+reset => tag_out1.OUTPUTSELECT
+reset => tag_out1.OUTPUTSELECT
+reset => tag_out_en1.OUTPUTSELECT
+reset => tag_out2.OUTPUTSELECT
+reset => tag_out2.OUTPUTSELECT
+reset => tag_out2.OUTPUTSELECT
+reset => tag_out_en2.OUTPUTSELECT
 reset => no_tag_left.OUTPUTSELECT
-dest_address[0] => ~NO_FANOUT~
-dest_address[1] => ~NO_FANOUT~
-dest_address[2] => ~NO_FANOUT~
-tag_out[0] <= tag_out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-tag_out[1] <= tag_out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-tag_out[2] <= tag_out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-tag_out_en <= tag_out_en~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dest_address1[0] => Equal0.IN2
+dest_address1[1] => Equal0.IN1
+dest_address1[2] => Equal0.IN0
+tag_out1[0] << tag_out1[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+tag_out1[1] << tag_out1[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+tag_out1[2] << tag_out1[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+tag_out_en1 << tag_out_en1~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dest_address2[0] => Equal0.IN5
+dest_address2[1] => Equal0.IN4
+dest_address2[2] => Equal0.IN3
+tag_out2[0] << tag_out2[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+tag_out2[1] << tag_out2[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+tag_out2[2] << tag_out2[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+tag_out_en2 << tag_out_en2~reg0.DB_MAX_OUTPUT_PORT_TYPE
 tag_rob_in[0] => Decoder0.IN2
 tag_rob_in[1] => Decoder0.IN1
 tag_rob_in[2] => Decoder0.IN0
@@ -43,6 +58,6 @@ rob_finish => tag_status.OUTPUTSELECT
 rob_finish => tag_status.OUTPUTSELECT
 rob_finish => tag_status.OUTPUTSELECT
 rob_finish => tag_status.OUTPUTSELECT
-no_tag_left <= no_tag_left~reg0.DB_MAX_OUTPUT_PORT_TYPE
+no_tag_left << no_tag_left~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
