@@ -42,67 +42,67 @@ begin
 			TableBusy <= x"0000";
 			count  := (others => 0);
 		elsif Instruction(15 downto 12) = x"C" then			
-			if ( BranchTable(0)(15 downto 0) = PC ) and ( TableBusy(0) = '0' ) then
+			if ( BranchTable(0)(15 downto 0) = PC ) and ( TableBusy(0) = '1' ) then
 				PredictedResult <=  BranchTable(0)(15);
 				count (0) := count (0) + 1;
 				write_table_en <= '0';
-			elsif ( BranchTable(1)(15 downto 0) = PC ) and ( TableBusy(1) = '0' ) then
+			elsif ( BranchTable(1)(15 downto 0) = PC ) and ( TableBusy(1) = '1' ) then
 				PredictedResult <=  BranchTable(1)(15);
 				count (1) := count (1) + 1;
 				write_table_en <= '0';
-			elsif ( BranchTable(2)(15 downto 0) = PC ) and ( TableBusy(2) = '0' ) then
+			elsif ( BranchTable(2)(15 downto 0) = PC ) and ( TableBusy(2) = '1' ) then
 				PredictedResult <=  BranchTable(2)(15);
 				count (2) := count (2) + 1;
 				write_table_en <= '0';
-			elsif ( BranchTable(3)(15 downto 0) = PC ) and ( TableBusy(3) = '0' ) then
+			elsif ( BranchTable(3)(15 downto 0) = PC ) and ( TableBusy(3) = '1' ) then
 				PredictedResult <=  BranchTable(3)(15);
 				count (3) := count (3) + 1;
 				write_table_en <= '0';
-			elsif ( BranchTable(4)(15 downto 0) = PC ) and ( TableBusy(4) = '0' ) then
+			elsif ( BranchTable(4)(15 downto 0) = PC ) and ( TableBusy(4) = '1' ) then
 				PredictedResult <=  BranchTable(4)(15);
 				count (4) := count (4) + 1;
 				write_table_en <= '0';
-			elsif ( BranchTable(5)(15 downto 0) = PC ) and ( TableBusy(5) = '0' ) then
+			elsif ( BranchTable(5)(15 downto 0) = PC ) and ( TableBusy(5) = '1' ) then
 				PredictedResult <=  BranchTable(5)(15);
 				count (5) := count (5) + 1;
 				write_table_en <= '0';	
-			elsif ( BranchTable(6)(15 downto 0) = PC ) and ( TableBusy(6) = '0' ) then
+			elsif ( BranchTable(6)(15 downto 0) = PC ) and ( TableBusy(6) = '1' ) then
 				PredictedResult <=  BranchTable(6)(15);
 				count (6) := count (6) + 1;
 				write_table_en <= '0';
-			elsif ( BranchTable(7)(15 downto 0) = PC ) and ( TableBusy(7) = '0' ) then
+			elsif ( BranchTable(7)(15 downto 0) = PC ) and ( TableBusy(7) = '1' ) then
 				PredictedResult <=  BranchTable(7)(15);
 				count (7) := count (7) + 1;
 				write_table_en <= '0';	
-			elsif ( BranchTable(8)(15 downto 0) = PC ) and ( TableBusy(8) = '0' ) then
+			elsif ( BranchTable(8)(15 downto 0) = PC ) and ( TableBusy(8) = '1' ) then
 				PredictedResult <=  BranchTable(8)(15);
 				count (8) := count (8) + 1;
 				write_table_en <= '0';
-			elsif ( BranchTable(9)(15 downto 0) = PC ) and ( TableBusy(9) = '0' ) then
+			elsif ( BranchTable(9)(15 downto 0) = PC ) and ( TableBusy(9) = '1' ) then
 				PredictedResult <=  BranchTable(9)(15);
 				count (9) := count (9) + 1;
 				write_table_en <= '0';	
-			elsif ( BranchTable(10)(15 downto 0) = PC ) and ( TableBusy(10) = '0' ) then
+			elsif ( BranchTable(10)(15 downto 0) = PC ) and ( TableBusy(10) = '1' ) then
 				PredictedResult <=  BranchTable(10)(15);
 				count (10) := count (10) + 1;
 				write_table_en <= '0';
-			elsif ( BranchTable(11)(15 downto 0) = PC ) and ( TableBusy(11) = '0' ) then
+			elsif ( BranchTable(11)(15 downto 0) = PC ) and ( TableBusy(11) = '1' ) then
 				PredictedResult <=  BranchTable(11)(15);
 				count (11) := count (11) + 1;
 				write_table_en <= '0';	
-			elsif ( BranchTable(12)(15 downto 0) = PC ) and ( TableBusy(12) = '0' ) then
+			elsif ( BranchTable(12)(15 downto 0) = PC ) and ( TableBusy(12) = '1' ) then
 				PredictedResult <=  BranchTable(12)(15);
 				count (12) := count (12) + 1;
 				write_table_en <= '0';	
-			elsif ( BranchTable(13)(15 downto 0) = PC ) and ( TableBusy(13) = '0' ) then
+			elsif ( BranchTable(13)(15 downto 0) = PC ) and ( TableBusy(13) = '1' ) then
 				PredictedResult <=  BranchTable(13)(15);
 				count (13) := count (13) + 1;
 				write_table_en <= '0';	
-			elsif ( BranchTable(14)(15 downto 0) = PC ) and ( TableBusy(14) = '0' ) then
+			elsif ( BranchTable(14)(15 downto 0) = PC ) and ( TableBusy(14) = '1' ) then
 				PredictedResult <=  BranchTable(14)(15);
 				count (14) := count (14) + 1;
 				write_table_en <= '0';	
-			elsif ( BranchTable(15)(15 downto 0) = PC ) and ( TableBusy(15) = '0' ) then
+			elsif ( BranchTable(15)(15 downto 0) = PC ) and ( TableBusy(15) = '1' ) then
 				PredictedResult <=  BranchTable(15)(15);
 				count (15) := count (15) + 1;
 				write_table_en <= '0';	
