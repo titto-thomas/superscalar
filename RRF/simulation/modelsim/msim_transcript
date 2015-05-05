@@ -1,0 +1,105 @@
+# Reading C:/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# ERROR: No extended dataflow license exists
+# do RRF_run_msim_gate_vhdl.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Copying C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {RRF_6_1200mv_85c_slow.vho}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package dffeas_pack
+# -- Loading package altera_primitives_components
+# -- Loading package cycloneive_atom_pack
+# -- Loading package cycloneive_components
+# -- Compiling entity RRF
+# -- Compiling architecture structure of RRF
+# 
+# vcom -93 -work work {E:/IITB/SEM IV/Processor Design/Assignment 4/RRF/tb_RRF.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_RRF
+# -- Compiling architecture behave of tb_RRF
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -sdftyp /RRF1=RRF_6_1200mv_85c_vhd_slow.sdo -L altera -L cycloneive -L gate_work -L work -voptargs="+acc"  tb_RRF
+# vsim +transport_int_delays +transport_path_delays -L altera -L cycloneive -L gate_work -L work -voptargs=\"+acc\" -sdftyp /RRF1=RRF_6_1200mv_85c_vhd_slow.sdo -t 1ps tb_RRF 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_rrf(behave)
+# SDF 10.1d Compiler 2012.11 Nov  2 2012
+# 
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading altera.dffeas_pack
+# Loading altera.altera_primitives_components
+# Loading cycloneive.cycloneive_atom_pack(body)
+# Loading cycloneive.cycloneive_components
+# Loading work.rrf(structure)
+# ** Warning: (vsim-8713) E:/IITB/SEM IV/Processor Design/Assignment 4/RRF/tb_RRF.vhd(49): Suspect default binding for component instance 'RRF1'.
+# 
+#    Entity has no generics at all; the component has generics:
+#           TAG_WIDTH
+#           DATA_WIDTH
+#           ADDR_WIDTH
+# 
+#         Region: /tb_rrf/RRF1
+# Loading ieee.std_logic_arith(body)
+# Loading cycloneive.cycloneive_io_obuf(arch)
+# Loading cycloneive.cycloneive_io_ibuf(arch)
+# Loading cycloneive.cycloneive_clkctrl(vital_clkctrl)
+# Loading cycloneive.cycloneive_ena_reg(behave)
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)
+# Loading altera.dffeas(vital_dffeas)
+# Loading instances from RRF_6_1200mv_85c_vhd_slow.sdo
+# Loading timing data from RRF_6_1200mv_85c_vhd_slow.sdo
+# ** Warning: Design size of 4 instances exceeds ModelSim ALTERA recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim Altera version. Expect performance to be adversely affected.
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_rrf File: E:/IITB/SEM IV/Processor Design/Assignment 4/RRF/tb_RRF.vhd
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 500 ns
+# ** Warning: */DFFEAS HOLD  Low VIOLATION ON ENA WITH RESPECT TO CLK;
+# 
+#   Expected := 0.157 ns; Observed := 0.149 ns; At : 52.762 ns
+#    Time: 52762 ps  Iteration: 0  Instance: /tb_rrf/RRF1/\data_RRFA2[13]~reg0\
+# ** Warning: */DFFEAS HOLD  Low VIOLATION ON ENA WITH RESPECT TO CLK;
+# 
+#   Expected := 0.157 ns; Observed := 0.149 ns; At : 52.762 ns
+#    Time: 52762 ps  Iteration: 0  Instance: /tb_rrf/RRF1/\data_RRFB1[13]~reg0\
+# ** Warning: */DFFEAS HOLD  Low VIOLATION ON ENA WITH RESPECT TO CLK;
+# 
+#   Expected := 0.157 ns; Observed := 0.149 ns; At : 52.762 ns
+#    Time: 52762 ps  Iteration: 0  Instance: /tb_rrf/RRF1/\data_RRFA1[13]~reg0\
+# ** Warning: */DFFEAS HOLD  Low VIOLATION ON ENA WITH RESPECT TO CLK;
+# 
+#   Expected := 0.157 ns; Observed := 0.144 ns; At : 52.774 ns
+#    Time: 52774 ps  Iteration: 0  Instance: /tb_rrf/RRF1/\data_RRFA2[14]~reg0\
+# ** Warning: */DFFEAS HOLD  Low VIOLATION ON ENA WITH RESPECT TO CLK;
+# 
+#   Expected := 0.157 ns; Observed := 0.144 ns; At : 52.774 ns
+#    Time: 52774 ps  Iteration: 0  Instance: /tb_rrf/RRF1/\data_RRFB1[14]~reg0\
+# ** Warning: */DFFEAS HOLD  Low VIOLATION ON ENA WITH RESPECT TO CLK;
+# 
+#   Expected := 0.157 ns; Observed := 0.144 ns; At : 52.774 ns
+#    Time: 52774 ps  Iteration: 0  Instance: /tb_rrf/RRF1/\data_RRFA1[14]~reg0\

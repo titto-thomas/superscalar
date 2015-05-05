@@ -1,0 +1,16 @@
+Fitter Status : Successful - Tue May  5 15:53:46 2015
+Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Web Edition
+Revision Name : BranchPredictor
+Top-level Entity Name : BranchPredictor
+Family : Cyclone IV E
+Device : EP4CE22F17C6
+Timing Models : Final
+Total logic elements : 411 / 22,320 ( 2 % )
+    Total combinational functions : 300 / 22,320 ( 1 % )
+    Dedicated logic registers : 294 / 22,320 ( 1 % )
+Total registers : 294
+Total pins : 53 / 154 ( 34 % )
+Total virtual pins : 0
+Total memory bits : 0 / 608,256 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

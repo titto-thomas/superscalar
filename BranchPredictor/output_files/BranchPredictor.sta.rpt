@@ -1,0 +1,1843 @@
+TimeQuest Timing Analyzer report for BranchPredictor
+Tue May  5 15:54:04 2015
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow 1200mV 85C Model Fmax Summary
+  6. Timing Closure Recommendations
+  7. Slow 1200mV 85C Model Setup Summary
+  8. Slow 1200mV 85C Model Hold Summary
+  9. Slow 1200mV 85C Model Recovery Summary
+ 10. Slow 1200mV 85C Model Removal Summary
+ 11. Slow 1200mV 85C Model Minimum Pulse Width Summary
+ 12. Slow 1200mV 85C Model Setup: 'clock'
+ 13. Slow 1200mV 85C Model Hold: 'clock'
+ 14. Slow 1200mV 85C Model Minimum Pulse Width: 'clock'
+ 15. Setup Times
+ 16. Hold Times
+ 17. Clock to Output Times
+ 18. Minimum Clock to Output Times
+ 19. Slow 1200mV 85C Model Metastability Report
+ 20. Slow 1200mV 0C Model Fmax Summary
+ 21. Slow 1200mV 0C Model Setup Summary
+ 22. Slow 1200mV 0C Model Hold Summary
+ 23. Slow 1200mV 0C Model Recovery Summary
+ 24. Slow 1200mV 0C Model Removal Summary
+ 25. Slow 1200mV 0C Model Minimum Pulse Width Summary
+ 26. Slow 1200mV 0C Model Setup: 'clock'
+ 27. Slow 1200mV 0C Model Hold: 'clock'
+ 28. Slow 1200mV 0C Model Minimum Pulse Width: 'clock'
+ 29. Setup Times
+ 30. Hold Times
+ 31. Clock to Output Times
+ 32. Minimum Clock to Output Times
+ 33. Slow 1200mV 0C Model Metastability Report
+ 34. Fast 1200mV 0C Model Setup Summary
+ 35. Fast 1200mV 0C Model Hold Summary
+ 36. Fast 1200mV 0C Model Recovery Summary
+ 37. Fast 1200mV 0C Model Removal Summary
+ 38. Fast 1200mV 0C Model Minimum Pulse Width Summary
+ 39. Fast 1200mV 0C Model Setup: 'clock'
+ 40. Fast 1200mV 0C Model Hold: 'clock'
+ 41. Fast 1200mV 0C Model Minimum Pulse Width: 'clock'
+ 42. Setup Times
+ 43. Hold Times
+ 44. Clock to Output Times
+ 45. Minimum Clock to Output Times
+ 46. Fast 1200mV 0C Model Metastability Report
+ 47. Multicorner Timing Analysis Summary
+ 48. Setup Times
+ 49. Hold Times
+ 50. Clock to Output Times
+ 51. Minimum Clock to Output Times
+ 52. Board Trace Model Assignments
+ 53. Input Transition Times
+ 54. Signal Integrity Metrics (Slow 1200mv 0c Model)
+ 55. Signal Integrity Metrics (Slow 1200mv 85c Model)
+ 56. Signal Integrity Metrics (Fast 1200mv 0c Model)
+ 57. Setup Transfers
+ 58. Hold Transfers
+ 59. Report TCCS
+ 60. Report RSKM
+ 61. Unconstrained Paths
+ 62. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                       ;
++--------------------+----------------------------------------------------+
+; Quartus II Version ; Version 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
+; Revision Name      ; BranchPredictor                                    ;
+; Device Family      ; Cyclone IV E                                       ;
+; Device Name        ; EP4CE22F17C6                                       ;
+; Timing Models      ; Final                                              ;
+; Delay Model        ; Combined                                           ;
+; Rise/Fall Delays   ; Enabled                                            ;
++--------------------+----------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 2      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                            ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets   ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------+
+; clock      ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clock } ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------+
+
+
++-------------------------------------------------+
+; Slow 1200mV 85C Model Fmax Summary              ;
++-----------+-----------------+------------+------+
+; Fmax      ; Restricted Fmax ; Clock Name ; Note ;
++-----------+-----------------+------------+------+
+; 99.32 MHz ; 99.32 MHz       ; clock      ;      ;
++-----------+-----------------+------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
+----------------------------------
+; Timing Closure Recommendations ;
+----------------------------------
+HTML report is unavailable in plain text report export.
+
+
++-------------------------------------+
+; Slow 1200mV 85C Model Setup Summary ;
++-------+--------+--------------------+
+; Clock ; Slack  ; End Point TNS      ;
++-------+--------+--------------------+
+; clock ; -4.534 ; -827.997           ;
++-------+--------+--------------------+
+
+
++------------------------------------+
+; Slow 1200mV 85C Model Hold Summary ;
++-------+-------+--------------------+
+; Clock ; Slack ; End Point TNS      ;
++-------+-------+--------------------+
+; clock ; 0.342 ; 0.000              ;
++-------+-------+--------------------+
+
+
+------------------------------------------
+; Slow 1200mV 85C Model Recovery Summary ;
+------------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Slow 1200mV 85C Model Removal Summary ;
+-----------------------------------------
+No paths to report.
+
+
++---------------------------------------------------+
+; Slow 1200mV 85C Model Minimum Pulse Width Summary ;
++-------+--------+----------------------------------+
+; Clock ; Slack  ; End Point TNS                    ;
++-------+--------+----------------------------------+
+; clock ; -3.000 ; -297.000                         ;
++-------+--------+----------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Setup: 'clock'                                                                              ;
++--------+--------------------+---------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node          ; To Node       ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+--------------------+---------------+--------------+-------------+--------------+------------+------------+
+; -4.534 ; BranchTable[0][3]  ; TableBusy[0]  ; clock        ; clock       ; 0.500        ; 0.104      ; 5.133      ;
+; -4.534 ; BranchTable[0][3]  ; TableBusy[5]  ; clock        ; clock       ; 0.500        ; 0.104      ; 5.133      ;
+; -4.532 ; BranchTable[0][3]  ; TableBusy[2]  ; clock        ; clock       ; 0.500        ; 0.104      ; 5.131      ;
+; -4.531 ; BranchTable[0][3]  ; TableBusy[6]  ; clock        ; clock       ; 0.500        ; 0.104      ; 5.130      ;
+; -4.526 ; BranchTable[0][3]  ; TableBusy[4]  ; clock        ; clock       ; 0.500        ; 0.104      ; 5.125      ;
+; -4.521 ; BranchTable[0][3]  ; TableBusy[9]  ; clock        ; clock       ; 0.500        ; 0.104      ; 5.120      ;
+; -4.508 ; BranchTable[0][3]  ; TableBusy[14] ; clock        ; clock       ; 0.500        ; 0.104      ; 5.107      ;
+; -4.477 ; BranchTable[0][3]  ; TableBusy[7]  ; clock        ; clock       ; 0.500        ; 0.104      ; 5.076      ;
+; -4.476 ; BranchTable[0][3]  ; TableBusy[12] ; clock        ; clock       ; 0.500        ; 0.104      ; 5.075      ;
+; -4.475 ; BranchTable[0][3]  ; TableBusy[10] ; clock        ; clock       ; 0.500        ; 0.104      ; 5.074      ;
+; -4.473 ; BranchTable[0][2]  ; TableBusy[0]  ; clock        ; clock       ; 0.500        ; 0.104      ; 5.072      ;
+; -4.473 ; BranchTable[0][2]  ; TableBusy[5]  ; clock        ; clock       ; 0.500        ; 0.104      ; 5.072      ;
+; -4.471 ; BranchTable[0][2]  ; TableBusy[2]  ; clock        ; clock       ; 0.500        ; 0.104      ; 5.070      ;
+; -4.470 ; BranchTable[0][2]  ; TableBusy[6]  ; clock        ; clock       ; 0.500        ; 0.104      ; 5.069      ;
+; -4.467 ; BranchTable[0][3]  ; TableBusy[8]  ; clock        ; clock       ; 0.500        ; 0.104      ; 5.066      ;
+; -4.465 ; BranchTable[0][2]  ; TableBusy[4]  ; clock        ; clock       ; 0.500        ; 0.104      ; 5.064      ;
+; -4.460 ; BranchTable[0][3]  ; TableBusy[11] ; clock        ; clock       ; 0.500        ; 0.104      ; 5.059      ;
+; -4.460 ; BranchTable[0][3]  ; TableBusy[3]  ; clock        ; clock       ; 0.500        ; 0.104      ; 5.059      ;
+; -4.460 ; BranchTable[0][2]  ; TableBusy[9]  ; clock        ; clock       ; 0.500        ; 0.104      ; 5.059      ;
+; -4.459 ; BranchTable[0][3]  ; TableBusy[1]  ; clock        ; clock       ; 0.500        ; 0.104      ; 5.058      ;
+; -4.452 ; BranchTable[0][0]  ; TableBusy[0]  ; clock        ; clock       ; 0.500        ; 0.100      ; 5.047      ;
+; -4.452 ; BranchTable[0][0]  ; TableBusy[5]  ; clock        ; clock       ; 0.500        ; 0.100      ; 5.047      ;
+; -4.450 ; BranchTable[0][3]  ; TableBusy[13] ; clock        ; clock       ; 0.500        ; 0.104      ; 5.049      ;
+; -4.450 ; BranchTable[0][0]  ; TableBusy[2]  ; clock        ; clock       ; 0.500        ; 0.100      ; 5.045      ;
+; -4.449 ; BranchTable[0][0]  ; TableBusy[6]  ; clock        ; clock       ; 0.500        ; 0.100      ; 5.044      ;
+; -4.447 ; BranchTable[0][2]  ; TableBusy[14] ; clock        ; clock       ; 0.500        ; 0.104      ; 5.046      ;
+; -4.444 ; BranchTable[0][0]  ; TableBusy[4]  ; clock        ; clock       ; 0.500        ; 0.100      ; 5.039      ;
+; -4.440 ; BranchTable[2][4]  ; TableBusy[0]  ; clock        ; clock       ; 0.500        ; 0.100      ; 5.035      ;
+; -4.440 ; BranchTable[2][4]  ; TableBusy[5]  ; clock        ; clock       ; 0.500        ; 0.100      ; 5.035      ;
+; -4.439 ; BranchTable[0][0]  ; TableBusy[9]  ; clock        ; clock       ; 0.500        ; 0.100      ; 5.034      ;
+; -4.438 ; BranchTable[2][4]  ; TableBusy[2]  ; clock        ; clock       ; 0.500        ; 0.100      ; 5.033      ;
+; -4.437 ; BranchTable[2][4]  ; TableBusy[6]  ; clock        ; clock       ; 0.500        ; 0.100      ; 5.032      ;
+; -4.432 ; BranchTable[0][9]  ; TableBusy[0]  ; clock        ; clock       ; 0.500        ; 0.100      ; 5.027      ;
+; -4.432 ; BranchTable[0][9]  ; TableBusy[5]  ; clock        ; clock       ; 0.500        ; 0.100      ; 5.027      ;
+; -4.432 ; BranchTable[2][4]  ; TableBusy[4]  ; clock        ; clock       ; 0.500        ; 0.100      ; 5.027      ;
+; -4.430 ; BranchTable[0][9]  ; TableBusy[2]  ; clock        ; clock       ; 0.500        ; 0.100      ; 5.025      ;
+; -4.429 ; BranchTable[0][9]  ; TableBusy[6]  ; clock        ; clock       ; 0.500        ; 0.100      ; 5.024      ;
+; -4.427 ; BranchTable[2][4]  ; TableBusy[9]  ; clock        ; clock       ; 0.500        ; 0.100      ; 5.022      ;
+; -4.426 ; BranchTable[0][0]  ; TableBusy[14] ; clock        ; clock       ; 0.500        ; 0.100      ; 5.021      ;
+; -4.424 ; BranchTable[0][9]  ; TableBusy[4]  ; clock        ; clock       ; 0.500        ; 0.100      ; 5.019      ;
+; -4.419 ; BranchTable[0][9]  ; TableBusy[9]  ; clock        ; clock       ; 0.500        ; 0.100      ; 5.014      ;
+; -4.416 ; BranchTable[0][2]  ; TableBusy[7]  ; clock        ; clock       ; 0.500        ; 0.104      ; 5.015      ;
+; -4.415 ; BranchTable[0][2]  ; TableBusy[12] ; clock        ; clock       ; 0.500        ; 0.104      ; 5.014      ;
+; -4.414 ; BranchTable[2][4]  ; TableBusy[14] ; clock        ; clock       ; 0.500        ; 0.100      ; 5.009      ;
+; -4.414 ; BranchTable[0][2]  ; TableBusy[10] ; clock        ; clock       ; 0.500        ; 0.104      ; 5.013      ;
+; -4.411 ; BranchTable[4][0]  ; TableBusy[0]  ; clock        ; clock       ; 0.500        ; 0.103      ; 5.009      ;
+; -4.411 ; BranchTable[4][0]  ; TableBusy[5]  ; clock        ; clock       ; 0.500        ; 0.103      ; 5.009      ;
+; -4.409 ; BranchTable[4][0]  ; TableBusy[2]  ; clock        ; clock       ; 0.500        ; 0.103      ; 5.007      ;
+; -4.408 ; BranchTable[4][0]  ; TableBusy[6]  ; clock        ; clock       ; 0.500        ; 0.103      ; 5.006      ;
+; -4.406 ; BranchTable[0][9]  ; TableBusy[14] ; clock        ; clock       ; 0.500        ; 0.100      ; 5.001      ;
+; -4.406 ; BranchTable[0][2]  ; TableBusy[8]  ; clock        ; clock       ; 0.500        ; 0.104      ; 5.005      ;
+; -4.403 ; BranchTable[4][0]  ; TableBusy[4]  ; clock        ; clock       ; 0.500        ; 0.103      ; 5.001      ;
+; -4.399 ; BranchTable[0][2]  ; TableBusy[11] ; clock        ; clock       ; 0.500        ; 0.104      ; 4.998      ;
+; -4.399 ; BranchTable[0][2]  ; TableBusy[3]  ; clock        ; clock       ; 0.500        ; 0.104      ; 4.998      ;
+; -4.398 ; BranchTable[4][0]  ; TableBusy[9]  ; clock        ; clock       ; 0.500        ; 0.103      ; 4.996      ;
+; -4.398 ; BranchTable[0][2]  ; TableBusy[1]  ; clock        ; clock       ; 0.500        ; 0.104      ; 4.997      ;
+; -4.395 ; BranchTable[0][0]  ; TableBusy[7]  ; clock        ; clock       ; 0.500        ; 0.100      ; 4.990      ;
+; -4.394 ; BranchTable[0][0]  ; TableBusy[12] ; clock        ; clock       ; 0.500        ; 0.100      ; 4.989      ;
+; -4.393 ; BranchTable[0][0]  ; TableBusy[10] ; clock        ; clock       ; 0.500        ; 0.100      ; 4.988      ;
+; -4.390 ; BranchTable[0][1]  ; TableBusy[0]  ; clock        ; clock       ; 0.500        ; 0.100      ; 4.985      ;
+; -4.390 ; BranchTable[0][1]  ; TableBusy[5]  ; clock        ; clock       ; 0.500        ; 0.100      ; 4.985      ;
+; -4.389 ; BranchTable[0][2]  ; TableBusy[13] ; clock        ; clock       ; 0.500        ; 0.104      ; 4.988      ;
+; -4.389 ; BranchTable[2][0]  ; TableBusy[0]  ; clock        ; clock       ; 0.500        ; 0.100      ; 4.984      ;
+; -4.389 ; BranchTable[2][0]  ; TableBusy[5]  ; clock        ; clock       ; 0.500        ; 0.100      ; 4.984      ;
+; -4.388 ; BranchTable[0][1]  ; TableBusy[2]  ; clock        ; clock       ; 0.500        ; 0.100      ; 4.983      ;
+; -4.387 ; BranchTable[0][1]  ; TableBusy[6]  ; clock        ; clock       ; 0.500        ; 0.100      ; 4.982      ;
+; -4.387 ; BranchTable[2][7]  ; TableBusy[0]  ; clock        ; clock       ; 0.500        ; 0.100      ; 4.982      ;
+; -4.387 ; BranchTable[2][7]  ; TableBusy[5]  ; clock        ; clock       ; 0.500        ; 0.100      ; 4.982      ;
+; -4.387 ; BranchTable[2][0]  ; TableBusy[2]  ; clock        ; clock       ; 0.500        ; 0.100      ; 4.982      ;
+; -4.386 ; BranchTable[2][0]  ; TableBusy[6]  ; clock        ; clock       ; 0.500        ; 0.100      ; 4.981      ;
+; -4.385 ; BranchTable[4][0]  ; TableBusy[14] ; clock        ; clock       ; 0.500        ; 0.103      ; 4.983      ;
+; -4.385 ; BranchTable[0][0]  ; TableBusy[8]  ; clock        ; clock       ; 0.500        ; 0.100      ; 4.980      ;
+; -4.385 ; BranchTable[2][7]  ; TableBusy[2]  ; clock        ; clock       ; 0.500        ; 0.100      ; 4.980      ;
+; -4.384 ; BranchTable[2][7]  ; TableBusy[6]  ; clock        ; clock       ; 0.500        ; 0.100      ; 4.979      ;
+; -4.383 ; BranchTable[2][4]  ; TableBusy[7]  ; clock        ; clock       ; 0.500        ; 0.100      ; 4.978      ;
+; -4.382 ; BranchTable[2][4]  ; TableBusy[12] ; clock        ; clock       ; 0.500        ; 0.100      ; 4.977      ;
+; -4.382 ; BranchTable[0][1]  ; TableBusy[4]  ; clock        ; clock       ; 0.500        ; 0.100      ; 4.977      ;
+; -4.381 ; BranchTable[2][4]  ; TableBusy[10] ; clock        ; clock       ; 0.500        ; 0.100      ; 4.976      ;
+; -4.381 ; BranchTable[2][0]  ; TableBusy[4]  ; clock        ; clock       ; 0.500        ; 0.100      ; 4.976      ;
+; -4.379 ; BranchTable[2][7]  ; TableBusy[4]  ; clock        ; clock       ; 0.500        ; 0.100      ; 4.974      ;
+; -4.378 ; BranchTable[0][0]  ; TableBusy[11] ; clock        ; clock       ; 0.500        ; 0.100      ; 4.973      ;
+; -4.378 ; BranchTable[0][0]  ; TableBusy[3]  ; clock        ; clock       ; 0.500        ; 0.100      ; 4.973      ;
+; -4.377 ; BranchTable[0][7]  ; TableBusy[0]  ; clock        ; clock       ; 0.500        ; 0.100      ; 4.972      ;
+; -4.377 ; BranchTable[0][7]  ; TableBusy[5]  ; clock        ; clock       ; 0.500        ; 0.100      ; 4.972      ;
+; -4.377 ; BranchTable[0][0]  ; TableBusy[1]  ; clock        ; clock       ; 0.500        ; 0.100      ; 4.972      ;
+; -4.377 ; BranchTable[0][1]  ; TableBusy[9]  ; clock        ; clock       ; 0.500        ; 0.100      ; 4.972      ;
+; -4.376 ; BranchTable[2][0]  ; TableBusy[9]  ; clock        ; clock       ; 0.500        ; 0.100      ; 4.971      ;
+; -4.375 ; BranchTable[0][7]  ; TableBusy[2]  ; clock        ; clock       ; 0.500        ; 0.100      ; 4.970      ;
+; -4.375 ; BranchTable[0][9]  ; TableBusy[7]  ; clock        ; clock       ; 0.500        ; 0.100      ; 4.970      ;
+; -4.374 ; BranchTable[0][7]  ; TableBusy[6]  ; clock        ; clock       ; 0.500        ; 0.100      ; 4.969      ;
+; -4.374 ; BranchTable[0][9]  ; TableBusy[12] ; clock        ; clock       ; 0.500        ; 0.100      ; 4.969      ;
+; -4.374 ; BranchTable[2][7]  ; TableBusy[9]  ; clock        ; clock       ; 0.500        ; 0.100      ; 4.969      ;
+; -4.373 ; BranchTable[0][9]  ; TableBusy[10] ; clock        ; clock       ; 0.500        ; 0.100      ; 4.968      ;
+; -4.373 ; BranchTable[2][4]  ; TableBusy[8]  ; clock        ; clock       ; 0.500        ; 0.100      ; 4.968      ;
+; -4.373 ; BranchTable[4][13] ; TableBusy[0]  ; clock        ; clock       ; 0.500        ; 0.103      ; 4.971      ;
+; -4.373 ; BranchTable[4][13] ; TableBusy[5]  ; clock        ; clock       ; 0.500        ; 0.103      ; 4.971      ;
+; -4.371 ; BranchTable[4][2]  ; TableBusy[0]  ; clock        ; clock       ; 0.500        ; 0.103      ; 4.969      ;
+; -4.371 ; BranchTable[4][2]  ; TableBusy[5]  ; clock        ; clock       ; 0.500        ; 0.103      ; 4.969      ;
+; -4.371 ; BranchTable[4][13] ; TableBusy[2]  ; clock        ; clock       ; 0.500        ; 0.103      ; 4.969      ;
+; -4.370 ; BranchTable[4][13] ; TableBusy[6]  ; clock        ; clock       ; 0.500        ; 0.103      ; 4.968      ;
++--------+--------------------+---------------+--------------+-------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Hold: 'clock'                                                                                      ;
++-------+---------------------+----------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node           ; To Node              ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------+----------------------+--------------+-------------+--------------+------------+------------+
+; 0.342 ; TableBusy[15]       ; TableBusy[15]        ; clock        ; clock       ; 0.000        ; 0.078      ; 0.577      ;
+; 0.357 ; TableBusy[0]        ; TableBusy[0]         ; clock        ; clock       ; 0.000        ; 0.063      ; 0.577      ;
+; 0.357 ; TableBusy[1]        ; TableBusy[1]         ; clock        ; clock       ; 0.000        ; 0.063      ; 0.577      ;
+; 0.357 ; TableBusy[14]       ; TableBusy[14]        ; clock        ; clock       ; 0.000        ; 0.063      ; 0.577      ;
+; 0.357 ; TableBusy[12]       ; TableBusy[12]        ; clock        ; clock       ; 0.000        ; 0.063      ; 0.577      ;
+; 0.357 ; TableBusy[5]        ; TableBusy[5]         ; clock        ; clock       ; 0.000        ; 0.063      ; 0.577      ;
+; 0.357 ; TableBusy[8]        ; TableBusy[8]         ; clock        ; clock       ; 0.000        ; 0.063      ; 0.577      ;
+; 0.357 ; TableBusy[11]       ; TableBusy[11]        ; clock        ; clock       ; 0.000        ; 0.063      ; 0.577      ;
+; 0.357 ; TableBusy[10]       ; TableBusy[10]        ; clock        ; clock       ; 0.000        ; 0.063      ; 0.577      ;
+; 0.357 ; TableBusy[7]        ; TableBusy[7]         ; clock        ; clock       ; 0.000        ; 0.063      ; 0.577      ;
+; 0.357 ; TableBusy[6]        ; TableBusy[6]         ; clock        ; clock       ; 0.000        ; 0.063      ; 0.577      ;
+; 0.357 ; TableBusy[3]        ; TableBusy[3]         ; clock        ; clock       ; 0.000        ; 0.063      ; 0.577      ;
+; 0.357 ; TableBusy[2]        ; TableBusy[2]         ; clock        ; clock       ; 0.000        ; 0.063      ; 0.577      ;
+; 0.357 ; TableBusy[13]       ; TableBusy[13]        ; clock        ; clock       ; 0.000        ; 0.063      ; 0.577      ;
+; 0.357 ; TableBusy[9]        ; TableBusy[9]         ; clock        ; clock       ; 0.000        ; 0.063      ; 0.577      ;
+; 0.357 ; TableBusy[4]        ; TableBusy[4]         ; clock        ; clock       ; 0.000        ; 0.063      ; 0.577      ;
+; 1.214 ; TableBusy[6]        ; write_loc[3]         ; clock        ; clock       ; 0.000        ; 0.062      ; 1.433      ;
+; 1.253 ; TableBusy[6]        ; write_loc[2]         ; clock        ; clock       ; 0.000        ; 0.062      ; 1.472      ;
+; 1.289 ; write_table[8]      ; BranchTable[15][8]   ; clock        ; clock       ; -0.500       ; -0.055     ; 0.911      ;
+; 1.289 ; write_table[0]      ; BranchTable[15][0]   ; clock        ; clock       ; -0.500       ; -0.055     ; 0.911      ;
+; 1.319 ; TableBusy[7]        ; write_loc[3]         ; clock        ; clock       ; 0.000        ; 0.062      ; 1.538      ;
+; 1.358 ; TableBusy[7]        ; write_loc[2]         ; clock        ; clock       ; 0.000        ; 0.062      ; 1.577      ;
+; 1.373 ; write_table[12]     ; BranchTable[15][12]  ; clock        ; clock       ; -0.500       ; -0.055     ; 0.995      ;
+; 1.394 ; write_table[15]     ; BranchTable[15][15]  ; clock        ; clock       ; -0.500       ; -0.055     ; 1.016      ;
+; 1.395 ; write_table[2]      ; BranchTable[15][2]   ; clock        ; clock       ; -0.500       ; -0.055     ; 1.017      ;
+; 1.412 ; write_table[13]     ; BranchTable[15][13]  ; clock        ; clock       ; -0.500       ; -0.055     ; 1.034      ;
+; 1.579 ; TableBusy[4]        ; write_loc[3]         ; clock        ; clock       ; 0.000        ; 0.062      ; 1.798      ;
+; 1.616 ; TableBusy[4]        ; write_loc[2]         ; clock        ; clock       ; 0.000        ; 0.062      ; 1.835      ;
+; 1.636 ; TableBusy[5]        ; write_loc[3]         ; clock        ; clock       ; 0.000        ; 0.062      ; 1.855      ;
+; 1.659 ; BranchTable[8][15]  ; PredictedResult~reg0 ; clock        ; clock       ; -0.500       ; 0.635      ; 1.971      ;
+; 1.673 ; TableBusy[5]        ; write_loc[2]         ; clock        ; clock       ; 0.000        ; 0.062      ; 1.892      ;
+; 1.716 ; BranchTable[0][15]  ; PredictedResult~reg0 ; clock        ; clock       ; -0.500       ; 0.638      ; 2.031      ;
+; 1.720 ; write_table[5]      ; BranchTable[1][5]    ; clock        ; clock       ; -0.500       ; -0.101     ; 1.296      ;
+; 1.737 ; write_table[7]      ; BranchTable[13][7]   ; clock        ; clock       ; -0.500       ; -0.418     ; 0.996      ;
+; 1.763 ; BranchTable[13][15] ; PredictedResult~reg0 ; clock        ; clock       ; -0.500       ; 0.638      ; 2.078      ;
+; 1.767 ; write_table[5]      ; BranchTable[5][5]    ; clock        ; clock       ; -0.500       ; 0.268      ; 1.712      ;
+; 1.775 ; write_table[1]      ; BranchTable[13][1]   ; clock        ; clock       ; -0.500       ; -0.418     ; 1.034      ;
+; 1.782 ; write_table[5]      ; BranchTable[13][5]   ; clock        ; clock       ; -0.500       ; 0.231      ; 1.690      ;
+; 1.788 ; write_table[11]     ; BranchTable[13][11]  ; clock        ; clock       ; -0.500       ; -0.418     ; 1.047      ;
+; 1.795 ; write_table[10]     ; BranchTable[13][10]  ; clock        ; clock       ; -0.500       ; -0.099     ; 1.373      ;
+; 1.801 ; write_table[15]     ; BranchTable[5][15]   ; clock        ; clock       ; -0.500       ; -0.060     ; 1.418      ;
+; 1.804 ; write_table[3]      ; BranchTable[15][3]   ; clock        ; clock       ; -0.500       ; -0.089     ; 1.392      ;
+; 1.837 ; write_table[15]     ; BranchTable[2][15]   ; clock        ; clock       ; -0.500       ; -0.431     ; 1.083      ;
+; 1.885 ; write_table[14]     ; BranchTable[7][14]   ; clock        ; clock       ; -0.500       ; -0.096     ; 1.466      ;
+; 1.910 ; write_table[8]      ; BranchTable[8][8]    ; clock        ; clock       ; -0.500       ; -0.051     ; 1.536      ;
+; 1.921 ; write_table[14]     ; BranchTable[3][14]   ; clock        ; clock       ; -0.500       ; 0.237      ; 1.835      ;
+; 1.928 ; write_table[13]     ; BranchTable[2][13]   ; clock        ; clock       ; -0.500       ; -0.431     ; 1.174      ;
+; 1.935 ; write_table[14]     ; BranchTable[13][14]  ; clock        ; clock       ; -0.500       ; -0.099     ; 1.513      ;
+; 1.937 ; write_table[14]     ; BranchTable[14][14]  ; clock        ; clock       ; -0.500       ; -0.099     ; 1.515      ;
+; 1.938 ; write_table[6]      ; BranchTable[1][6]    ; clock        ; clock       ; -0.500       ; -0.028     ; 1.587      ;
+; 1.940 ; write_table[8]      ; BranchTable[5][8]    ; clock        ; clock       ; -0.500       ; -0.060     ; 1.557      ;
+; 1.941 ; write_table[8]      ; BranchTable[2][8]    ; clock        ; clock       ; -0.500       ; -0.431     ; 1.187      ;
+; 1.942 ; write_table[8]      ; BranchTable[12][8]   ; clock        ; clock       ; -0.500       ; -0.082     ; 1.537      ;
+; 1.947 ; write_table[11]     ; BranchTable[15][11]  ; clock        ; clock       ; -0.500       ; -0.085     ; 1.539      ;
+; 1.948 ; write_table[12]     ; BranchTable[1][12]   ; clock        ; clock       ; -0.500       ; -0.430     ; 1.195      ;
+; 1.949 ; write_table[6]      ; BranchTable[13][6]   ; clock        ; clock       ; -0.500       ; -0.418     ; 1.208      ;
+; 1.964 ; write_table[14]     ; BranchTable[4][14]   ; clock        ; clock       ; -0.500       ; -0.100     ; 1.541      ;
+; 1.966 ; BranchTable[6][15]  ; PredictedResult~reg0 ; clock        ; clock       ; -0.500       ; 0.644      ; 2.287      ;
+; 1.967 ; write_table[8]      ; BranchTable[1][8]    ; clock        ; clock       ; -0.500       ; -0.430     ; 1.214      ;
+; 1.968 ; TableBusy[0]        ; TableBusy[7]         ; clock        ; clock       ; 0.000        ; 0.063      ; 2.188      ;
+; 1.970 ; write_table[4]      ; BranchTable[13][4]   ; clock        ; clock       ; -0.500       ; 0.231      ; 1.878      ;
+; 1.974 ; TableBusy[7]        ; write_table_en       ; clock        ; clock       ; 0.000        ; 0.063      ; 2.194      ;
+; 1.976 ; TableBusy[0]        ; write_loc[0]         ; clock        ; clock       ; 0.000        ; 0.062      ; 2.195      ;
+; 1.977 ; write_table[2]      ; BranchTable[0][2]    ; clock        ; clock       ; -0.500       ; -0.432     ; 1.222      ;
+; 1.988 ; TableBusy[0]        ; TableBusy[12]        ; clock        ; clock       ; 0.000        ; 0.063      ; 2.208      ;
+; 1.990 ; write_table[13]     ; BranchTable[1][13]   ; clock        ; clock       ; -0.500       ; -0.430     ; 1.237      ;
+; 1.992 ; write_table[14]     ; BranchTable[1][14]   ; clock        ; clock       ; -0.500       ; -0.101     ; 1.568      ;
+; 1.994 ; BranchTable[7][15]  ; PredictedResult~reg0 ; clock        ; clock       ; -0.500       ; 0.635      ; 2.306      ;
+; 2.000 ; TableBusy[0]        ; TableBusy[11]        ; clock        ; clock       ; 0.000        ; 0.063      ; 2.220      ;
+; 2.004 ; write_table[5]      ; BranchTable[0][5]    ; clock        ; clock       ; -0.500       ; -0.099     ; 1.582      ;
+; 2.005 ; TableBusy[0]        ; TableBusy[15]        ; clock        ; clock       ; 0.000        ; 0.438      ; 2.600      ;
+; 2.012 ; write_table[2]      ; BranchTable[9][2]    ; clock        ; clock       ; -0.500       ; -0.431     ; 1.258      ;
+; 2.012 ; write_table[13]     ; BranchTable[5][13]   ; clock        ; clock       ; -0.500       ; -0.060     ; 1.629      ;
+; 2.017 ; write_table[5]      ; BranchTable[15][5]   ; clock        ; clock       ; -0.500       ; -0.100     ; 1.594      ;
+; 2.017 ; TableBusy[0]        ; TableBusy[13]        ; clock        ; clock       ; 0.000        ; 0.063      ; 2.237      ;
+; 2.024 ; write_table[2]      ; BranchTable[14][2]   ; clock        ; clock       ; -0.500       ; -0.433     ; 1.268      ;
+; 2.026 ; BranchTable[14][15] ; PredictedResult~reg0 ; clock        ; clock       ; -0.500       ; 0.638      ; 2.341      ;
+; 2.026 ; TableBusy[0]        ; TableBusy[3]         ; clock        ; clock       ; 0.000        ; 0.063      ; 2.246      ;
+; 2.027 ; write_table[15]     ; BranchTable[3][15]   ; clock        ; clock       ; -0.500       ; -0.092     ; 1.612      ;
+; 2.028 ; BranchTable[12][15] ; PredictedResult~reg0 ; clock        ; clock       ; -0.500       ; 0.636      ; 2.341      ;
+; 2.033 ; write_table[15]     ; BranchTable[4][15]   ; clock        ; clock       ; -0.500       ; -0.429     ; 1.281      ;
+; 2.038 ; TableBusy[7]        ; TableBusy[15]        ; clock        ; clock       ; 0.000        ; 0.438      ; 2.633      ;
+; 2.040 ; write_table[3]      ; BranchTable[5][3]    ; clock        ; clock       ; -0.500       ; -0.095     ; 1.622      ;
+; 2.042 ; write_table[3]      ; BranchTable[8][3]    ; clock        ; clock       ; -0.500       ; -0.085     ; 1.634      ;
+; 2.057 ; TableBusy[10]       ; write_loc[3]         ; clock        ; clock       ; 0.000        ; 0.062      ; 2.276      ;
+; 2.058 ; write_table[10]     ; BranchTable[15][10]  ; clock        ; clock       ; -0.500       ; 0.234      ; 1.969      ;
+; 2.058 ; TableBusy[10]       ; write_loc[2]         ; clock        ; clock       ; 0.000        ; 0.062      ; 2.277      ;
+; 2.059 ; write_table[5]      ; BranchTable[9][5]    ; clock        ; clock       ; -0.500       ; -0.102     ; 1.634      ;
+; 2.072 ; TableBusy[0]        ; TableBusy[10]        ; clock        ; clock       ; 0.000        ; 0.063      ; 2.292      ;
+; 2.075 ; write_table[3]      ; BranchTable[12][3]   ; clock        ; clock       ; -0.500       ; -0.116     ; 1.636      ;
+; 2.077 ; write_table[5]      ; BranchTable[10][5]   ; clock        ; clock       ; -0.500       ; -0.105     ; 1.649      ;
+; 2.080 ; write_table[5]      ; BranchTable[14][5]   ; clock        ; clock       ; -0.500       ; -0.099     ; 1.658      ;
+; 2.080 ; write_table[5]      ; BranchTable[2][5]    ; clock        ; clock       ; -0.500       ; -0.099     ; 1.658      ;
+; 2.092 ; BranchTable[0][10]  ; PredictedResult~reg0 ; clock        ; clock       ; -0.500       ; 0.638      ; 2.407      ;
+; 2.100 ; write_table[0]      ; BranchTable[3][0]    ; clock        ; clock       ; -0.500       ; -0.431     ; 1.346      ;
+; 2.100 ; write_table[0]      ; BranchTable[4][0]    ; clock        ; clock       ; -0.500       ; -0.431     ; 1.346      ;
+; 2.106 ; write_table[6]      ; BranchTable[15][6]   ; clock        ; clock       ; -0.500       ; -0.058     ; 1.725      ;
+; 2.108 ; write_table[5]      ; BranchTable[3][5]    ; clock        ; clock       ; -0.500       ; -0.102     ; 1.683      ;
+; 2.109 ; write_table[3]      ; BranchTable[7][3]    ; clock        ; clock       ; -0.500       ; -0.459     ; 1.327      ;
+; 2.109 ; TableBusy[0]        ; write_loc[2]         ; clock        ; clock       ; 0.000        ; 0.062      ; 2.328      ;
++-------+---------------------+----------------------+--------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Minimum Pulse Width: 'clock'                                             ;
++--------+--------------+----------------+------------+-------+------------+---------------------+
+; Slack  ; Actual Width ; Required Width ; Type       ; Clock ; Clock Edge ; Target              ;
++--------+--------------+----------------+------------+-------+------------+---------------------+
+; -3.000 ; 1.000        ; 4.000          ; Port Rate  ; clock ; Rise       ; clock               ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[0][0]   ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[0][10]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[0][11]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[0][12]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[0][13]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[0][14]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[0][15]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[0][1]   ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[0][2]   ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[0][3]   ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[0][4]   ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[0][5]   ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[0][6]   ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[0][7]   ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[0][8]   ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[0][9]   ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[10][0]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[10][10] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[10][11] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[10][12] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[10][13] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[10][14] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[10][15] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[10][1]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[10][2]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[10][3]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[10][4]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[10][5]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[10][6]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[10][7]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[10][8]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[10][9]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[11][0]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[11][10] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[11][11] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[11][12] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[11][13] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[11][14] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[11][15] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[11][1]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[11][2]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[11][3]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[11][4]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[11][5]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[11][6]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[11][7]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[11][8]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[11][9]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[12][0]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[12][10] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[12][11] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[12][12] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[12][13] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[12][14] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[12][15] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[12][1]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[12][2]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[12][3]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[12][4]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[12][5]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[12][6]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[12][7]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[12][8]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[12][9]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[13][0]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[13][10] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[13][11] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[13][12] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[13][13] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[13][14] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[13][15] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[13][1]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[13][2]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[13][3]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[13][4]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[13][5]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[13][6]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[13][7]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[13][8]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[13][9]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[14][0]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[14][10] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[14][11] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[14][12] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[14][13] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[14][14] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[14][15] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[14][1]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[14][2]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[14][3]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[14][4]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[14][5]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[14][6]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[14][7]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[14][8]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[14][9]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[15][0]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[15][10] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[15][11] ;
++--------+--------------+----------------+------------+-------+------------+---------------------+
+
+
++------------------------------------------------------------------------------+
+; Setup Times                                                                  ;
++------------------+------------+-------+-------+------------+-----------------+
+; Data Port        ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++------------------+------------+-------+-------+------------+-----------------+
+; reset            ; clock      ; 4.242 ; 4.621 ; Rise       ; clock           ;
+; Instruction[*]   ; clock      ; 5.085 ; 5.485 ; Fall       ; clock           ;
+;  Instruction[5]  ; clock      ; 2.731 ; 3.237 ; Fall       ; clock           ;
+;  Instruction[12] ; clock      ; 5.085 ; 5.277 ; Fall       ; clock           ;
+;  Instruction[13] ; clock      ; 5.066 ; 5.254 ; Fall       ; clock           ;
+;  Instruction[14] ; clock      ; 4.861 ; 5.485 ; Fall       ; clock           ;
+;  Instruction[15] ; clock      ; 4.705 ; 5.355 ; Fall       ; clock           ;
+; PC[*]            ; clock      ; 6.882 ; 7.401 ; Fall       ; clock           ;
+;  PC[0]           ; clock      ; 6.457 ; 7.018 ; Fall       ; clock           ;
+;  PC[1]           ; clock      ; 6.683 ; 7.088 ; Fall       ; clock           ;
+;  PC[2]           ; clock      ; 6.763 ; 7.274 ; Fall       ; clock           ;
+;  PC[3]           ; clock      ; 6.882 ; 7.401 ; Fall       ; clock           ;
+;  PC[4]           ; clock      ; 6.221 ; 6.742 ; Fall       ; clock           ;
+;  PC[5]           ; clock      ; 6.179 ; 6.672 ; Fall       ; clock           ;
+;  PC[6]           ; clock      ; 4.869 ; 5.005 ; Fall       ; clock           ;
+;  PC[7]           ; clock      ; 4.392 ; 4.595 ; Fall       ; clock           ;
+;  PC[8]           ; clock      ; 6.091 ; 6.583 ; Fall       ; clock           ;
+;  PC[9]           ; clock      ; 4.656 ; 4.770 ; Fall       ; clock           ;
+;  PC[10]          ; clock      ; 4.571 ; 4.678 ; Fall       ; clock           ;
+;  PC[11]          ; clock      ; 6.294 ; 6.826 ; Fall       ; clock           ;
+;  PC[12]          ; clock      ; 6.079 ; 6.555 ; Fall       ; clock           ;
+;  PC[13]          ; clock      ; 6.147 ; 6.625 ; Fall       ; clock           ;
+;  PC[14]          ; clock      ; 6.264 ; 6.788 ; Fall       ; clock           ;
+;  PC[15]          ; clock      ; 6.070 ; 6.550 ; Fall       ; clock           ;
+; reset            ; clock      ; 3.484 ; 3.802 ; Fall       ; clock           ;
++------------------+------------+-------+-------+------------+-----------------+
+
+
++--------------------------------------------------------------------------------+
+; Hold Times                                                                     ;
++------------------+------------+--------+--------+------------+-----------------+
+; Data Port        ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++------------------+------------+--------+--------+------------+-----------------+
+; reset            ; clock      ; -1.190 ; -1.619 ; Rise       ; clock           ;
+; Instruction[*]   ; clock      ; -2.256 ; -2.725 ; Fall       ; clock           ;
+;  Instruction[5]  ; clock      ; -2.256 ; -2.725 ; Fall       ; clock           ;
+;  Instruction[12] ; clock      ; -2.550 ; -2.903 ; Fall       ; clock           ;
+;  Instruction[13] ; clock      ; -2.531 ; -2.882 ; Fall       ; clock           ;
+;  Instruction[14] ; clock      ; -2.499 ; -2.938 ; Fall       ; clock           ;
+;  Instruction[15] ; clock      ; -2.349 ; -2.813 ; Fall       ; clock           ;
+; PC[*]            ; clock      ; 0.475  ; 0.323  ; Fall       ; clock           ;
+;  PC[0]           ; clock      ; -1.268 ; -1.717 ; Fall       ; clock           ;
+;  PC[1]           ; clock      ; -1.075 ; -1.477 ; Fall       ; clock           ;
+;  PC[2]           ; clock      ; -1.405 ; -1.904 ; Fall       ; clock           ;
+;  PC[3]           ; clock      ; -1.331 ; -1.760 ; Fall       ; clock           ;
+;  PC[4]           ; clock      ; -1.373 ; -1.840 ; Fall       ; clock           ;
+;  PC[5]           ; clock      ; -1.393 ; -1.814 ; Fall       ; clock           ;
+;  PC[6]           ; clock      ; 0.015  ; -0.152 ; Fall       ; clock           ;
+;  PC[7]           ; clock      ; 0.475  ; 0.323  ; Fall       ; clock           ;
+;  PC[8]           ; clock      ; -1.073 ; -1.541 ; Fall       ; clock           ;
+;  PC[9]           ; clock      ; 0.295  ; 0.197  ; Fall       ; clock           ;
+;  PC[10]          ; clock      ; 0.048  ; -0.098 ; Fall       ; clock           ;
+;  PC[11]          ; clock      ; -0.838 ; -1.288 ; Fall       ; clock           ;
+;  PC[12]          ; clock      ; -1.169 ; -1.618 ; Fall       ; clock           ;
+;  PC[13]          ; clock      ; -1.073 ; -1.476 ; Fall       ; clock           ;
+;  PC[14]          ; clock      ; -1.918 ; -2.384 ; Fall       ; clock           ;
+;  PC[15]          ; clock      ; -0.822 ; -1.280 ; Fall       ; clock           ;
+; reset            ; clock      ; -1.159 ; -1.561 ; Fall       ; clock           ;
++------------------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------------+
+; Clock to Output Times                                                       ;
++-----------------+------------+-------+-------+------------+-----------------+
+; Data Port       ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------------+------------+-------+-------+------------+-----------------+
+; PredictedResult ; clock      ; 6.336 ; 6.347 ; Fall       ; clock           ;
++-----------------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                               ;
++-----------------+------------+-------+-------+------------+-----------------+
+; Data Port       ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------------+------------+-------+-------+------------+-----------------+
+; PredictedResult ; clock      ; 6.131 ; 6.140 ; Fall       ; clock           ;
++-----------------+------------+-------+-------+------------+-----------------+
+
+
+----------------------------------------------
+; Slow 1200mV 85C Model Metastability Report ;
+----------------------------------------------
+No synchronizer chains to report.
+
+
++--------------------------------------------------+
+; Slow 1200mV 0C Model Fmax Summary                ;
++------------+-----------------+------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
++------------+-----------------+------------+------+
+; 109.58 MHz ; 109.58 MHz      ; clock      ;      ;
++------------+-----------------+------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++------------------------------------+
+; Slow 1200mV 0C Model Setup Summary ;
++-------+--------+-------------------+
+; Clock ; Slack  ; End Point TNS     ;
++-------+--------+-------------------+
+; clock ; -4.063 ; -733.587          ;
++-------+--------+-------------------+
+
+
++-----------------------------------+
+; Slow 1200mV 0C Model Hold Summary ;
++-------+-------+-------------------+
+; Clock ; Slack ; End Point TNS     ;
++-------+-------+-------------------+
+; clock ; 0.299 ; 0.000             ;
++-------+-------+-------------------+
+
+
+-----------------------------------------
+; Slow 1200mV 0C Model Recovery Summary ;
+-----------------------------------------
+No paths to report.
+
+
+----------------------------------------
+; Slow 1200mV 0C Model Removal Summary ;
+----------------------------------------
+No paths to report.
+
+
++--------------------------------------------------+
+; Slow 1200mV 0C Model Minimum Pulse Width Summary ;
++-------+--------+---------------------------------+
+; Clock ; Slack  ; End Point TNS                   ;
++-------+--------+---------------------------------+
+; clock ; -3.000 ; -297.000                        ;
++-------+--------+---------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Setup: 'clock'                                                                                 ;
++--------+--------------------+-----------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node          ; To Node         ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+--------------------+-----------------+--------------+-------------+--------------+------------+------------+
+; -4.063 ; BranchTable[0][3]  ; TableBusy[0]    ; clock        ; clock       ; 0.500        ; 0.086      ; 4.644      ;
+; -4.063 ; BranchTable[0][3]  ; TableBusy[5]    ; clock        ; clock       ; 0.500        ; 0.086      ; 4.644      ;
+; -4.060 ; BranchTable[0][3]  ; TableBusy[2]    ; clock        ; clock       ; 0.500        ; 0.086      ; 4.641      ;
+; -4.059 ; BranchTable[0][3]  ; TableBusy[6]    ; clock        ; clock       ; 0.500        ; 0.086      ; 4.640      ;
+; -4.053 ; BranchTable[0][3]  ; TableBusy[4]    ; clock        ; clock       ; 0.500        ; 0.086      ; 4.634      ;
+; -4.047 ; BranchTable[0][3]  ; TableBusy[9]    ; clock        ; clock       ; 0.500        ; 0.086      ; 4.628      ;
+; -4.034 ; BranchTable[0][3]  ; TableBusy[14]   ; clock        ; clock       ; 0.500        ; 0.086      ; 4.615      ;
+; -4.010 ; BranchTable[0][3]  ; TableBusy[7]    ; clock        ; clock       ; 0.500        ; 0.086      ; 4.591      ;
+; -4.009 ; BranchTable[0][3]  ; TableBusy[12]   ; clock        ; clock       ; 0.500        ; 0.086      ; 4.590      ;
+; -4.008 ; BranchTable[0][3]  ; TableBusy[10]   ; clock        ; clock       ; 0.500        ; 0.086      ; 4.589      ;
+; -4.004 ; BranchTable[0][2]  ; TableBusy[0]    ; clock        ; clock       ; 0.500        ; 0.086      ; 4.585      ;
+; -4.004 ; BranchTable[0][2]  ; TableBusy[5]    ; clock        ; clock       ; 0.500        ; 0.086      ; 4.585      ;
+; -4.001 ; BranchTable[0][2]  ; TableBusy[2]    ; clock        ; clock       ; 0.500        ; 0.086      ; 4.582      ;
+; -4.000 ; BranchTable[0][2]  ; TableBusy[6]    ; clock        ; clock       ; 0.500        ; 0.086      ; 4.581      ;
+; -3.999 ; BranchTable[0][3]  ; TableBusy[8]    ; clock        ; clock       ; 0.500        ; 0.086      ; 4.580      ;
+; -3.994 ; BranchTable[0][2]  ; TableBusy[4]    ; clock        ; clock       ; 0.500        ; 0.086      ; 4.575      ;
+; -3.991 ; BranchTable[0][3]  ; TableBusy[11]   ; clock        ; clock       ; 0.500        ; 0.086      ; 4.572      ;
+; -3.991 ; BranchTable[0][3]  ; TableBusy[3]    ; clock        ; clock       ; 0.500        ; 0.086      ; 4.572      ;
+; -3.990 ; BranchTable[0][3]  ; TableBusy[1]    ; clock        ; clock       ; 0.500        ; 0.086      ; 4.571      ;
+; -3.988 ; BranchTable[0][2]  ; TableBusy[9]    ; clock        ; clock       ; 0.500        ; 0.086      ; 4.569      ;
+; -3.983 ; BranchTable[0][0]  ; TableBusy[0]    ; clock        ; clock       ; 0.500        ; 0.083      ; 4.561      ;
+; -3.983 ; BranchTable[0][0]  ; TableBusy[5]    ; clock        ; clock       ; 0.500        ; 0.083      ; 4.561      ;
+; -3.981 ; BranchTable[0][3]  ; TableBusy[13]   ; clock        ; clock       ; 0.500        ; 0.086      ; 4.562      ;
+; -3.980 ; BranchTable[0][0]  ; TableBusy[2]    ; clock        ; clock       ; 0.500        ; 0.083      ; 4.558      ;
+; -3.979 ; BranchTable[0][0]  ; TableBusy[6]    ; clock        ; clock       ; 0.500        ; 0.083      ; 4.557      ;
+; -3.975 ; BranchTable[0][2]  ; TableBusy[14]   ; clock        ; clock       ; 0.500        ; 0.086      ; 4.556      ;
+; -3.973 ; BranchTable[0][0]  ; TableBusy[4]    ; clock        ; clock       ; 0.500        ; 0.083      ; 4.551      ;
+; -3.968 ; BranchTable[2][4]  ; TableBusy[0]    ; clock        ; clock       ; 0.500        ; 0.082      ; 4.545      ;
+; -3.968 ; BranchTable[2][4]  ; TableBusy[5]    ; clock        ; clock       ; 0.500        ; 0.082      ; 4.545      ;
+; -3.967 ; BranchTable[0][0]  ; TableBusy[9]    ; clock        ; clock       ; 0.500        ; 0.083      ; 4.545      ;
+; -3.965 ; BranchTable[2][4]  ; TableBusy[2]    ; clock        ; clock       ; 0.500        ; 0.082      ; 4.542      ;
+; -3.964 ; BranchTable[2][4]  ; TableBusy[6]    ; clock        ; clock       ; 0.500        ; 0.082      ; 4.541      ;
+; -3.961 ; BranchTable[0][9]  ; TableBusy[0]    ; clock        ; clock       ; 0.500        ; 0.082      ; 4.538      ;
+; -3.961 ; BranchTable[0][9]  ; TableBusy[5]    ; clock        ; clock       ; 0.500        ; 0.082      ; 4.538      ;
+; -3.958 ; BranchTable[0][9]  ; TableBusy[2]    ; clock        ; clock       ; 0.500        ; 0.082      ; 4.535      ;
+; -3.958 ; BranchTable[2][4]  ; TableBusy[4]    ; clock        ; clock       ; 0.500        ; 0.082      ; 4.535      ;
+; -3.957 ; BranchTable[0][9]  ; TableBusy[6]    ; clock        ; clock       ; 0.500        ; 0.082      ; 4.534      ;
+; -3.954 ; BranchTable[0][0]  ; TableBusy[14]   ; clock        ; clock       ; 0.500        ; 0.083      ; 4.532      ;
+; -3.952 ; BranchTable[2][4]  ; TableBusy[9]    ; clock        ; clock       ; 0.500        ; 0.082      ; 4.529      ;
+; -3.951 ; BranchTable[0][9]  ; TableBusy[4]    ; clock        ; clock       ; 0.500        ; 0.082      ; 4.528      ;
+; -3.951 ; BranchTable[0][2]  ; TableBusy[7]    ; clock        ; clock       ; 0.500        ; 0.086      ; 4.532      ;
+; -3.950 ; BranchTable[0][2]  ; TableBusy[12]   ; clock        ; clock       ; 0.500        ; 0.086      ; 4.531      ;
+; -3.949 ; BranchTable[0][2]  ; TableBusy[10]   ; clock        ; clock       ; 0.500        ; 0.086      ; 4.530      ;
+; -3.945 ; BranchTable[0][9]  ; TableBusy[9]    ; clock        ; clock       ; 0.500        ; 0.082      ; 4.522      ;
+; -3.940 ; BranchTable[0][2]  ; TableBusy[8]    ; clock        ; clock       ; 0.500        ; 0.086      ; 4.521      ;
+; -3.939 ; BranchTable[2][4]  ; TableBusy[14]   ; clock        ; clock       ; 0.500        ; 0.082      ; 4.516      ;
+; -3.935 ; BranchTable[4][0]  ; TableBusy[0]    ; clock        ; clock       ; 0.500        ; 0.086      ; 4.516      ;
+; -3.935 ; BranchTable[4][0]  ; TableBusy[5]    ; clock        ; clock       ; 0.500        ; 0.086      ; 4.516      ;
+; -3.932 ; BranchTable[4][0]  ; TableBusy[2]    ; clock        ; clock       ; 0.500        ; 0.086      ; 4.513      ;
+; -3.932 ; BranchTable[0][9]  ; TableBusy[14]   ; clock        ; clock       ; 0.500        ; 0.082      ; 4.509      ;
+; -3.932 ; BranchTable[0][2]  ; TableBusy[11]   ; clock        ; clock       ; 0.500        ; 0.086      ; 4.513      ;
+; -3.932 ; BranchTable[0][2]  ; TableBusy[3]    ; clock        ; clock       ; 0.500        ; 0.086      ; 4.513      ;
+; -3.931 ; BranchTable[4][0]  ; TableBusy[6]    ; clock        ; clock       ; 0.500        ; 0.086      ; 4.512      ;
+; -3.931 ; BranchTable[0][2]  ; TableBusy[1]    ; clock        ; clock       ; 0.500        ; 0.086      ; 4.512      ;
+; -3.930 ; BranchTable[0][0]  ; TableBusy[7]    ; clock        ; clock       ; 0.500        ; 0.083      ; 4.508      ;
+; -3.929 ; BranchTable[0][0]  ; TableBusy[12]   ; clock        ; clock       ; 0.500        ; 0.083      ; 4.507      ;
+; -3.928 ; BranchTable[0][0]  ; TableBusy[10]   ; clock        ; clock       ; 0.500        ; 0.083      ; 4.506      ;
+; -3.925 ; BranchTable[4][0]  ; TableBusy[4]    ; clock        ; clock       ; 0.500        ; 0.086      ; 4.506      ;
+; -3.924 ; BranchTable[2][0]  ; TableBusy[0]    ; clock        ; clock       ; 0.500        ; 0.082      ; 4.501      ;
+; -3.924 ; BranchTable[2][0]  ; TableBusy[5]    ; clock        ; clock       ; 0.500        ; 0.082      ; 4.501      ;
+; -3.923 ; BranchTable[0][1]  ; TableBusy[0]    ; clock        ; clock       ; 0.500        ; 0.083      ; 4.501      ;
+; -3.923 ; BranchTable[0][1]  ; TableBusy[5]    ; clock        ; clock       ; 0.500        ; 0.083      ; 4.501      ;
+; -3.922 ; BranchTable[0][2]  ; TableBusy[13]   ; clock        ; clock       ; 0.500        ; 0.086      ; 4.503      ;
+; -3.921 ; BranchTable[2][7]  ; TableBusy[0]    ; clock        ; clock       ; 0.500        ; 0.082      ; 4.498      ;
+; -3.921 ; BranchTable[2][7]  ; TableBusy[5]    ; clock        ; clock       ; 0.500        ; 0.082      ; 4.498      ;
+; -3.921 ; BranchTable[2][0]  ; TableBusy[2]    ; clock        ; clock       ; 0.500        ; 0.082      ; 4.498      ;
+; -3.920 ; BranchTable[0][1]  ; TableBusy[2]    ; clock        ; clock       ; 0.500        ; 0.083      ; 4.498      ;
+; -3.920 ; BranchTable[2][0]  ; TableBusy[6]    ; clock        ; clock       ; 0.500        ; 0.082      ; 4.497      ;
+; -3.919 ; BranchTable[4][0]  ; TableBusy[9]    ; clock        ; clock       ; 0.500        ; 0.086      ; 4.500      ;
+; -3.919 ; BranchTable[0][0]  ; TableBusy[8]    ; clock        ; clock       ; 0.500        ; 0.083      ; 4.497      ;
+; -3.919 ; BranchTable[0][1]  ; TableBusy[6]    ; clock        ; clock       ; 0.500        ; 0.083      ; 4.497      ;
+; -3.918 ; BranchTable[2][7]  ; TableBusy[2]    ; clock        ; clock       ; 0.500        ; 0.082      ; 4.495      ;
+; -3.917 ; BranchTable[2][7]  ; TableBusy[6]    ; clock        ; clock       ; 0.500        ; 0.082      ; 4.494      ;
+; -3.915 ; BranchTable[2][4]  ; TableBusy[7]    ; clock        ; clock       ; 0.500        ; 0.082      ; 4.492      ;
+; -3.914 ; BranchTable[12][6] ; write_loc[3]    ; clock        ; clock       ; 0.500        ; -0.227     ; 4.182      ;
+; -3.914 ; BranchTable[12][6] ; write_loc[0]    ; clock        ; clock       ; 0.500        ; -0.227     ; 4.182      ;
+; -3.914 ; BranchTable[12][6] ; write_loc[2]    ; clock        ; clock       ; 0.500        ; -0.227     ; 4.182      ;
+; -3.914 ; BranchTable[12][6] ; write_loc[1]    ; clock        ; clock       ; 0.500        ; -0.227     ; 4.182      ;
+; -3.914 ; BranchTable[12][6] ; write_table[14] ; clock        ; clock       ; 0.500        ; -0.227     ; 4.182      ;
+; -3.914 ; BranchTable[12][6] ; write_table[10] ; clock        ; clock       ; 0.500        ; -0.227     ; 4.182      ;
+; -3.914 ; BranchTable[12][6] ; write_table[4]  ; clock        ; clock       ; 0.500        ; -0.227     ; 4.182      ;
+; -3.914 ; BranchTable[12][6] ; write_table[5]  ; clock        ; clock       ; 0.500        ; -0.227     ; 4.182      ;
+; -3.914 ; BranchTable[0][7]  ; TableBusy[0]    ; clock        ; clock       ; 0.500        ; 0.082      ; 4.491      ;
+; -3.914 ; BranchTable[0][7]  ; TableBusy[5]    ; clock        ; clock       ; 0.500        ; 0.082      ; 4.491      ;
+; -3.914 ; BranchTable[2][4]  ; TableBusy[12]   ; clock        ; clock       ; 0.500        ; 0.082      ; 4.491      ;
+; -3.914 ; BranchTable[2][0]  ; TableBusy[4]    ; clock        ; clock       ; 0.500        ; 0.082      ; 4.491      ;
+; -3.913 ; BranchTable[2][4]  ; TableBusy[10]   ; clock        ; clock       ; 0.500        ; 0.082      ; 4.490      ;
+; -3.913 ; BranchTable[0][1]  ; TableBusy[4]    ; clock        ; clock       ; 0.500        ; 0.083      ; 4.491      ;
+; -3.911 ; BranchTable[0][7]  ; TableBusy[2]    ; clock        ; clock       ; 0.500        ; 0.082      ; 4.488      ;
+; -3.911 ; BranchTable[0][0]  ; TableBusy[11]   ; clock        ; clock       ; 0.500        ; 0.083      ; 4.489      ;
+; -3.911 ; BranchTable[0][0]  ; TableBusy[3]    ; clock        ; clock       ; 0.500        ; 0.083      ; 4.489      ;
+; -3.911 ; BranchTable[2][7]  ; TableBusy[4]    ; clock        ; clock       ; 0.500        ; 0.082      ; 4.488      ;
+; -3.910 ; BranchTable[0][7]  ; TableBusy[6]    ; clock        ; clock       ; 0.500        ; 0.082      ; 4.487      ;
+; -3.910 ; BranchTable[0][0]  ; TableBusy[1]    ; clock        ; clock       ; 0.500        ; 0.083      ; 4.488      ;
+; -3.908 ; BranchTable[0][9]  ; TableBusy[7]    ; clock        ; clock       ; 0.500        ; 0.082      ; 4.485      ;
+; -3.908 ; BranchTable[2][0]  ; TableBusy[9]    ; clock        ; clock       ; 0.500        ; 0.082      ; 4.485      ;
+; -3.907 ; BranchTable[0][9]  ; TableBusy[12]   ; clock        ; clock       ; 0.500        ; 0.082      ; 4.484      ;
+; -3.907 ; BranchTable[0][1]  ; TableBusy[9]    ; clock        ; clock       ; 0.500        ; 0.083      ; 4.485      ;
+; -3.906 ; BranchTable[4][0]  ; TableBusy[14]   ; clock        ; clock       ; 0.500        ; 0.086      ; 4.487      ;
+; -3.906 ; BranchTable[0][9]  ; TableBusy[10]   ; clock        ; clock       ; 0.500        ; 0.082      ; 4.483      ;
++--------+--------------------+-----------------+--------------+-------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Hold: 'clock'                                                                                       ;
++-------+---------------------+----------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node           ; To Node              ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------+----------------------+--------------+-------------+--------------+------------+------------+
+; 0.299 ; TableBusy[15]       ; TableBusy[15]        ; clock        ; clock       ; 0.000        ; 0.068      ; 0.511      ;
+; 0.312 ; TableBusy[0]        ; TableBusy[0]         ; clock        ; clock       ; 0.000        ; 0.055      ; 0.511      ;
+; 0.312 ; TableBusy[1]        ; TableBusy[1]         ; clock        ; clock       ; 0.000        ; 0.055      ; 0.511      ;
+; 0.312 ; TableBusy[14]       ; TableBusy[14]        ; clock        ; clock       ; 0.000        ; 0.055      ; 0.511      ;
+; 0.312 ; TableBusy[12]       ; TableBusy[12]        ; clock        ; clock       ; 0.000        ; 0.055      ; 0.511      ;
+; 0.312 ; TableBusy[5]        ; TableBusy[5]         ; clock        ; clock       ; 0.000        ; 0.055      ; 0.511      ;
+; 0.312 ; TableBusy[8]        ; TableBusy[8]         ; clock        ; clock       ; 0.000        ; 0.055      ; 0.511      ;
+; 0.312 ; TableBusy[11]       ; TableBusy[11]        ; clock        ; clock       ; 0.000        ; 0.055      ; 0.511      ;
+; 0.312 ; TableBusy[10]       ; TableBusy[10]        ; clock        ; clock       ; 0.000        ; 0.055      ; 0.511      ;
+; 0.312 ; TableBusy[7]        ; TableBusy[7]         ; clock        ; clock       ; 0.000        ; 0.055      ; 0.511      ;
+; 0.312 ; TableBusy[6]        ; TableBusy[6]         ; clock        ; clock       ; 0.000        ; 0.055      ; 0.511      ;
+; 0.312 ; TableBusy[3]        ; TableBusy[3]         ; clock        ; clock       ; 0.000        ; 0.055      ; 0.511      ;
+; 0.312 ; TableBusy[2]        ; TableBusy[2]         ; clock        ; clock       ; 0.000        ; 0.055      ; 0.511      ;
+; 0.312 ; TableBusy[13]       ; TableBusy[13]        ; clock        ; clock       ; 0.000        ; 0.055      ; 0.511      ;
+; 0.312 ; TableBusy[9]        ; TableBusy[9]         ; clock        ; clock       ; 0.000        ; 0.055      ; 0.511      ;
+; 0.312 ; TableBusy[4]        ; TableBusy[4]         ; clock        ; clock       ; 0.000        ; 0.055      ; 0.511      ;
+; 1.097 ; TableBusy[6]        ; write_loc[3]         ; clock        ; clock       ; 0.000        ; 0.053      ; 1.294      ;
+; 1.125 ; TableBusy[6]        ; write_loc[2]         ; clock        ; clock       ; 0.000        ; 0.053      ; 1.322      ;
+; 1.187 ; write_table[8]      ; BranchTable[15][8]   ; clock        ; clock       ; -0.500       ; -0.036     ; 0.815      ;
+; 1.187 ; write_table[0]      ; BranchTable[15][0]   ; clock        ; clock       ; -0.500       ; -0.036     ; 0.815      ;
+; 1.200 ; TableBusy[7]        ; write_loc[3]         ; clock        ; clock       ; 0.000        ; 0.053      ; 1.397      ;
+; 1.228 ; TableBusy[7]        ; write_loc[2]         ; clock        ; clock       ; 0.000        ; 0.053      ; 1.425      ;
+; 1.268 ; write_table[12]     ; BranchTable[15][12]  ; clock        ; clock       ; -0.500       ; -0.036     ; 0.896      ;
+; 1.287 ; write_table[15]     ; BranchTable[15][15]  ; clock        ; clock       ; -0.500       ; -0.036     ; 0.915      ;
+; 1.288 ; write_table[2]      ; BranchTable[15][2]   ; clock        ; clock       ; -0.500       ; -0.036     ; 0.916      ;
+; 1.303 ; write_table[13]     ; BranchTable[15][13]  ; clock        ; clock       ; -0.500       ; -0.036     ; 0.931      ;
+; 1.439 ; TableBusy[4]        ; write_loc[3]         ; clock        ; clock       ; 0.000        ; 0.053      ; 1.636      ;
+; 1.465 ; TableBusy[4]        ; write_loc[2]         ; clock        ; clock       ; 0.000        ; 0.053      ; 1.662      ;
+; 1.492 ; TableBusy[5]        ; write_loc[3]         ; clock        ; clock       ; 0.000        ; 0.053      ; 1.689      ;
+; 1.518 ; TableBusy[5]        ; write_loc[2]         ; clock        ; clock       ; 0.000        ; 0.053      ; 1.715      ;
+; 1.580 ; BranchTable[8][15]  ; PredictedResult~reg0 ; clock        ; clock       ; -0.500       ; 0.553      ; 1.797      ;
+; 1.594 ; write_table[7]      ; BranchTable[13][7]   ; clock        ; clock       ; -0.500       ; -0.361     ; 0.897      ;
+; 1.601 ; write_table[5]      ; BranchTable[1][5]    ; clock        ; clock       ; -0.500       ; -0.081     ; 1.184      ;
+; 1.627 ; BranchTable[13][15] ; PredictedResult~reg0 ; clock        ; clock       ; -0.500       ; 0.555      ; 1.846      ;
+; 1.628 ; write_table[1]      ; BranchTable[13][1]   ; clock        ; clock       ; -0.500       ; -0.361     ; 0.931      ;
+; 1.633 ; write_table[11]     ; BranchTable[13][11]  ; clock        ; clock       ; -0.500       ; -0.361     ; 0.936      ;
+; 1.645 ; BranchTable[0][15]  ; PredictedResult~reg0 ; clock        ; clock       ; -0.500       ; 0.555      ; 1.864      ;
+; 1.655 ; write_table[3]      ; BranchTable[15][3]   ; clock        ; clock       ; -0.500       ; -0.066     ; 1.253      ;
+; 1.658 ; write_table[5]      ; BranchTable[5][5]    ; clock        ; clock       ; -0.500       ; 0.248      ; 1.570      ;
+; 1.668 ; write_table[5]      ; BranchTable[13][5]   ; clock        ; clock       ; -0.500       ; 0.213      ; 1.545      ;
+; 1.671 ; write_table[15]     ; BranchTable[5][15]   ; clock        ; clock       ; -0.500       ; -0.041     ; 1.294      ;
+; 1.672 ; write_table[15]     ; BranchTable[2][15]   ; clock        ; clock       ; -0.500       ; -0.372     ; 0.964      ;
+; 1.676 ; write_table[10]     ; BranchTable[13][10]  ; clock        ; clock       ; -0.500       ; -0.079     ; 1.261      ;
+; 1.751 ; write_table[8]      ; BranchTable[8][8]    ; clock        ; clock       ; -0.500       ; -0.034     ; 1.381      ;
+; 1.758 ; write_table[8]      ; BranchTable[5][8]    ; clock        ; clock       ; -0.500       ; -0.041     ; 1.381      ;
+; 1.763 ; write_table[6]      ; BranchTable[1][6]    ; clock        ; clock       ; -0.500       ; -0.010     ; 1.417      ;
+; 1.765 ; write_table[14]     ; BranchTable[7][14]   ; clock        ; clock       ; -0.500       ; -0.078     ; 1.351      ;
+; 1.777 ; TableBusy[7]        ; write_table_en       ; clock        ; clock       ; 0.000        ; 0.055      ; 1.976      ;
+; 1.778 ; write_table[13]     ; BranchTable[2][13]   ; clock        ; clock       ; -0.500       ; -0.372     ; 1.070      ;
+; 1.780 ; write_table[8]      ; BranchTable[12][8]   ; clock        ; clock       ; -0.500       ; -0.063     ; 1.381      ;
+; 1.784 ; write_table[8]      ; BranchTable[2][8]    ; clock        ; clock       ; -0.500       ; -0.372     ; 1.076      ;
+; 1.787 ; write_table[11]     ; BranchTable[15][11]  ; clock        ; clock       ; -0.500       ; -0.065     ; 1.386      ;
+; 1.790 ; write_table[12]     ; BranchTable[1][12]   ; clock        ; clock       ; -0.500       ; -0.371     ; 1.083      ;
+; 1.790 ; write_table[6]      ; BranchTable[13][6]   ; clock        ; clock       ; -0.500       ; -0.361     ; 1.093      ;
+; 1.796 ; write_table[14]     ; BranchTable[3][14]   ; clock        ; clock       ; -0.500       ; 0.219      ; 1.679      ;
+; 1.801 ; write_table[13]     ; BranchTable[1][13]   ; clock        ; clock       ; -0.500       ; -0.371     ; 1.094      ;
+; 1.803 ; write_table[8]      ; BranchTable[1][8]    ; clock        ; clock       ; -0.500       ; -0.371     ; 1.096      ;
+; 1.808 ; TableBusy[0]        ; TableBusy[7]         ; clock        ; clock       ; 0.000        ; 0.055      ; 2.007      ;
+; 1.809 ; write_table[2]      ; BranchTable[0][2]    ; clock        ; clock       ; -0.500       ; -0.374     ; 1.099      ;
+; 1.809 ; write_table[14]     ; BranchTable[13][14]  ; clock        ; clock       ; -0.500       ; -0.080     ; 1.393      ;
+; 1.812 ; write_table[14]     ; BranchTable[14][14]  ; clock        ; clock       ; -0.500       ; -0.080     ; 1.396      ;
+; 1.812 ; TableBusy[0]        ; TableBusy[12]        ; clock        ; clock       ; 0.000        ; 0.055      ; 2.011      ;
+; 1.814 ; TableBusy[0]        ; write_loc[0]         ; clock        ; clock       ; 0.000        ; 0.053      ; 2.011      ;
+; 1.825 ; write_table[2]      ; BranchTable[9][2]    ; clock        ; clock       ; -0.500       ; -0.373     ; 1.116      ;
+; 1.831 ; write_table[14]     ; BranchTable[4][14]   ; clock        ; clock       ; -0.500       ; -0.081     ; 1.414      ;
+; 1.836 ; TableBusy[0]        ; TableBusy[11]        ; clock        ; clock       ; 0.000        ; 0.055      ; 2.035      ;
+; 1.837 ; write_table[2]      ; BranchTable[14][2]   ; clock        ; clock       ; -0.500       ; -0.375     ; 1.126      ;
+; 1.839 ; TableBusy[7]        ; TableBusy[15]        ; clock        ; clock       ; 0.000        ; 0.385      ; 2.368      ;
+; 1.843 ; write_table[15]     ; BranchTable[4][15]   ; clock        ; clock       ; -0.500       ; -0.371     ; 1.136      ;
+; 1.846 ; TableBusy[0]        ; TableBusy[15]        ; clock        ; clock       ; 0.000        ; 0.385      ; 2.375      ;
+; 1.851 ; write_table[4]      ; BranchTable[13][4]   ; clock        ; clock       ; -0.500       ; 0.213      ; 1.728      ;
+; 1.854 ; TableBusy[0]        ; TableBusy[13]        ; clock        ; clock       ; 0.000        ; 0.055      ; 2.053      ;
+; 1.855 ; write_table[14]     ; BranchTable[1][14]   ; clock        ; clock       ; -0.500       ; -0.081     ; 1.438      ;
+; 1.858 ; BranchTable[6][15]  ; PredictedResult~reg0 ; clock        ; clock       ; -0.500       ; 0.560      ; 2.082      ;
+; 1.859 ; TableBusy[0]        ; TableBusy[3]         ; clock        ; clock       ; 0.000        ; 0.055      ; 2.058      ;
+; 1.860 ; write_table[15]     ; BranchTable[3][15]   ; clock        ; clock       ; -0.500       ; -0.071     ; 1.453      ;
+; 1.861 ; TableBusy[10]       ; write_loc[3]         ; clock        ; clock       ; 0.000        ; 0.053      ; 2.058      ;
+; 1.862 ; write_table[13]     ; BranchTable[5][13]   ; clock        ; clock       ; -0.500       ; -0.041     ; 1.485      ;
+; 1.862 ; TableBusy[10]       ; write_loc[2]         ; clock        ; clock       ; 0.000        ; 0.053      ; 2.059      ;
+; 1.865 ; write_table[5]      ; BranchTable[0][5]    ; clock        ; clock       ; -0.500       ; -0.080     ; 1.449      ;
+; 1.869 ; write_table[3]      ; BranchTable[5][3]    ; clock        ; clock       ; -0.500       ; -0.072     ; 1.461      ;
+; 1.874 ; write_table[3]      ; BranchTable[8][3]    ; clock        ; clock       ; -0.500       ; -0.064     ; 1.474      ;
+; 1.879 ; write_table[5]      ; BranchTable[15][5]   ; clock        ; clock       ; -0.500       ; -0.081     ; 1.462      ;
+; 1.883 ; TableBusy[0]        ; TableBusy[10]        ; clock        ; clock       ; 0.000        ; 0.055      ; 2.082      ;
+; 1.888 ; write_table[10]     ; BranchTable[15][10]  ; clock        ; clock       ; -0.500       ; 0.217      ; 1.769      ;
+; 1.888 ; TableBusy[0]        ; write_loc[3]         ; clock        ; clock       ; 0.000        ; 0.053      ; 2.085      ;
+; 1.889 ; TableBusy[0]        ; write_loc[2]         ; clock        ; clock       ; 0.000        ; 0.053      ; 2.086      ;
+; 1.896 ; BranchTable[12][15] ; PredictedResult~reg0 ; clock        ; clock       ; -0.500       ; 0.554      ; 2.114      ;
+; 1.902 ; BranchTable[7][15]  ; PredictedResult~reg0 ; clock        ; clock       ; -0.500       ; 0.553      ; 2.119      ;
+; 1.906 ; write_table[3]      ; BranchTable[12][3]   ; clock        ; clock       ; -0.500       ; -0.093     ; 1.477      ;
+; 1.908 ; write_table[0]      ; BranchTable[3][0]    ; clock        ; clock       ; -0.500       ; -0.374     ; 1.198      ;
+; 1.911 ; write_table[0]      ; BranchTable[4][0]    ; clock        ; clock       ; -0.500       ; -0.374     ; 1.201      ;
+; 1.915 ; write_table[5]      ; BranchTable[9][5]    ; clock        ; clock       ; -0.500       ; -0.083     ; 1.496      ;
+; 1.917 ; BranchTable[14][15] ; PredictedResult~reg0 ; clock        ; clock       ; -0.500       ; 0.555      ; 2.136      ;
+; 1.924 ; write_table[6]      ; BranchTable[15][6]   ; clock        ; clock       ; -0.500       ; -0.040     ; 1.548      ;
+; 1.927 ; write_table[5]      ; BranchTable[10][5]   ; clock        ; clock       ; -0.500       ; -0.085     ; 1.506      ;
+; 1.927 ; write_table[3]      ; BranchTable[7][3]    ; clock        ; clock       ; -0.500       ; -0.399     ; 1.192      ;
+; 1.928 ; BranchTable[0][10]  ; PredictedResult~reg0 ; clock        ; clock       ; -0.500       ; 0.555      ; 2.147      ;
+; 1.936 ; write_table[5]      ; BranchTable[14][5]   ; clock        ; clock       ; -0.500       ; -0.080     ; 1.520      ;
+; 1.936 ; write_table[5]      ; BranchTable[2][5]    ; clock        ; clock       ; -0.500       ; -0.080     ; 1.520      ;
++-------+---------------------+----------------------+--------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Minimum Pulse Width: 'clock'                                              ;
++--------+--------------+----------------+------------+-------+------------+---------------------+
+; Slack  ; Actual Width ; Required Width ; Type       ; Clock ; Clock Edge ; Target              ;
++--------+--------------+----------------+------------+-------+------------+---------------------+
+; -3.000 ; 1.000        ; 4.000          ; Port Rate  ; clock ; Rise       ; clock               ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[0][0]   ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[0][10]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[0][11]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[0][12]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[0][13]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[0][14]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[0][15]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[0][1]   ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[0][2]   ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[0][3]   ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[0][4]   ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[0][5]   ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[0][6]   ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[0][7]   ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[0][8]   ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[0][9]   ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[10][0]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[10][10] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[10][11] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[10][12] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[10][13] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[10][14] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[10][15] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[10][1]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[10][2]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[10][3]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[10][4]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[10][5]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[10][6]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[10][7]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[10][8]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[10][9]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[11][0]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[11][10] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[11][11] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[11][12] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[11][13] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[11][14] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[11][15] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[11][1]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[11][2]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[11][3]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[11][4]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[11][5]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[11][6]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[11][7]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[11][8]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[11][9]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[12][0]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[12][10] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[12][11] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[12][12] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[12][13] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[12][14] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[12][15] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[12][1]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[12][2]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[12][3]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[12][4]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[12][5]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[12][6]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[12][7]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[12][8]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[12][9]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[13][0]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[13][10] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[13][11] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[13][12] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[13][13] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[13][14] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[13][15] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[13][1]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[13][2]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[13][3]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[13][4]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[13][5]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[13][6]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[13][7]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[13][8]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[13][9]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[14][0]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[14][10] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[14][11] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[14][12] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[14][13] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[14][14] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[14][15] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[14][1]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[14][2]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[14][3]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[14][4]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[14][5]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[14][6]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[14][7]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[14][8]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[14][9]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[15][0]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[15][10] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[15][11] ;
++--------+--------------+----------------+------------+-------+------------+---------------------+
+
+
++------------------------------------------------------------------------------+
+; Setup Times                                                                  ;
++------------------+------------+-------+-------+------------+-----------------+
+; Data Port        ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++------------------+------------+-------+-------+------------+-----------------+
+; reset            ; clock      ; 3.740 ; 4.064 ; Rise       ; clock           ;
+; Instruction[*]   ; clock      ; 4.461 ; 4.773 ; Fall       ; clock           ;
+;  Instruction[5]  ; clock      ; 2.417 ; 2.767 ; Fall       ; clock           ;
+;  Instruction[12] ; clock      ; 4.461 ; 4.695 ; Fall       ; clock           ;
+;  Instruction[13] ; clock      ; 4.452 ; 4.676 ; Fall       ; clock           ;
+;  Instruction[14] ; clock      ; 4.371 ; 4.773 ; Fall       ; clock           ;
+;  Instruction[15] ; clock      ; 4.228 ; 4.662 ; Fall       ; clock           ;
+; PC[*]            ; clock      ; 6.175 ; 6.551 ; Fall       ; clock           ;
+;  PC[0]           ; clock      ; 5.775 ; 6.195 ; Fall       ; clock           ;
+;  PC[1]           ; clock      ; 5.969 ; 6.268 ; Fall       ; clock           ;
+;  PC[2]           ; clock      ; 6.068 ; 6.443 ; Fall       ; clock           ;
+;  PC[3]           ; clock      ; 6.175 ; 6.551 ; Fall       ; clock           ;
+;  PC[4]           ; clock      ; 5.551 ; 5.947 ; Fall       ; clock           ;
+;  PC[5]           ; clock      ; 5.518 ; 5.886 ; Fall       ; clock           ;
+;  PC[6]           ; clock      ; 4.406 ; 4.586 ; Fall       ; clock           ;
+;  PC[7]           ; clock      ; 3.984 ; 4.210 ; Fall       ; clock           ;
+;  PC[8]           ; clock      ; 5.414 ; 5.802 ; Fall       ; clock           ;
+;  PC[9]           ; clock      ; 4.208 ; 4.367 ; Fall       ; clock           ;
+;  PC[10]          ; clock      ; 4.141 ; 4.288 ; Fall       ; clock           ;
+;  PC[11]          ; clock      ; 5.614 ; 5.999 ; Fall       ; clock           ;
+;  PC[12]          ; clock      ; 5.404 ; 5.773 ; Fall       ; clock           ;
+;  PC[13]          ; clock      ; 5.476 ; 5.852 ; Fall       ; clock           ;
+;  PC[14]          ; clock      ; 5.572 ; 5.972 ; Fall       ; clock           ;
+;  PC[15]          ; clock      ; 5.414 ; 5.794 ; Fall       ; clock           ;
+; reset            ; clock      ; 3.068 ; 3.323 ; Fall       ; clock           ;
++------------------+------------+-------+-------+------------+-----------------+
+
+
++--------------------------------------------------------------------------------+
+; Hold Times                                                                     ;
++------------------+------------+--------+--------+------------+-----------------+
+; Data Port        ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++------------------+------------+--------+--------+------------+-----------------+
+; reset            ; clock      ; -0.994 ; -1.328 ; Rise       ; clock           ;
+; Instruction[*]   ; clock      ; -1.992 ; -2.321 ; Fall       ; clock           ;
+;  Instruction[5]  ; clock      ; -1.992 ; -2.321 ; Fall       ; clock           ;
+;  Instruction[12] ; clock      ; -2.192 ; -2.556 ; Fall       ; clock           ;
+;  Instruction[13] ; clock      ; -2.182 ; -2.537 ; Fall       ; clock           ;
+;  Instruction[14] ; clock      ; -2.241 ; -2.496 ; Fall       ; clock           ;
+;  Instruction[15] ; clock      ; -2.104 ; -2.388 ; Fall       ; clock           ;
+; PC[*]            ; clock      ; 0.393  ; 0.225  ; Fall       ; clock           ;
+;  PC[0]           ; clock      ; -1.108 ; -1.423 ; Fall       ; clock           ;
+;  PC[1]           ; clock      ; -0.919 ; -1.214 ; Fall       ; clock           ;
+;  PC[2]           ; clock      ; -1.220 ; -1.616 ; Fall       ; clock           ;
+;  PC[3]           ; clock      ; -1.161 ; -1.456 ; Fall       ; clock           ;
+;  PC[4]           ; clock      ; -1.184 ; -1.533 ; Fall       ; clock           ;
+;  PC[5]           ; clock      ; -1.192 ; -1.507 ; Fall       ; clock           ;
+;  PC[6]           ; clock      ; -0.021 ; -0.221 ; Fall       ; clock           ;
+;  PC[7]           ; clock      ; 0.393  ; 0.225  ; Fall       ; clock           ;
+;  PC[8]           ; clock      ; -0.913 ; -1.273 ; Fall       ; clock           ;
+;  PC[9]           ; clock      ; 0.237  ; 0.107  ; Fall       ; clock           ;
+;  PC[10]          ; clock      ; 0.011  ; -0.148 ; Fall       ; clock           ;
+;  PC[11]          ; clock      ; -0.692 ; -1.051 ; Fall       ; clock           ;
+;  PC[12]          ; clock      ; -0.995 ; -1.358 ; Fall       ; clock           ;
+;  PC[13]          ; clock      ; -0.915 ; -1.213 ; Fall       ; clock           ;
+;  PC[14]          ; clock      ; -1.676 ; -2.024 ; Fall       ; clock           ;
+;  PC[15]          ; clock      ; -0.681 ; -1.044 ; Fall       ; clock           ;
+; reset            ; clock      ; -0.998 ; -1.295 ; Fall       ; clock           ;
++------------------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------------+
+; Clock to Output Times                                                       ;
++-----------------+------------+-------+-------+------------+-----------------+
+; Data Port       ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------------+------------+-------+-------+------------+-----------------+
+; PredictedResult ; clock      ; 5.655 ; 5.646 ; Fall       ; clock           ;
++-----------------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                               ;
++-----------------+------------+-------+-------+------------+-----------------+
+; Data Port       ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------------+------------+-------+-------+------------+-----------------+
+; PredictedResult ; clock      ; 5.461 ; 5.452 ; Fall       ; clock           ;
++-----------------+------------+-------+-------+------------+-----------------+
+
+
+---------------------------------------------
+; Slow 1200mV 0C Model Metastability Report ;
+---------------------------------------------
+No synchronizer chains to report.
+
+
++------------------------------------+
+; Fast 1200mV 0C Model Setup Summary ;
++-------+--------+-------------------+
+; Clock ; Slack  ; End Point TNS     ;
++-------+--------+-------------------+
+; clock ; -2.006 ; -472.169          ;
++-------+--------+-------------------+
+
+
++-----------------------------------+
+; Fast 1200mV 0C Model Hold Summary ;
++-------+-------+-------------------+
+; Clock ; Slack ; End Point TNS     ;
++-------+-------+-------------------+
+; clock ; 0.176 ; 0.000             ;
++-------+-------+-------------------+
+
+
+-----------------------------------------
+; Fast 1200mV 0C Model Recovery Summary ;
+-----------------------------------------
+No paths to report.
+
+
+----------------------------------------
+; Fast 1200mV 0C Model Removal Summary ;
+----------------------------------------
+No paths to report.
+
+
++--------------------------------------------------+
+; Fast 1200mV 0C Model Minimum Pulse Width Summary ;
++-------+--------+---------------------------------+
+; Clock ; Slack  ; End Point TNS                   ;
++-------+--------+---------------------------------+
+; clock ; -3.000 ; -316.482                        ;
++-------+--------+---------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Fast 1200mV 0C Model Setup: 'clock'                                                                               ;
++--------+--------------------+---------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node          ; To Node       ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+--------------------+---------------+--------------+-------------+--------------+------------+------------+
+; -2.006 ; BranchTable[0][3]  ; TableBusy[0]  ; clock        ; clock       ; 0.500        ; 0.358      ; 2.851      ;
+; -2.006 ; BranchTable[0][3]  ; TableBusy[5]  ; clock        ; clock       ; 0.500        ; 0.358      ; 2.851      ;
+; -2.004 ; BranchTable[0][3]  ; TableBusy[6]  ; clock        ; clock       ; 0.500        ; 0.358      ; 2.849      ;
+; -2.004 ; BranchTable[0][3]  ; TableBusy[2]  ; clock        ; clock       ; 0.500        ; 0.358      ; 2.849      ;
+; -1.998 ; BranchTable[0][3]  ; TableBusy[4]  ; clock        ; clock       ; 0.500        ; 0.358      ; 2.843      ;
+; -1.993 ; BranchTable[0][3]  ; TableBusy[9]  ; clock        ; clock       ; 0.500        ; 0.358      ; 2.838      ;
+; -1.987 ; BranchTable[0][3]  ; TableBusy[14] ; clock        ; clock       ; 0.500        ; 0.358      ; 2.832      ;
+; -1.977 ; BranchTable[0][3]  ; TableBusy[7]  ; clock        ; clock       ; 0.500        ; 0.358      ; 2.822      ;
+; -1.976 ; BranchTable[0][3]  ; TableBusy[12] ; clock        ; clock       ; 0.500        ; 0.358      ; 2.821      ;
+; -1.975 ; BranchTable[0][2]  ; TableBusy[0]  ; clock        ; clock       ; 0.500        ; 0.358      ; 2.820      ;
+; -1.975 ; BranchTable[0][2]  ; TableBusy[5]  ; clock        ; clock       ; 0.500        ; 0.358      ; 2.820      ;
+; -1.974 ; BranchTable[0][3]  ; TableBusy[10] ; clock        ; clock       ; 0.500        ; 0.358      ; 2.819      ;
+; -1.973 ; BranchTable[0][2]  ; TableBusy[6]  ; clock        ; clock       ; 0.500        ; 0.358      ; 2.818      ;
+; -1.973 ; BranchTable[0][2]  ; TableBusy[2]  ; clock        ; clock       ; 0.500        ; 0.358      ; 2.818      ;
+; -1.971 ; BranchTable[0][3]  ; TableBusy[8]  ; clock        ; clock       ; 0.500        ; 0.358      ; 2.816      ;
+; -1.967 ; BranchTable[0][2]  ; TableBusy[4]  ; clock        ; clock       ; 0.500        ; 0.358      ; 2.812      ;
+; -1.965 ; BranchTable[0][3]  ; TableBusy[1]  ; clock        ; clock       ; 0.500        ; 0.358      ; 2.810      ;
+; -1.964 ; BranchTable[0][3]  ; TableBusy[3]  ; clock        ; clock       ; 0.500        ; 0.358      ; 2.809      ;
+; -1.963 ; BranchTable[2][4]  ; TableBusy[0]  ; clock        ; clock       ; 0.500        ; 0.354      ; 2.804      ;
+; -1.963 ; BranchTable[2][4]  ; TableBusy[5]  ; clock        ; clock       ; 0.500        ; 0.354      ; 2.804      ;
+; -1.962 ; BranchTable[0][2]  ; TableBusy[9]  ; clock        ; clock       ; 0.500        ; 0.358      ; 2.807      ;
+; -1.961 ; BranchTable[2][4]  ; TableBusy[6]  ; clock        ; clock       ; 0.500        ; 0.354      ; 2.802      ;
+; -1.961 ; BranchTable[2][4]  ; TableBusy[2]  ; clock        ; clock       ; 0.500        ; 0.354      ; 2.802      ;
+; -1.959 ; BranchTable[0][3]  ; TableBusy[11] ; clock        ; clock       ; 0.500        ; 0.358      ; 2.804      ;
+; -1.956 ; BranchTable[0][0]  ; TableBusy[0]  ; clock        ; clock       ; 0.500        ; 0.355      ; 2.798      ;
+; -1.956 ; BranchTable[0][0]  ; TableBusy[5]  ; clock        ; clock       ; 0.500        ; 0.355      ; 2.798      ;
+; -1.956 ; BranchTable[0][2]  ; TableBusy[14] ; clock        ; clock       ; 0.500        ; 0.358      ; 2.801      ;
+; -1.955 ; BranchTable[2][4]  ; TableBusy[4]  ; clock        ; clock       ; 0.500        ; 0.354      ; 2.796      ;
+; -1.954 ; BranchTable[0][3]  ; TableBusy[13] ; clock        ; clock       ; 0.500        ; 0.358      ; 2.799      ;
+; -1.954 ; BranchTable[0][0]  ; TableBusy[6]  ; clock        ; clock       ; 0.500        ; 0.355      ; 2.796      ;
+; -1.954 ; BranchTable[0][0]  ; TableBusy[2]  ; clock        ; clock       ; 0.500        ; 0.355      ; 2.796      ;
+; -1.950 ; BranchTable[2][4]  ; TableBusy[9]  ; clock        ; clock       ; 0.500        ; 0.354      ; 2.791      ;
+; -1.949 ; BranchTable[0][9]  ; TableBusy[0]  ; clock        ; clock       ; 0.500        ; 0.354      ; 2.790      ;
+; -1.949 ; BranchTable[0][9]  ; TableBusy[5]  ; clock        ; clock       ; 0.500        ; 0.354      ; 2.790      ;
+; -1.948 ; BranchTable[0][0]  ; TableBusy[4]  ; clock        ; clock       ; 0.500        ; 0.355      ; 2.790      ;
+; -1.947 ; BranchTable[0][9]  ; TableBusy[6]  ; clock        ; clock       ; 0.500        ; 0.354      ; 2.788      ;
+; -1.947 ; BranchTable[0][9]  ; TableBusy[2]  ; clock        ; clock       ; 0.500        ; 0.354      ; 2.788      ;
+; -1.946 ; BranchTable[0][2]  ; TableBusy[7]  ; clock        ; clock       ; 0.500        ; 0.358      ; 2.791      ;
+; -1.945 ; BranchTable[0][2]  ; TableBusy[12] ; clock        ; clock       ; 0.500        ; 0.358      ; 2.790      ;
+; -1.944 ; BranchTable[2][4]  ; TableBusy[14] ; clock        ; clock       ; 0.500        ; 0.354      ; 2.785      ;
+; -1.943 ; BranchTable[0][0]  ; TableBusy[9]  ; clock        ; clock       ; 0.500        ; 0.355      ; 2.785      ;
+; -1.943 ; BranchTable[0][2]  ; TableBusy[10] ; clock        ; clock       ; 0.500        ; 0.358      ; 2.788      ;
+; -1.941 ; BranchTable[0][9]  ; TableBusy[4]  ; clock        ; clock       ; 0.500        ; 0.354      ; 2.782      ;
+; -1.940 ; BranchTable[0][2]  ; TableBusy[8]  ; clock        ; clock       ; 0.500        ; 0.358      ; 2.785      ;
+; -1.937 ; BranchTable[0][0]  ; TableBusy[14] ; clock        ; clock       ; 0.500        ; 0.355      ; 2.779      ;
+; -1.936 ; BranchTable[0][9]  ; TableBusy[9]  ; clock        ; clock       ; 0.500        ; 0.354      ; 2.777      ;
+; -1.935 ; BranchTable[4][0]  ; TableBusy[0]  ; clock        ; clock       ; 0.500        ; 0.358      ; 2.780      ;
+; -1.935 ; BranchTable[4][0]  ; TableBusy[5]  ; clock        ; clock       ; 0.500        ; 0.358      ; 2.780      ;
+; -1.934 ; BranchTable[2][4]  ; TableBusy[7]  ; clock        ; clock       ; 0.500        ; 0.354      ; 2.775      ;
+; -1.934 ; BranchTable[0][2]  ; TableBusy[1]  ; clock        ; clock       ; 0.500        ; 0.358      ; 2.779      ;
+; -1.933 ; BranchTable[4][0]  ; TableBusy[6]  ; clock        ; clock       ; 0.500        ; 0.358      ; 2.778      ;
+; -1.933 ; BranchTable[4][0]  ; TableBusy[2]  ; clock        ; clock       ; 0.500        ; 0.358      ; 2.778      ;
+; -1.933 ; BranchTable[2][4]  ; TableBusy[12] ; clock        ; clock       ; 0.500        ; 0.354      ; 2.774      ;
+; -1.933 ; BranchTable[0][2]  ; TableBusy[3]  ; clock        ; clock       ; 0.500        ; 0.358      ; 2.778      ;
+; -1.933 ; TableBusy[6]       ; TableBusy[9]  ; clock        ; clock       ; 1.000        ; -0.037     ; 2.883      ;
+; -1.932 ; TableBusy[6]       ; TableBusy[14] ; clock        ; clock       ; 1.000        ; -0.037     ; 2.882      ;
+; -1.931 ; BranchTable[2][4]  ; TableBusy[10] ; clock        ; clock       ; 0.500        ; 0.354      ; 2.772      ;
+; -1.930 ; BranchTable[0][9]  ; TableBusy[14] ; clock        ; clock       ; 0.500        ; 0.354      ; 2.771      ;
+; -1.928 ; BranchTable[2][4]  ; TableBusy[8]  ; clock        ; clock       ; 0.500        ; 0.354      ; 2.769      ;
+; -1.928 ; BranchTable[0][2]  ; TableBusy[11] ; clock        ; clock       ; 0.500        ; 0.358      ; 2.773      ;
+; -1.927 ; BranchTable[4][0]  ; TableBusy[4]  ; clock        ; clock       ; 0.500        ; 0.358      ; 2.772      ;
+; -1.927 ; BranchTable[0][0]  ; TableBusy[7]  ; clock        ; clock       ; 0.500        ; 0.355      ; 2.769      ;
+; -1.927 ; BranchTable[2][7]  ; TableBusy[0]  ; clock        ; clock       ; 0.500        ; 0.354      ; 2.768      ;
+; -1.927 ; BranchTable[2][0]  ; TableBusy[0]  ; clock        ; clock       ; 0.500        ; 0.354      ; 2.768      ;
+; -1.927 ; BranchTable[2][7]  ; TableBusy[5]  ; clock        ; clock       ; 0.500        ; 0.354      ; 2.768      ;
+; -1.927 ; BranchTable[2][0]  ; TableBusy[5]  ; clock        ; clock       ; 0.500        ; 0.354      ; 2.768      ;
+; -1.926 ; BranchTable[0][0]  ; TableBusy[12] ; clock        ; clock       ; 0.500        ; 0.355      ; 2.768      ;
+; -1.925 ; BranchTable[2][7]  ; TableBusy[6]  ; clock        ; clock       ; 0.500        ; 0.354      ; 2.766      ;
+; -1.925 ; BranchTable[2][0]  ; TableBusy[6]  ; clock        ; clock       ; 0.500        ; 0.354      ; 2.766      ;
+; -1.925 ; BranchTable[2][7]  ; TableBusy[2]  ; clock        ; clock       ; 0.500        ; 0.354      ; 2.766      ;
+; -1.925 ; BranchTable[2][0]  ; TableBusy[2]  ; clock        ; clock       ; 0.500        ; 0.354      ; 2.766      ;
+; -1.925 ; BranchTable[0][1]  ; TableBusy[0]  ; clock        ; clock       ; 0.500        ; 0.355      ; 2.767      ;
+; -1.925 ; BranchTable[0][1]  ; TableBusy[5]  ; clock        ; clock       ; 0.500        ; 0.355      ; 2.767      ;
+; -1.924 ; BranchTable[0][0]  ; TableBusy[10] ; clock        ; clock       ; 0.500        ; 0.355      ; 2.766      ;
+; -1.923 ; BranchTable[0][2]  ; TableBusy[13] ; clock        ; clock       ; 0.500        ; 0.358      ; 2.768      ;
+; -1.923 ; BranchTable[0][1]  ; TableBusy[6]  ; clock        ; clock       ; 0.500        ; 0.355      ; 2.765      ;
+; -1.923 ; BranchTable[0][1]  ; TableBusy[2]  ; clock        ; clock       ; 0.500        ; 0.355      ; 2.765      ;
+; -1.923 ; TableBusy[11]      ; TableBusy[9]  ; clock        ; clock       ; 1.000        ; -0.037     ; 2.873      ;
+; -1.922 ; BranchTable[4][0]  ; TableBusy[9]  ; clock        ; clock       ; 0.500        ; 0.358      ; 2.767      ;
+; -1.922 ; BranchTable[2][4]  ; TableBusy[1]  ; clock        ; clock       ; 0.500        ; 0.354      ; 2.763      ;
+; -1.922 ; TableBusy[11]      ; TableBusy[14] ; clock        ; clock       ; 1.000        ; -0.037     ; 2.872      ;
+; -1.921 ; BranchTable[0][0]  ; TableBusy[8]  ; clock        ; clock       ; 0.500        ; 0.355      ; 2.763      ;
+; -1.921 ; BranchTable[2][4]  ; TableBusy[3]  ; clock        ; clock       ; 0.500        ; 0.354      ; 2.762      ;
+; -1.920 ; BranchTable[0][9]  ; TableBusy[7]  ; clock        ; clock       ; 0.500        ; 0.354      ; 2.761      ;
+; -1.920 ; BranchTable[4][13] ; TableBusy[0]  ; clock        ; clock       ; 0.500        ; 0.358      ; 2.765      ;
+; -1.920 ; BranchTable[4][13] ; TableBusy[5]  ; clock        ; clock       ; 0.500        ; 0.358      ; 2.765      ;
+; -1.919 ; BranchTable[0][9]  ; TableBusy[12] ; clock        ; clock       ; 0.500        ; 0.354      ; 2.760      ;
+; -1.919 ; BranchTable[2][7]  ; TableBusy[4]  ; clock        ; clock       ; 0.500        ; 0.354      ; 2.760      ;
+; -1.919 ; BranchTable[2][0]  ; TableBusy[4]  ; clock        ; clock       ; 0.500        ; 0.354      ; 2.760      ;
+; -1.918 ; BranchTable[4][13] ; TableBusy[6]  ; clock        ; clock       ; 0.500        ; 0.358      ; 2.763      ;
+; -1.918 ; BranchTable[4][13] ; TableBusy[2]  ; clock        ; clock       ; 0.500        ; 0.358      ; 2.763      ;
+; -1.917 ; BranchTable[0][9]  ; TableBusy[10] ; clock        ; clock       ; 0.500        ; 0.354      ; 2.758      ;
+; -1.917 ; BranchTable[0][1]  ; TableBusy[4]  ; clock        ; clock       ; 0.500        ; 0.355      ; 2.759      ;
+; -1.917 ; BranchTable[4][2]  ; TableBusy[0]  ; clock        ; clock       ; 0.500        ; 0.358      ; 2.762      ;
+; -1.917 ; BranchTable[4][2]  ; TableBusy[5]  ; clock        ; clock       ; 0.500        ; 0.358      ; 2.762      ;
+; -1.916 ; BranchTable[4][0]  ; TableBusy[14] ; clock        ; clock       ; 0.500        ; 0.358      ; 2.761      ;
+; -1.916 ; BranchTable[2][4]  ; TableBusy[11] ; clock        ; clock       ; 0.500        ; 0.354      ; 2.757      ;
+; -1.915 ; BranchTable[0][0]  ; TableBusy[1]  ; clock        ; clock       ; 0.500        ; 0.355      ; 2.757      ;
+; -1.915 ; BranchTable[4][2]  ; TableBusy[6]  ; clock        ; clock       ; 0.500        ; 0.358      ; 2.760      ;
+; -1.915 ; BranchTable[4][2]  ; TableBusy[2]  ; clock        ; clock       ; 0.500        ; 0.358      ; 2.760      ;
++--------+--------------------+---------------+--------------+-------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Fast 1200mV 0C Model Hold: 'clock'                                                                                       ;
++-------+---------------------+----------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node           ; To Node              ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------+----------------------+--------------+-------------+--------------+------------+------------+
+; 0.176 ; TableBusy[15]       ; TableBusy[15]        ; clock        ; clock       ; 0.000        ; 0.047      ; 0.307      ;
+; 0.186 ; TableBusy[0]        ; TableBusy[0]         ; clock        ; clock       ; 0.000        ; 0.037      ; 0.307      ;
+; 0.186 ; TableBusy[1]        ; TableBusy[1]         ; clock        ; clock       ; 0.000        ; 0.037      ; 0.307      ;
+; 0.186 ; TableBusy[14]       ; TableBusy[14]        ; clock        ; clock       ; 0.000        ; 0.037      ; 0.307      ;
+; 0.186 ; TableBusy[12]       ; TableBusy[12]        ; clock        ; clock       ; 0.000        ; 0.037      ; 0.307      ;
+; 0.186 ; TableBusy[5]        ; TableBusy[5]         ; clock        ; clock       ; 0.000        ; 0.037      ; 0.307      ;
+; 0.186 ; TableBusy[8]        ; TableBusy[8]         ; clock        ; clock       ; 0.000        ; 0.037      ; 0.307      ;
+; 0.186 ; TableBusy[11]       ; TableBusy[11]        ; clock        ; clock       ; 0.000        ; 0.037      ; 0.307      ;
+; 0.186 ; TableBusy[10]       ; TableBusy[10]        ; clock        ; clock       ; 0.000        ; 0.037      ; 0.307      ;
+; 0.186 ; TableBusy[7]        ; TableBusy[7]         ; clock        ; clock       ; 0.000        ; 0.037      ; 0.307      ;
+; 0.186 ; TableBusy[6]        ; TableBusy[6]         ; clock        ; clock       ; 0.000        ; 0.037      ; 0.307      ;
+; 0.186 ; TableBusy[3]        ; TableBusy[3]         ; clock        ; clock       ; 0.000        ; 0.037      ; 0.307      ;
+; 0.186 ; TableBusy[2]        ; TableBusy[2]         ; clock        ; clock       ; 0.000        ; 0.037      ; 0.307      ;
+; 0.186 ; TableBusy[13]       ; TableBusy[13]        ; clock        ; clock       ; 0.000        ; 0.037      ; 0.307      ;
+; 0.186 ; TableBusy[9]        ; TableBusy[9]         ; clock        ; clock       ; 0.000        ; 0.037      ; 0.307      ;
+; 0.186 ; TableBusy[4]        ; TableBusy[4]         ; clock        ; clock       ; 0.000        ; 0.037      ; 0.307      ;
+; 0.628 ; TableBusy[6]        ; write_loc[3]         ; clock        ; clock       ; 0.000        ; 0.036      ; 0.748      ;
+; 0.650 ; TableBusy[6]        ; write_loc[2]         ; clock        ; clock       ; 0.000        ; 0.036      ; 0.770      ;
+; 0.695 ; TableBusy[7]        ; write_loc[3]         ; clock        ; clock       ; 0.000        ; 0.036      ; 0.815      ;
+; 0.717 ; TableBusy[7]        ; write_loc[2]         ; clock        ; clock       ; 0.000        ; 0.036      ; 0.837      ;
+; 0.789 ; BranchTable[8][15]  ; PredictedResult~reg0 ; clock        ; clock       ; -0.500       ; 0.666      ; 1.059      ;
+; 0.822 ; BranchTable[13][15] ; PredictedResult~reg0 ; clock        ; clock       ; -0.500       ; 0.669      ; 1.095      ;
+; 0.834 ; BranchTable[0][15]  ; PredictedResult~reg0 ; clock        ; clock       ; -0.500       ; 0.669      ; 1.107      ;
+; 0.840 ; TableBusy[4]        ; write_loc[3]         ; clock        ; clock       ; 0.000        ; 0.036      ; 0.960      ;
+; 0.860 ; TableBusy[4]        ; write_loc[2]         ; clock        ; clock       ; 0.000        ; 0.036      ; 0.980      ;
+; 0.874 ; TableBusy[5]        ; write_loc[3]         ; clock        ; clock       ; 0.000        ; 0.036      ; 0.994      ;
+; 0.894 ; TableBusy[5]        ; write_loc[2]         ; clock        ; clock       ; 0.000        ; 0.036      ; 1.014      ;
+; 0.939 ; BranchTable[6][15]  ; PredictedResult~reg0 ; clock        ; clock       ; -0.500       ; 0.674      ; 1.217      ;
+; 0.962 ; BranchTable[14][15] ; PredictedResult~reg0 ; clock        ; clock       ; -0.500       ; 0.669      ; 1.235      ;
+; 0.964 ; BranchTable[7][15]  ; PredictedResult~reg0 ; clock        ; clock       ; -0.500       ; 0.666      ; 1.234      ;
+; 0.975 ; BranchTable[12][15] ; PredictedResult~reg0 ; clock        ; clock       ; -0.500       ; 0.668      ; 1.247      ;
+; 1.008 ; BranchTable[0][10]  ; PredictedResult~reg0 ; clock        ; clock       ; -0.500       ; 0.669      ; 1.281      ;
+; 1.010 ; BranchTable[10][15] ; PredictedResult~reg0 ; clock        ; clock       ; -0.500       ; 0.673      ; 1.287      ;
+; 1.045 ; TableBusy[0]        ; TableBusy[7]         ; clock        ; clock       ; 0.000        ; 0.037      ; 1.166      ;
+; 1.047 ; TableBusy[0]        ; TableBusy[15]        ; clock        ; clock       ; 0.000        ; 0.260      ; 1.391      ;
+; 1.059 ; TableBusy[0]        ; write_loc[0]         ; clock        ; clock       ; 0.000        ; 0.036      ; 1.179      ;
+; 1.067 ; BranchTable[0][14]  ; PredictedResult~reg0 ; clock        ; clock       ; -0.500       ; 0.669      ; 1.340      ;
+; 1.068 ; TableBusy[0]        ; TableBusy[11]        ; clock        ; clock       ; 0.000        ; 0.037      ; 1.189      ;
+; 1.075 ; TableBusy[0]        ; TableBusy[13]        ; clock        ; clock       ; 0.000        ; 0.037      ; 1.196      ;
+; 1.077 ; BranchTable[2][15]  ; PredictedResult~reg0 ; clock        ; clock       ; -0.500       ; 0.672      ; 1.353      ;
+; 1.082 ; TableBusy[0]        ; TableBusy[3]         ; clock        ; clock       ; 0.000        ; 0.037      ; 1.203      ;
+; 1.083 ; TableBusy[0]        ; TableBusy[12]        ; clock        ; clock       ; 0.000        ; 0.037      ; 1.204      ;
+; 1.109 ; BranchTable[0][12]  ; PredictedResult~reg0 ; clock        ; clock       ; -0.500       ; 0.669      ; 1.382      ;
+; 1.112 ; TableBusy[7]        ; write_table_en       ; clock        ; clock       ; 0.000        ; 0.037      ; 1.233      ;
+; 1.114 ; TableBusy[0]        ; write_loc[2]         ; clock        ; clock       ; 0.000        ; 0.036      ; 1.234      ;
+; 1.115 ; TableBusy[0]        ; write_loc[3]         ; clock        ; clock       ; 0.000        ; 0.036      ; 1.235      ;
+; 1.117 ; BranchTable[0][11]  ; PredictedResult~reg0 ; clock        ; clock       ; -0.500       ; 0.669      ; 1.390      ;
+; 1.117 ; TableBusy[7]        ; TableBusy[15]        ; clock        ; clock       ; 0.000        ; 0.260      ; 1.461      ;
+; 1.132 ; TableBusy[0]        ; TableBusy[10]        ; clock        ; clock       ; 0.000        ; 0.037      ; 1.253      ;
+; 1.135 ; TableBusy[10]       ; write_loc[2]         ; clock        ; clock       ; 0.000        ; 0.036      ; 1.255      ;
+; 1.136 ; TableBusy[10]       ; write_loc[3]         ; clock        ; clock       ; 0.000        ; 0.036      ; 1.256      ;
+; 1.163 ; TableBusy[0]        ; TableBusy[5]         ; clock        ; clock       ; 0.000        ; 0.037      ; 1.284      ;
+; 1.171 ; BranchTable[15][15] ; PredictedResult~reg0 ; clock        ; clock       ; -0.500       ; 0.476      ; 1.251      ;
+; 1.172 ; BranchTable[4][15]  ; PredictedResult~reg0 ; clock        ; clock       ; -0.500       ; 0.670      ; 1.446      ;
+; 1.184 ; BranchTable[0][13]  ; PredictedResult~reg0 ; clock        ; clock       ; -0.500       ; 0.669      ; 1.457      ;
+; 1.189 ; TableBusy[9]        ; write_loc[2]         ; clock        ; clock       ; 0.000        ; 0.036      ; 1.309      ;
+; 1.190 ; TableBusy[1]        ; write_loc[2]         ; clock        ; clock       ; 0.000        ; 0.036      ; 1.310      ;
+; 1.190 ; TableBusy[9]        ; write_loc[3]         ; clock        ; clock       ; 0.000        ; 0.036      ; 1.310      ;
+; 1.191 ; TableBusy[0]        ; TableBusy[9]         ; clock        ; clock       ; 0.000        ; 0.037      ; 1.312      ;
+; 1.191 ; TableBusy[1]        ; write_loc[3]         ; clock        ; clock       ; 0.000        ; 0.036      ; 1.311      ;
+; 1.192 ; TableBusy[7]        ; PredictedResult~reg0 ; clock        ; clock       ; 0.000        ; 0.279      ; 1.555      ;
+; 1.193 ; BranchTable[0][8]   ; PredictedResult~reg0 ; clock        ; clock       ; -0.500       ; 0.669      ; 1.466      ;
+; 1.194 ; TableBusy[0]        ; TableBusy[1]         ; clock        ; clock       ; 0.000        ; 0.037      ; 1.315      ;
+; 1.199 ; TableBusy[0]        ; PredictedResult~reg0 ; clock        ; clock       ; 0.000        ; 0.279      ; 1.562      ;
+; 1.201 ; BranchTable[9][15]  ; PredictedResult~reg0 ; clock        ; clock       ; -0.500       ; 0.671      ; 1.476      ;
+; 1.201 ; TableBusy[13]       ; write_loc[3]         ; clock        ; clock       ; 0.000        ; 0.036      ; 1.321      ;
+; 1.201 ; TableBusy[13]       ; write_loc[2]         ; clock        ; clock       ; 0.000        ; 0.036      ; 1.321      ;
+; 1.203 ; TableBusy[0]        ; TableBusy[8]         ; clock        ; clock       ; 0.000        ; 0.037      ; 1.324      ;
+; 1.207 ; BranchTable[0][4]   ; PredictedResult~reg0 ; clock        ; clock       ; -0.500       ; 0.669      ; 1.480      ;
+; 1.208 ; TableBusy[2]        ; write_loc[2]         ; clock        ; clock       ; 0.000        ; 0.036      ; 1.328      ;
+; 1.209 ; TableBusy[2]        ; write_loc[3]         ; clock        ; clock       ; 0.000        ; 0.036      ; 1.329      ;
+; 1.213 ; BranchTable[1][14]  ; PredictedResult~reg0 ; clock        ; clock       ; -0.500       ; 0.671      ; 1.488      ;
+; 1.213 ; BranchTable[0][5]   ; PredictedResult~reg0 ; clock        ; clock       ; -0.500       ; 0.669      ; 1.486      ;
+; 1.216 ; TableBusy[3]        ; write_loc[2]         ; clock        ; clock       ; 0.000        ; 0.036      ; 1.336      ;
+; 1.217 ; TableBusy[3]        ; write_loc[3]         ; clock        ; clock       ; 0.000        ; 0.036      ; 1.337      ;
+; 1.222 ; TableBusy[0]        ; TableBusy[6]         ; clock        ; clock       ; 0.000        ; 0.037      ; 1.343      ;
+; 1.224 ; write_table[8]      ; BranchTable[15][8]   ; clock        ; clock       ; -0.500       ; -0.344     ; 0.484      ;
+; 1.224 ; write_table[0]      ; BranchTable[15][0]   ; clock        ; clock       ; -0.500       ; -0.344     ; 0.484      ;
+; 1.226 ; TableBusy[0]        ; TableBusy[4]         ; clock        ; clock       ; 0.000        ; 0.037      ; 1.347      ;
+; 1.232 ; BranchTable[1][15]  ; PredictedResult~reg0 ; clock        ; clock       ; -0.500       ; 0.671      ; 1.507      ;
+; 1.233 ; BranchTable[0][6]   ; PredictedResult~reg0 ; clock        ; clock       ; -0.500       ; 0.669      ; 1.506      ;
+; 1.235 ; TableBusy[0]        ; TableBusy[14]        ; clock        ; clock       ; 0.000        ; 0.037      ; 1.356      ;
+; 1.238 ; BranchTable[7][4]   ; write_table_en       ; clock        ; clock       ; -0.500       ; 0.424      ; 1.266      ;
+; 1.239 ; BranchTable[8][14]  ; PredictedResult~reg0 ; clock        ; clock       ; -0.500       ; 0.666      ; 1.509      ;
+; 1.239 ; BranchTable[0][7]   ; PredictedResult~reg0 ; clock        ; clock       ; -0.500       ; 0.669      ; 1.512      ;
+; 1.241 ; BranchTable[7][5]   ; write_table_en       ; clock        ; clock       ; -0.500       ; 0.424      ; 1.269      ;
+; 1.242 ; BranchTable[8][12]  ; PredictedResult~reg0 ; clock        ; clock       ; -0.500       ; 0.666      ; 1.512      ;
+; 1.243 ; BranchTable[7][4]   ; TableBusy[15]        ; clock        ; clock       ; -0.500       ; 0.647      ; 1.494      ;
+; 1.246 ; BranchTable[7][5]   ; TableBusy[15]        ; clock        ; clock       ; -0.500       ; 0.647      ; 1.497      ;
+; 1.247 ; BranchTable[8][13]  ; PredictedResult~reg0 ; clock        ; clock       ; -0.500       ; 0.666      ; 1.517      ;
+; 1.249 ; BranchTable[6][14]  ; PredictedResult~reg0 ; clock        ; clock       ; -0.500       ; 0.674      ; 1.527      ;
+; 1.252 ; TableBusy[3]        ; write_loc[1]         ; clock        ; clock       ; 0.000        ; 0.036      ; 1.372      ;
+; 1.254 ; TableBusy[14]       ; write_loc[3]         ; clock        ; clock       ; 0.000        ; 0.036      ; 1.374      ;
+; 1.254 ; TableBusy[14]       ; write_loc[2]         ; clock        ; clock       ; 0.000        ; 0.036      ; 1.374      ;
+; 1.255 ; TableBusy[0]        ; TableBusy[2]         ; clock        ; clock       ; 0.000        ; 0.037      ; 1.376      ;
+; 1.256 ; BranchTable[11][15] ; PredictedResult~reg0 ; clock        ; clock       ; -0.500       ; 0.668      ; 1.528      ;
+; 1.256 ; BranchTable[1][4]   ; PredictedResult~reg0 ; clock        ; clock       ; -0.500       ; 0.671      ; 1.531      ;
+; 1.256 ; BranchTable[1][1]   ; PredictedResult~reg0 ; clock        ; clock       ; -0.500       ; 0.671      ; 1.531      ;
+; 1.257 ; TableBusy[11]       ; write_loc[2]         ; clock        ; clock       ; 0.000        ; 0.036      ; 1.377      ;
+; 1.258 ; TableBusy[11]       ; write_loc[3]         ; clock        ; clock       ; 0.000        ; 0.036      ; 1.378      ;
++-------+---------------------+----------------------+--------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------+
+; Fast 1200mV 0C Model Minimum Pulse Width: 'clock'                                              ;
++--------+--------------+----------------+------------+-------+------------+---------------------+
+; Slack  ; Actual Width ; Required Width ; Type       ; Clock ; Clock Edge ; Target              ;
++--------+--------------+----------------+------------+-------+------------+---------------------+
+; -3.000 ; 1.000        ; 4.000          ; Port Rate  ; clock ; Rise       ; clock               ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[0][0]   ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[0][10]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[0][11]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[0][12]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[0][13]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[0][14]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[0][15]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[0][1]   ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[0][2]   ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[0][3]   ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[0][4]   ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[0][5]   ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[0][6]   ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[0][7]   ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[0][8]   ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[0][9]   ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[10][0]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[10][10] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[10][11] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[10][12] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[10][13] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[10][14] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[10][15] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[10][1]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[10][2]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[10][3]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[10][4]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[10][5]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[10][6]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[10][7]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[10][8]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[10][9]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[11][0]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[11][10] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[11][11] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[11][12] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[11][13] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[11][14] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[11][15] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[11][1]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[11][2]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[11][3]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[11][4]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[11][5]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[11][6]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[11][7]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[11][8]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[11][9]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[12][0]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[12][10] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[12][11] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[12][12] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[12][13] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[12][14] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[12][15] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[12][1]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[12][2]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[12][3]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[12][4]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[12][5]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[12][6]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[12][7]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[12][8]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[12][9]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[13][0]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[13][10] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[13][11] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[13][12] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[13][13] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[13][14] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[13][15] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[13][1]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[13][2]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[13][3]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[13][4]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[13][5]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[13][6]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[13][7]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[13][8]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[13][9]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[14][0]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[14][10] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[14][11] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[14][12] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[14][13] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[14][14] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[14][15] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[14][1]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[14][2]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[14][3]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[14][4]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[14][5]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[14][6]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[14][7]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[14][8]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[14][9]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[15][0]  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[15][10] ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period ; clock ; Rise       ; BranchTable[15][11] ;
++--------+--------------+----------------+------------+-------+------------+---------------------+
+
+
++------------------------------------------------------------------------------+
+; Setup Times                                                                  ;
++------------------+------------+-------+-------+------------+-----------------+
+; Data Port        ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++------------------+------------+-------+-------+------------+-----------------+
+; reset            ; clock      ; 2.440 ; 2.931 ; Rise       ; clock           ;
+; Instruction[*]   ; clock      ; 2.686 ; 3.225 ; Fall       ; clock           ;
+;  Instruction[5]  ; clock      ; 1.160 ; 1.850 ; Fall       ; clock           ;
+;  Instruction[12] ; clock      ; 2.686 ; 2.932 ; Fall       ; clock           ;
+;  Instruction[13] ; clock      ; 2.680 ; 2.935 ; Fall       ; clock           ;
+;  Instruction[14] ; clock      ; 2.372 ; 3.225 ; Fall       ; clock           ;
+;  Instruction[15] ; clock      ; 2.289 ; 3.149 ; Fall       ; clock           ;
+; PC[*]            ; clock      ; 3.538 ; 4.236 ; Fall       ; clock           ;
+;  PC[0]           ; clock      ; 3.306 ; 4.001 ; Fall       ; clock           ;
+;  PC[1]           ; clock      ; 3.403 ; 4.050 ; Fall       ; clock           ;
+;  PC[2]           ; clock      ; 3.476 ; 4.166 ; Fall       ; clock           ;
+;  PC[3]           ; clock      ; 3.538 ; 4.236 ; Fall       ; clock           ;
+;  PC[4]           ; clock      ; 3.168 ; 3.837 ; Fall       ; clock           ;
+;  PC[5]           ; clock      ; 3.150 ; 3.829 ; Fall       ; clock           ;
+;  PC[6]           ; clock      ; 2.450 ; 2.693 ; Fall       ; clock           ;
+;  PC[7]           ; clock      ; 2.178 ; 2.487 ; Fall       ; clock           ;
+;  PC[8]           ; clock      ; 3.102 ; 3.750 ; Fall       ; clock           ;
+;  PC[9]           ; clock      ; 2.322 ; 2.567 ; Fall       ; clock           ;
+;  PC[10]          ; clock      ; 2.287 ; 2.546 ; Fall       ; clock           ;
+;  PC[11]          ; clock      ; 3.215 ; 3.881 ; Fall       ; clock           ;
+;  PC[12]          ; clock      ; 3.072 ; 3.719 ; Fall       ; clock           ;
+;  PC[13]          ; clock      ; 3.126 ; 3.787 ; Fall       ; clock           ;
+;  PC[14]          ; clock      ; 3.218 ; 3.909 ; Fall       ; clock           ;
+;  PC[15]          ; clock      ; 3.096 ; 3.772 ; Fall       ; clock           ;
+; reset            ; clock      ; 1.636 ; 2.161 ; Fall       ; clock           ;
++------------------+------------+-------+-------+------------+-----------------+
+
+
++--------------------------------------------------------------------------------+
+; Hold Times                                                                     ;
++------------------+------------+--------+--------+------------+-----------------+
+; Data Port        ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++------------------+------------+--------+--------+------------+-----------------+
+; reset            ; clock      ; -0.669 ; -1.237 ; Rise       ; clock           ;
+; Instruction[*]   ; clock      ; -0.896 ; -1.559 ; Fall       ; clock           ;
+;  Instruction[5]  ; clock      ; -0.896 ; -1.559 ; Fall       ; clock           ;
+;  Instruction[12] ; clock      ; -1.204 ; -1.606 ; Fall       ; clock           ;
+;  Instruction[13] ; clock      ; -1.200 ; -1.609 ; Fall       ; clock           ;
+;  Instruction[14] ; clock      ; -1.053 ; -1.739 ; Fall       ; clock           ;
+;  Instruction[15] ; clock      ; -0.973 ; -1.666 ; Fall       ; clock           ;
+; PC[*]            ; clock      ; 0.556  ; 0.287  ; Fall       ; clock           ;
+;  PC[0]           ; clock      ; -0.389 ; -1.017 ; Fall       ; clock           ;
+;  PC[1]           ; clock      ; -0.261 ; -0.855 ; Fall       ; clock           ;
+;  PC[2]           ; clock      ; -0.478 ; -1.125 ; Fall       ; clock           ;
+;  PC[3]           ; clock      ; -0.410 ; -1.023 ; Fall       ; clock           ;
+;  PC[4]           ; clock      ; -0.467 ; -1.074 ; Fall       ; clock           ;
+;  PC[5]           ; clock      ; -0.475 ; -1.063 ; Fall       ; clock           ;
+;  PC[6]           ; clock      ; 0.276  ; 0.038  ; Fall       ; clock           ;
+;  PC[7]           ; clock      ; 0.556  ; 0.287  ; Fall       ; clock           ;
+;  PC[8]           ; clock      ; -0.286 ; -0.902 ; Fall       ; clock           ;
+;  PC[9]           ; clock      ; 0.453  ; 0.208  ; Fall       ; clock           ;
+;  PC[10]          ; clock      ; 0.303  ; 0.042  ; Fall       ; clock           ;
+;  PC[11]          ; clock      ; -0.146 ; -0.744 ; Fall       ; clock           ;
+;  PC[12]          ; clock      ; -0.339 ; -0.970 ; Fall       ; clock           ;
+;  PC[13]          ; clock      ; -0.264 ; -0.855 ; Fall       ; clock           ;
+;  PC[14]          ; clock      ; -0.772 ; -1.423 ; Fall       ; clock           ;
+;  PC[15]          ; clock      ; -0.139 ; -0.730 ; Fall       ; clock           ;
+; reset            ; clock      ; -0.309 ; -0.878 ; Fall       ; clock           ;
++------------------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------------+
+; Clock to Output Times                                                       ;
++-----------------+------------+-------+-------+------------+-----------------+
+; Data Port       ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------------+------------+-------+-------+------------+-----------------+
+; PredictedResult ; clock      ; 3.997 ; 4.057 ; Fall       ; clock           ;
++-----------------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                               ;
++-----------------+------------+-------+-------+------------+-----------------+
+; Data Port       ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------------+------------+-------+-------+------------+-----------------+
+; PredictedResult ; clock      ; 3.873 ; 3.931 ; Fall       ; clock           ;
++-----------------+------------+-------+-------+------------+-----------------+
+
+
+---------------------------------------------
+; Fast 1200mV 0C Model Metastability Report ;
+---------------------------------------------
+No synchronizer chains to report.
+
+
++--------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                            ;
++------------------+----------+-------+----------+---------+---------------------+
+; Clock            ; Setup    ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+----------+-------+----------+---------+---------------------+
+; Worst-case Slack ; -4.534   ; 0.176 ; N/A      ; N/A     ; -3.000              ;
+;  clock           ; -4.534   ; 0.176 ; N/A      ; N/A     ; -3.000              ;
+; Design-wide TNS  ; -827.997 ; 0.0   ; 0.0      ; 0.0     ; -316.482            ;
+;  clock           ; -827.997 ; 0.000 ; N/A      ; N/A     ; -316.482            ;
++------------------+----------+-------+----------+---------+---------------------+
+
+
++------------------------------------------------------------------------------+
+; Setup Times                                                                  ;
++------------------+------------+-------+-------+------------+-----------------+
+; Data Port        ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++------------------+------------+-------+-------+------------+-----------------+
+; reset            ; clock      ; 4.242 ; 4.621 ; Rise       ; clock           ;
+; Instruction[*]   ; clock      ; 5.085 ; 5.485 ; Fall       ; clock           ;
+;  Instruction[5]  ; clock      ; 2.731 ; 3.237 ; Fall       ; clock           ;
+;  Instruction[12] ; clock      ; 5.085 ; 5.277 ; Fall       ; clock           ;
+;  Instruction[13] ; clock      ; 5.066 ; 5.254 ; Fall       ; clock           ;
+;  Instruction[14] ; clock      ; 4.861 ; 5.485 ; Fall       ; clock           ;
+;  Instruction[15] ; clock      ; 4.705 ; 5.355 ; Fall       ; clock           ;
+; PC[*]            ; clock      ; 6.882 ; 7.401 ; Fall       ; clock           ;
+;  PC[0]           ; clock      ; 6.457 ; 7.018 ; Fall       ; clock           ;
+;  PC[1]           ; clock      ; 6.683 ; 7.088 ; Fall       ; clock           ;
+;  PC[2]           ; clock      ; 6.763 ; 7.274 ; Fall       ; clock           ;
+;  PC[3]           ; clock      ; 6.882 ; 7.401 ; Fall       ; clock           ;
+;  PC[4]           ; clock      ; 6.221 ; 6.742 ; Fall       ; clock           ;
+;  PC[5]           ; clock      ; 6.179 ; 6.672 ; Fall       ; clock           ;
+;  PC[6]           ; clock      ; 4.869 ; 5.005 ; Fall       ; clock           ;
+;  PC[7]           ; clock      ; 4.392 ; 4.595 ; Fall       ; clock           ;
+;  PC[8]           ; clock      ; 6.091 ; 6.583 ; Fall       ; clock           ;
+;  PC[9]           ; clock      ; 4.656 ; 4.770 ; Fall       ; clock           ;
+;  PC[10]          ; clock      ; 4.571 ; 4.678 ; Fall       ; clock           ;
+;  PC[11]          ; clock      ; 6.294 ; 6.826 ; Fall       ; clock           ;
+;  PC[12]          ; clock      ; 6.079 ; 6.555 ; Fall       ; clock           ;
+;  PC[13]          ; clock      ; 6.147 ; 6.625 ; Fall       ; clock           ;
+;  PC[14]          ; clock      ; 6.264 ; 6.788 ; Fall       ; clock           ;
+;  PC[15]          ; clock      ; 6.070 ; 6.550 ; Fall       ; clock           ;
+; reset            ; clock      ; 3.484 ; 3.802 ; Fall       ; clock           ;
++------------------+------------+-------+-------+------------+-----------------+
+
+
++--------------------------------------------------------------------------------+
+; Hold Times                                                                     ;
++------------------+------------+--------+--------+------------+-----------------+
+; Data Port        ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++------------------+------------+--------+--------+------------+-----------------+
+; reset            ; clock      ; -0.669 ; -1.237 ; Rise       ; clock           ;
+; Instruction[*]   ; clock      ; -0.896 ; -1.559 ; Fall       ; clock           ;
+;  Instruction[5]  ; clock      ; -0.896 ; -1.559 ; Fall       ; clock           ;
+;  Instruction[12] ; clock      ; -1.204 ; -1.606 ; Fall       ; clock           ;
+;  Instruction[13] ; clock      ; -1.200 ; -1.609 ; Fall       ; clock           ;
+;  Instruction[14] ; clock      ; -1.053 ; -1.739 ; Fall       ; clock           ;
+;  Instruction[15] ; clock      ; -0.973 ; -1.666 ; Fall       ; clock           ;
+; PC[*]            ; clock      ; 0.556  ; 0.323  ; Fall       ; clock           ;
+;  PC[0]           ; clock      ; -0.389 ; -1.017 ; Fall       ; clock           ;
+;  PC[1]           ; clock      ; -0.261 ; -0.855 ; Fall       ; clock           ;
+;  PC[2]           ; clock      ; -0.478 ; -1.125 ; Fall       ; clock           ;
+;  PC[3]           ; clock      ; -0.410 ; -1.023 ; Fall       ; clock           ;
+;  PC[4]           ; clock      ; -0.467 ; -1.074 ; Fall       ; clock           ;
+;  PC[5]           ; clock      ; -0.475 ; -1.063 ; Fall       ; clock           ;
+;  PC[6]           ; clock      ; 0.276  ; 0.038  ; Fall       ; clock           ;
+;  PC[7]           ; clock      ; 0.556  ; 0.323  ; Fall       ; clock           ;
+;  PC[8]           ; clock      ; -0.286 ; -0.902 ; Fall       ; clock           ;
+;  PC[9]           ; clock      ; 0.453  ; 0.208  ; Fall       ; clock           ;
+;  PC[10]          ; clock      ; 0.303  ; 0.042  ; Fall       ; clock           ;
+;  PC[11]          ; clock      ; -0.146 ; -0.744 ; Fall       ; clock           ;
+;  PC[12]          ; clock      ; -0.339 ; -0.970 ; Fall       ; clock           ;
+;  PC[13]          ; clock      ; -0.264 ; -0.855 ; Fall       ; clock           ;
+;  PC[14]          ; clock      ; -0.772 ; -1.423 ; Fall       ; clock           ;
+;  PC[15]          ; clock      ; -0.139 ; -0.730 ; Fall       ; clock           ;
+; reset            ; clock      ; -0.309 ; -0.878 ; Fall       ; clock           ;
++------------------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------------+
+; Clock to Output Times                                                       ;
++-----------------+------------+-------+-------+------------+-----------------+
+; Data Port       ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------------+------------+-------+-------+------------+-----------------+
+; PredictedResult ; clock      ; 6.336 ; 6.347 ; Fall       ; clock           ;
++-----------------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                               ;
++-----------------+------------+-------+-------+------------+-----------------+
+; Data Port       ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------------+------------+-------+-------+------------+-----------------+
+; PredictedResult ; clock      ; 3.873 ; 3.931 ; Fall       ; clock           ;
++-----------------+------------+-------+-------+------------+-----------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Board Trace Model Assignments                                                                                                                                                                                                                                                                                                                                                                                      ;
++-----------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; Pin             ; I/O Standard ; Near Tline Length ; Near Tline L per Length ; Near Tline C per Length ; Near Series R ; Near Differential R ; Near Pull-up R ; Near Pull-down R ; Near C ; Far Tline Length ; Far Tline L per Length ; Far Tline C per Length ; Far Series R ; Far Pull-up R ; Far Pull-down R ; Far C ; Termination Voltage ; Far Differential R ; EBD File Name ; EBD Signal Name ; EBD Far-end ;
++-----------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; PredictedResult ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ~ALTERA_DCLK~   ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ~ALTERA_nCEO~   ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
++-----------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+
+
++----------------------------------------------------------------------------+
+; Input Transition Times                                                     ;
++-------------------------+--------------+-----------------+-----------------+
+; Pin                     ; I/O Standard ; 10-90 Rise Time ; 90-10 Fall Time ;
++-------------------------+--------------+-----------------+-----------------+
+; Instruction[0]          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Instruction[1]          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Instruction[2]          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Instruction[3]          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Instruction[4]          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Instruction[6]          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Instruction[7]          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Instruction[8]          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Instruction[9]          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Instruction[10]         ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Instruction[11]         ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Address[0]              ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Address[1]              ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Address[2]              ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Address[3]              ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Address[4]              ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Address[5]              ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Address[6]              ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Address[7]              ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Address[8]              ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Address[9]              ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Address[10]             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Address[11]             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Address[12]             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Address[13]             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Address[14]             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Address[15]             ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ActualResult            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; AddressValid            ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Instruction[14]         ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Instruction[15]         ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Instruction[12]         ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Instruction[13]         ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; PC[0]                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; PC[1]                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; PC[2]                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; PC[3]                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; PC[4]                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; PC[5]                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; PC[6]                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; PC[7]                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; PC[8]                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; PC[9]                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; PC[10]                  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; PC[11]                  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; PC[12]                  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; PC[13]                  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; PC[14]                  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; PC[15]                  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Instruction[5]          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; reset                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; clock                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_ASDO_DATA1~     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_FLASH_nCE_nCSO~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_DATA0~          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
++-------------------------+--------------+-----------------+-----------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1200mv 0c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ;
++-----------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin             ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++-----------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; PredictedResult ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.95e-09 V                   ; 2.38 V              ; -0.016 V            ; 0.22 V                               ; 0.025 V                              ; 3.06e-10 s                  ; 3.3e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 5.95e-09 V                  ; 2.38 V             ; -0.016 V           ; 0.22 V                              ; 0.025 V                             ; 3.06e-10 s                 ; 3.3e-10 s                  ; Yes                       ; Yes                       ;
+; ~ALTERA_DCLK~   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.45e-09 V                   ; 2.38 V              ; -0.0609 V           ; 0.148 V                              ; 0.095 V                              ; 2.82e-10 s                  ; 2.59e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.45e-09 V                  ; 2.38 V             ; -0.0609 V          ; 0.148 V                             ; 0.095 V                             ; 2.82e-10 s                 ; 2.59e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_nCEO~   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.61e-09 V                   ; 2.38 V              ; -0.00274 V          ; 0.141 V                              ; 0.006 V                              ; 4.7e-10 s                   ; 6.02e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 5.61e-09 V                  ; 2.38 V             ; -0.00274 V         ; 0.141 V                             ; 0.006 V                             ; 4.7e-10 s                  ; 6.02e-10 s                 ; Yes                       ; Yes                       ;
++-----------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1200mv 85c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ;
++-----------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin             ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++-----------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; PredictedResult ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.06e-06 V                   ; 2.36 V              ; -0.00724 V          ; 0.107 V                              ; 0.02 V                               ; 4.5e-10 s                   ; 4.25e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.06e-06 V                  ; 2.36 V             ; -0.00724 V         ; 0.107 V                             ; 0.02 V                              ; 4.5e-10 s                  ; 4.25e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_DCLK~   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.74e-07 V                   ; 2.36 V              ; -0.0201 V           ; 0.072 V                              ; 0.033 V                              ; 4.04e-10 s                  ; 3.29e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 5.74e-07 V                  ; 2.36 V             ; -0.0201 V          ; 0.072 V                             ; 0.033 V                             ; 4.04e-10 s                 ; 3.29e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_nCEO~   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 9.45e-07 V                   ; 2.35 V              ; -0.00643 V          ; 0.081 V                              ; 0.031 V                              ; 5.31e-10 s                  ; 7.59e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 9.45e-07 V                  ; 2.35 V             ; -0.00643 V         ; 0.081 V                             ; 0.031 V                             ; 5.31e-10 s                 ; 7.59e-10 s                 ; Yes                       ; Yes                       ;
++-----------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Fast 1200mv 0c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ;
++-----------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin             ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++-----------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; PredictedResult ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.05e-08 V                   ; 2.72 V              ; -0.0349 V           ; 0.173 V                              ; 0.1 V                                ; 2.72e-10 s                  ; 2.69e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.05e-08 V                  ; 2.72 V             ; -0.0349 V          ; 0.173 V                             ; 0.1 V                               ; 2.72e-10 s                 ; 2.69e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_DCLK~   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.22e-08 V                   ; 2.74 V              ; -0.06 V             ; 0.158 V                              ; 0.08 V                               ; 2.68e-10 s                  ; 2.19e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 2.22e-08 V                  ; 2.74 V             ; -0.06 V            ; 0.158 V                             ; 0.08 V                              ; 2.68e-10 s                 ; 2.19e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_nCEO~   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.54e-08 V                   ; 2.7 V               ; -0.00943 V          ; 0.276 V                              ; 0.035 V                              ; 3.19e-10 s                  ; 4.99e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 3.54e-08 V                  ; 2.7 V              ; -0.00943 V         ; 0.276 V                             ; 0.035 V                             ; 3.19e-10 s                 ; 4.99e-10 s                 ; No                        ; Yes                       ;
++-----------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++-------------------------------------------------------------------+
+; Setup Transfers                                                   ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; clock      ; clock    ; 0        ; 1536     ; 10096    ; 2214     ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Hold Transfers                                                    ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; clock      ; clock    ; 0        ; 1536     ; 10096    ; 2214     ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No non-DPA dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 22    ; 22   ;
+; Unconstrained Input Port Paths  ; 1055  ; 1055 ;
+; Unconstrained Output Ports      ; 1     ; 1    ;
+; Unconstrained Output Port Paths ; 1     ; 1    ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+    Info: Processing started: Tue May  5 15:54:00 2015
+Info: Command: quartus_sta BranchPredictor -c BranchPredictor
+Info: qsta_default_script.tcl version: #1
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (21077): Core supply voltage is 1.2V
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'BranchPredictor.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name clock clock
+Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow 1200mV 85C Model
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
+Info (332146): Worst-case setup slack is -4.534
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -4.534            -827.997 clock 
+Info (332146): Worst-case hold slack is 0.342
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.342               0.000 clock 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -3.000
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -3.000            -297.000 clock 
+Info: Analyzing Slow 1200mV 0C Model
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
+Info (332146): Worst-case setup slack is -4.063
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -4.063            -733.587 clock 
+Info (332146): Worst-case hold slack is 0.299
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.299               0.000 clock 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -3.000
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -3.000            -297.000 clock 
+Info: Analyzing Fast 1200mV 0C Model
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
+Info (332146): Worst-case setup slack is -2.006
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -2.006            -472.169 clock 
+Info (332146): Worst-case hold slack is 0.176
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.176               0.000 clock 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -3.000
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -3.000            -316.482 clock 
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 738 megabytes
+    Info: Processing ended: Tue May  5 15:54:04 2015
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:05
+
+

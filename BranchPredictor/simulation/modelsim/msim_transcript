@@ -1,0 +1,58 @@
+# do BranchPredictor_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying /home/anagha/altera/13.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied /home/anagha/altera/13.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {/home/anagha/Desktop/Superscalar/superscalar/BranchPredictor/BranchPredictor.vhdl}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity BranchPredictor
+# -- Compiling architecture Predict of BranchPredictor
+# ** Warning: /home/anagha/Desktop/Superscalar/superscalar/BranchPredictor/BranchPredictor.vhdl(112): (vcom-1083) Implicit array operator "/=" always returns TRUE (left length 16 is not equal to right length 4).
+# ** Warning: /home/anagha/Desktop/Superscalar/superscalar/BranchPredictor/BranchPredictor.vhdl(220): (vcom-1083) Implicit array operator "=" always returns FALSE (left length 10 is not equal to right length 9).
+# ** Warning: /home/anagha/Desktop/Superscalar/superscalar/BranchPredictor/BranchPredictor.vhdl(226): (vcom-1083) Implicit array operator "=" always returns FALSE (left length 11 is not equal to right length 10).
+# ** Warning: /home/anagha/Desktop/Superscalar/superscalar/BranchPredictor/BranchPredictor.vhdl(232): (vcom-1083) Implicit array operator "=" always returns FALSE (left length 12 is not equal to right length 11).
+# ** Warning: /home/anagha/Desktop/Superscalar/superscalar/BranchPredictor/BranchPredictor.vhdl(238): (vcom-1083) Implicit array operator "=" always returns FALSE (left length 13 is not equal to right length 12).
+# ** Warning: /home/anagha/Desktop/Superscalar/superscalar/BranchPredictor/BranchPredictor.vhdl(244): (vcom-1083) Implicit array operator "=" always returns FALSE (left length 14 is not equal to right length 13).
+# ** Warning: /home/anagha/Desktop/Superscalar/superscalar/BranchPredictor/BranchPredictor.vhdl(250): (vcom-1083) Implicit array operator "=" always returns FALSE (left length 15 is not equal to right length 14).
+# 
+# vcom -93 -work work {/home/anagha/Desktop/Superscalar/superscalar/BranchPredictor/testbench.vhdl}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity testbench
+# -- Compiling architecture behave of testbench
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs="+acc"  testbench
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs=\"+acc\" -t 1ps testbench 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.testbench(behave)
+# Loading work.branchpredictor(predict)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 500 ns
+# ** Fatal: (vsim-3421) Value 17 for count(0) is out of range 0 to 16.
+#    Time: 235 ns  Iteration: 0  Process: /testbench/DUT/Predictor File: /home/anagha/Desktop/Superscalar/superscalar/BranchPredictor/BranchPredictor.vhdl
+# Fatal error in Process Predictor at /home/anagha/Desktop/Superscalar/superscalar/BranchPredictor/BranchPredictor.vhdl line 48
+# 
+# HDL call sequence:
+# Stopped at /home/anagha/Desktop/Superscalar/superscalar/BranchPredictor/BranchPredictor.vhdl 48 Process Predictor
+# 

@@ -1,0 +1,326 @@
+ -- Copyright (C) 1991-2013 Altera Corporation
+ -- Your use of Altera Corporation's design tools, logic functions 
+ -- and other software and tools, and its AMPP partner logic 
+ -- functions, and any output files from any of the foregoing 
+ -- (including device programming or simulation files), and any 
+ -- associated documentation or information are expressly subject 
+ -- to the terms and conditions of the Altera Program License 
+ -- Subscription Agreement, Altera MegaCore Function License 
+ -- Agreement, or other applicable license agreement, including, 
+ -- without limitation, that your use is for the sole purpose of 
+ -- programming logic devices manufactured by Altera and sold by 
+ -- Altera or its authorized distributors.  Please refer to the 
+ -- applicable agreement for further details.
+ -- 
+ -- This is a Quartus II output file. It is for reporting purposes only, and is
+ -- not intended for use as a Quartus II input file. This file cannot be used
+ -- to make Quartus II pin assignments - for instructions on how to make pin
+ -- assignments, please see Quartus II help.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- NC            : No Connect. This pin has no internal connection to the device.
+ -- DNU           : Do Not Use. This pin MUST NOT be connected.
+ -- VCCINT        : Dedicated power pin, which MUST be connected to VCC  (1.2V).
+ -- VCCIO         : Dedicated power pin, which MUST be connected to VCC
+ --                 of its bank.
+ --					Bank 1:		2.5V
+ --					Bank 2:		2.5V
+ --					Bank 3:		2.5V
+ --					Bank 4:		2.5V
+ --					Bank 5:		2.5V
+ --					Bank 6:		2.5V
+ --					Bank 7:		2.5V
+ --					Bank 8:		2.5V
+ -- GND           : Dedicated ground pin. Dedicated GND pins MUST be connected to GND.
+ --					It can also be used to report unused dedicated pins. The connection
+ --					on the board for unused dedicated pins depends on whether this will
+ --					be used in a future design. One example is device migration. When
+ --					using device migration, refer to the device pin-tables. If it is a
+ --					GND pin in the pin table or if it will not be used in a future design
+ --					for another purpose the it MUST be connected to GND. If it is an unused
+ --					dedicated pin, then it can be connected to a valid signal on the board
+ --					(low, high, or toggling) if that signal is required for a different
+ --					revision of the design.
+ -- GND+          : Unused input pin. It can also be used to report unused dual-purpose pins.
+ --					This pin should be connected to GND. It may also be connected  to a
+ --					valid signal  on the board  (low, high, or toggling)  if that signal
+ --					is required for a different revision of the design.
+ -- GND*          : Unused  I/O  pin. Connect each pin marked GND* directly to GND
+ --           	    or leave it unconnected.
+ -- RESERVED      : Unused I/O pin, which MUST be left unconnected.
+ -- RESERVED_INPUT    : Pin is tri-stated and should be connected to the board.
+ -- RESERVED_INPUT_WITH_WEAK_PULLUP    : Pin is tri-stated with internal weak pull-up resistor.
+ -- RESERVED_INPUT_WITH_BUS_HOLD       : Pin is tri-stated with bus-hold circuitry.
+ -- RESERVED_OUTPUT_DRIVEN_HIGH        : Pin is output driven high.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- Pin directions (input, output or bidir) are based on device operating in user mode.
+ ---------------------------------------------------------------------------------
+
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+CHIP  "RRF"  ASSIGNED TO AN: EP4CE22F17C6
+
+Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
+-------------------------------------------------------------------------------------------------------------
+VCCIO8                       : A1        : power  :                   : 2.5V    : 8         :                
+data_RRFB2[13]               : A2        : output : 2.5 V             :         : 8         : N              
+data_RRFA1[6]                : A3        : output : 2.5 V             :         : 8         : N              
+tag_data_in[6]               : A4        : input  : 2.5 V             :         : 8         : N              
+data_RRFB1[8]                : A5        : output : 2.5 V             :         : 8         : N              
+data_RRFB1[1]                : A6        : output : 2.5 V             :         : 8         : N              
+data_RRFA2[1]                : A7        : output : 2.5 V             :         : 8         : N              
+tag_in1[1]                   : A8        : input  : 2.5 V             :         : 8         : N              
+tag_in2[0]                   : A9        : input  : 2.5 V             :         : 7         : N              
+tag_B2[1]                    : A10       : input  : 2.5 V             :         : 7         : N              
+tag_A1[2]                    : A11       : input  : 2.5 V             :         : 7         : N              
+tag_ROB[1]                   : A12       : input  : 2.5 V             :         : 7         : N              
+tag_ROB[0]                   : A13       : input  : 2.5 V             :         : 7         : N              
+data_RRF[10]                 : A14       : output : 2.5 V             :         : 7         : N              
+tag_B1[2]                    : A15       : input  : 2.5 V             :         : 7         : N              
+VCCIO7                       : A16       : power  :                   : 2.5V    : 7         :                
+data_RRFB1[6]                : B1        : output : 2.5 V             :         : 1         : N              
+GND                          : B2        : gnd    :                   :         :           :                
+data_RRF[12]                 : B3        : output : 2.5 V             :         : 8         : N              
+data_RRF[13]                 : B4        : output : 2.5 V             :         : 8         : N              
+data_RRF[9]                  : B5        : output : 2.5 V             :         : 8         : N              
+data_RRF[8]                  : B6        : output : 2.5 V             :         : 8         : N              
+data_RRFB2[5]                : B7        : output : 2.5 V             :         : 8         : N              
+tag_in1[0]                   : B8        : input  : 2.5 V             :         : 8         : N              
+tag_en2                      : B9        : input  : 2.5 V             :         : 7         : N              
+tag_A2[1]                    : B10       : input  : 2.5 V             :         : 7         : N              
+tag_B1[0]                    : B11       : input  : 2.5 V             :         : 7         : N              
+data_RRFB1[3]                : B12       : output : 2.5 V             :         : 7         : N              
+tag_A1[0]                    : B13       : input  : 2.5 V             :         : 7         : N              
+tag_A2[0]                    : B14       : input  : 2.5 V             :         : 7         : N              
+GND                          : B15       : gnd    :                   :         :           :                
+data_RRFB1[9]                : B16       : output : 2.5 V             :         : 6         : N              
+~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP : C1        : input  : 2.5 V             :         : 1         : N              
+tag_data_in[2]               : C2        : input  : 2.5 V             :         : 1         : N              
+data_RRFB2[8]                : C3        : output : 2.5 V             :         : 8         : N              
+VCCIO8                       : C4        : power  :                   : 2.5V    : 8         :                
+GND                          : C5        : gnd    :                   :         :           :                
+data_RRFA1[8]                : C6        : output : 2.5 V             :         : 8         : N              
+VCCIO8                       : C7        : power  :                   : 2.5V    : 8         :                
+tag_ROB[2]                   : C8        : input  : 2.5 V             :         : 8         : N              
+tag_B2[0]                    : C9        : input  : 2.5 V             :         : 7         : N              
+VCCIO7                       : C10       : power  :                   : 2.5V    : 7         :                
+tag_B1[1]                    : C11       : input  : 2.5 V             :         : 7         : N              
+GND                          : C12       : gnd    :                   :         :           :                
+VCCIO7                       : C13       : power  :                   : 2.5V    : 7         :                
+data_RRF[14]                 : C14       : output : 2.5 V             :         : 7         : N              
+data_RRFB2[12]               : C15       : output : 2.5 V             :         : 6         : N              
+data_RRFA1[12]               : C16       : output : 2.5 V             :         : 6         : N              
+tag_in2[1]                   : D1        : input  : 2.5 V             :         : 1         : N              
+~ALTERA_FLASH_nCE_nCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : D2        : input  : 2.5 V             :         : 1         : N              
+data_RRFA1[1]                : D3        : output : 2.5 V             :         : 8         : N              
+VCCD_PLL3                    : D4        : power  :                   : 1.2V    :           :                
+data_RRFA2[13]               : D5        : output : 2.5 V             :         : 8         : N              
+data_RRF[7]                  : D6        : output : 2.5 V             :         : 8         : N              
+GND                          : D7        : gnd    :                   :         :           :                
+tag_data_en                  : D8        : input  : 2.5 V             :         : 8         : N              
+tag_A2[2]                    : D9        : input  : 2.5 V             :         : 7         : N              
+GND                          : D10       : gnd    :                   :         :           :                
+data_RRFA1[2]                : D11       : output : 2.5 V             :         : 7         : N              
+data_RRFA2[0]                : D12       : output : 2.5 V             :         : 7         : N              
+VCCD_PLL2                    : D13       : power  :                   : 1.2V    :           :                
+data_RRFB1[13]               : D14       : output : 2.5 V             :         : 7         : N              
+data_RRFA1[14]               : D15       : output : 2.5 V             :         : 6         : N              
+data_RRFA2[10]               : D16       : output : 2.5 V             :         : 6         : N              
+clk                          : E1        : input  : 2.5 V             :         : 1         : N              
+GND                          : E2        : gnd    :                   :         :           :                
+VCCIO1                       : E3        : power  :                   : 2.5V    : 1         :                
+GND                          : E4        : gnd    :                   :         :           :                
+GNDA3                        : E5        : gnd    :                   :         :           :                
+tag_data_in[10]              : E6        : input  : 2.5 V             :         : 8         : N              
+tag_data_in[16]              : E7        : input  : 2.5 V             :         : 8         : N              
+data_RRFB1[12]               : E8        : output : 2.5 V             :         : 8         : N              
+tag_B2[2]                    : E9        : input  : 2.5 V             :         : 7         : N              
+data_RRF[4]                  : E10       : output : 2.5 V             :         : 7         : N              
+data_RRFB1[2]                : E11       : output : 2.5 V             :         : 7         : N              
+GNDA2                        : E12       : gnd    :                   :         :           :                
+GND                          : E13       : gnd    :                   :         :           :                
+VCCIO6                       : E14       : power  :                   : 2.5V    : 6         :                
+GND+                         : E15       :        :                   :         : 6         :                
+GND+                         : E16       :        :                   :         : 6         :                
+tag_data_in[18]              : F1        : input  : 2.5 V             :         : 1         : N              
+data_RRF[1]                  : F2        : output : 2.5 V             :         : 1         : N              
+data_RRFB1[14]               : F3        : output : 2.5 V             :         : 1         : N              
+nSTATUS                      : F4        :        :                   :         : 1         :                
+VCCA3                        : F5        : power  :                   : 2.5V    :           :                
+GND                          : F6        : gnd    :                   :         :           :                
+VCCINT                       : F7        : power  :                   : 1.2V    :           :                
+data_RRF[15]                 : F8        : output : 2.5 V             :         : 8         : N              
+tag_A1[1]                    : F9        : input  : 2.5 V             :         : 7         : N              
+GND                          : F10       : gnd    :                   :         :           :                
+VCCINT                       : F11       : power  :                   : 1.2V    :           :                
+VCCA2                        : F12       : power  :                   : 2.5V    :           :                
+data_RRFA2[12]               : F13       : output : 2.5 V             :         : 6         : N              
+data_RRFA1[3]                : F14       : output : 2.5 V             :         : 6         : N              
+data_RRFB2[10]               : F15       : output : 2.5 V             :         : 6         : N              
+~ALTERA_nCEO~ / RESERVED_OUTPUT_OPEN_DRAIN : F16       : output : 2.5 V             :         : 6         : N              
+tag_in1[2]                   : G1        : input  : 2.5 V             :         : 1         : N              
+data_RRFB2[15]               : G2        : output : 2.5 V             :         : 1         : N              
+VCCIO1                       : G3        : power  :                   : 2.5V    : 1         :                
+GND                          : G4        : gnd    :                   :         :           :                
+data_RRFB1[10]               : G5        : output : 2.5 V             :         : 1         : N              
+VCCINT                       : G6        : power  :                   : 1.2V    :           :                
+VCCINT                       : G7        : power  :                   : 1.2V    :           :                
+VCCINT                       : G8        : power  :                   : 1.2V    :           :                
+VCCINT                       : G9        : power  :                   : 1.2V    :           :                
+VCCINT                       : G10       : power  :                   : 1.2V    :           :                
+GND                          : G11       : gnd    :                   :         :           :                
+MSEL2                        : G12       :        :                   :         : 6         :                
+GND                          : G13       : gnd    :                   :         :           :                
+VCCIO6                       : G14       : power  :                   : 2.5V    : 6         :                
+tag_data_in[13]              : G15       : input  : 2.5 V             :         : 6         : N              
+data_RRFA2[6]                : G16       : output : 2.5 V             :         : 6         : N              
+~ALTERA_DCLK~                : H1        : output : 2.5 V             :         : 1         : N              
+~ALTERA_DATA0~ / RESERVED_INPUT_WITH_WEAK_PULLUP : H2        : input  : 2.5 V             :         : 1         : N              
+TCK                          : H3        : input  :                   :         : 1         :                
+TDI                          : H4        : input  :                   :         : 1         :                
+nCONFIG                      : H5        :        :                   :         : 1         :                
+VCCINT                       : H6        : power  :                   : 1.2V    :           :                
+GND                          : H7        : gnd    :                   :         :           :                
+GND                          : H8        : gnd    :                   :         :           :                
+GND                          : H9        : gnd    :                   :         :           :                
+GND                          : H10       : gnd    :                   :         :           :                
+VCCINT                       : H11       : power  :                   : 1.2V    :           :                
+MSEL1                        : H12       :        :                   :         : 6         :                
+MSEL0                        : H13       :        :                   :         : 6         :                
+CONF_DONE                    : H14       :        :                   :         : 6         :                
+GND                          : H15       : gnd    :                   :         :           :                
+GND                          : H16       : gnd    :                   :         :           :                
+data_RRFB2[2]                : J1        : output : 2.5 V             :         : 2         : N              
+tag_data_in[3]               : J2        : input  : 2.5 V             :         : 2         : N              
+nCE                          : J3        :        :                   :         : 1         :                
+TDO                          : J4        : output :                   :         : 1         :                
+TMS                          : J5        : input  :                   :         : 1         :                
+VCCINT                       : J6        : power  :                   : 1.2V    :           :                
+GND                          : J7        : gnd    :                   :         :           :                
+GND                          : J8        : gnd    :                   :         :           :                
+GND                          : J9        : gnd    :                   :         :           :                
+GND                          : J10       : gnd    :                   :         :           :                
+GND                          : J11       : gnd    :                   :         :           :                
+VCCINT                       : J12       : power  :                   : 1.2V    :           :                
+data_RRFA2[3]                : J13       : output : 2.5 V             :         : 5         : N              
+tag_data_in[11]              : J14       : input  : 2.5 V             :         : 5         : N              
+data_RRFA1[0]                : J15       : output : 2.5 V             :         : 5         : N              
+data_RRFB1[5]                : J16       : output : 2.5 V             :         : 5         : N              
+tag_data_in[4]               : K1        : input  : 2.5 V             :         : 2         : N              
+data_RRFB1[11]               : K2        : output : 2.5 V             :         : 2         : N              
+VCCIO2                       : K3        : power  :                   : 2.5V    : 2         :                
+GND                          : K4        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : K5        :        :                   :         : 2         :                
+GND                          : K6        : gnd    :                   :         :           :                
+VCCINT                       : K7        : power  :                   : 1.2V    :           :                
+GND                          : K8        : gnd    :                   :         :           :                
+VCCINT                       : K9        : power  :                   : 1.2V    :           :                
+VCCINT                       : K10       : power  :                   : 1.2V    :           :                
+VCCINT                       : K11       : power  :                   : 1.2V    :           :                
+GND                          : K12       : gnd    :                   :         :           :                
+GND                          : K13       : gnd    :                   :         :           :                
+VCCIO5                       : K14       : power  :                   : 2.5V    : 5         :                
+data_RRFB1[15]               : K15       : output : 2.5 V             :         : 5         : N              
+data_RRFB2[1]                : K16       : output : 2.5 V             :         : 5         : N              
+data_RRFA2[4]                : L1        : output : 2.5 V             :         : 2         : N              
+data_RRFA1[15]               : L2        : output : 2.5 V             :         : 2         : N              
+data_RRFA2[14]               : L3        : output : 2.5 V             :         : 2         : N              
+data_RRFB2[11]               : L4        : output : 2.5 V             :         : 2         : N              
+VCCA1                        : L5        : power  :                   : 2.5V    :           :                
+VCCINT                       : L6        : power  :                   : 1.2V    :           :                
+tag_en1                      : L7        : input  : 2.5 V             :         : 3         : N              
+data_RRFA1[11]               : L8        : output : 2.5 V             :         : 3         : N              
+GND                          : L9        : gnd    :                   :         :           :                
+GND                          : L10       : gnd    :                   :         :           :                
+GND                          : L11       : gnd    :                   :         :           :                
+VCCA4                        : L12       : power  :                   : 2.5V    :           :                
+tag_data_in[1]               : L13       : input  : 2.5 V             :         : 5         : N              
+data_RRFA1[4]                : L14       : output : 2.5 V             :         : 5         : N              
+tag_data_in[15]              : L15       : input  : 2.5 V             :         : 5         : N              
+tag_data_in[14]              : L16       : input  : 2.5 V             :         : 5         : N              
+GND+                         : M1        :        :                   :         : 2         :                
+rst                          : M2        : input  : 2.5 V             :         : 2         : N              
+VCCIO2                       : M3        : power  :                   : 2.5V    : 2         :                
+GND                          : M4        : gnd    :                   :         :           :                
+GNDA1                        : M5        : gnd    :                   :         :           :                
+data_RRFA1[7]                : M6        : output : 2.5 V             :         : 3         : N              
+tag_in2[2]                   : M7        : input  : 2.5 V             :         : 3         : N              
+tag_data_in[8]               : M8        : input  : 2.5 V             :         : 3         : N              
+VCCINT                       : M9        : power  :                   : 1.2V    :           :                
+data_RRFB2[3]                : M10       : output : 2.5 V             :         : 4         : N              
+VCCINT                       : M11       : power  :                   : 1.2V    :           :                
+GNDA4                        : M12       : gnd    :                   :         :           :                
+GND                          : M13       : gnd    :                   :         :           :                
+VCCIO5                       : M14       : power  :                   : 2.5V    : 5         :                
+GND+                         : M15       :        :                   :         : 5         :                
+GND+                         : M16       :        :                   :         : 5         :                
+data_RRF[0]                  : N1        : output : 2.5 V             :         : 2         : N              
+data_RRFB1[4]                : N2        : output : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : N3        :        :                   :         : 3         :                
+VCCD_PLL1                    : N4        : power  :                   : 1.2V    :           :                
+data_RRFA2[7]                : N5        : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : N6        :        :                   :         : 3         :                
+GND                          : N7        : gnd    :                   :         :           :                
+data_RRFA1[10]               : N8        : output : 2.5 V             :         : 3         : N              
+data_RRF[11]                 : N9        : output : 2.5 V             :         : 4         : N              
+GND                          : N10       : gnd    :                   :         :           :                
+data_RRFA1[9]                : N11       : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : N12       :        :                   :         : 4         :                
+VCCD_PLL4                    : N13       : power  :                   : 1.2V    :           :                
+data_RRFB1[7]                : N14       : output : 2.5 V             :         : 5         : N              
+tag_data_in[5]               : N15       : input  : 2.5 V             :         : 5         : N              
+data_RRF[3]                  : N16       : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : P1        :        :                   :         : 2         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : P2        :        :                   :         : 2         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : P3        :        :                   :         : 3         :                
+VCCIO3                       : P4        : power  :                   : 2.5V    : 3         :                
+GND                          : P5        : gnd    :                   :         :           :                
+tag_data_in[9]               : P6        : input  : 2.5 V             :         : 3         : N              
+VCCIO3                       : P7        : power  :                   : 2.5V    : 3         :                
+data_RRFB2[9]                : P8        : output : 2.5 V             :         : 3         : N              
+tag_data_in[0]               : P9        : input  : 2.5 V             :         : 4         : N              
+VCCIO4                       : P10       : power  :                   : 2.5V    : 4         :                
+tag_data_in[12]              : P11       : input  : 2.5 V             :         : 4         : N              
+GND                          : P12       : gnd    :                   :         :           :                
+VCCIO4                       : P13       : power  :                   : 2.5V    : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : P14       :        :                   :         : 4         :                
+data_RRFB2[7]                : P15       : output : 2.5 V             :         : 5         : N              
+data_RRFB2[0]                : P16       : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : R1        :        :                   :         : 2         :                
+GND                          : R2        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : R3        :        :                   :         : 3         :                
+data_RRFA2[8]                : R4        : output : 2.5 V             :         : 3         : N              
+data_RRFA2[11]               : R5        : output : 2.5 V             :         : 3         : N              
+data_RRFA2[15]               : R6        : output : 2.5 V             :         : 3         : N              
+tag_data_in[7]               : R7        : input  : 2.5 V             :         : 3         : N              
+GND+                         : R8        :        :                   :         : 3         :                
+GND+                         : R9        :        :                   :         : 4         :                
+data_RRF[5]                  : R10       : output : 2.5 V             :         : 4         : N              
+data_RRFB1[0]                : R11       : output : 2.5 V             :         : 4         : N              
+data_RRF[6]                  : R12       : output : 2.5 V             :         : 4         : N              
+data_RRFA2[9]                : R13       : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : R14       :        :                   :         : 4         :                
+GND                          : R15       : gnd    :                   :         :           :                
+data_RRFB2[4]                : R16       : output : 2.5 V             :         : 5         : N              
+VCCIO3                       : T1        : power  :                   : 2.5V    : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : T2        :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : T3        :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : T4        :        :                   :         : 3         :                
+data_RRFA2[5]                : T5        : output : 2.5 V             :         : 3         : N              
+data_RRFA1[5]                : T6        : output : 2.5 V             :         : 3         : N              
+tag_data_in[17]              : T7        : input  : 2.5 V             :         : 3         : N              
+GND+                         : T8        :        :                   :         : 3         :                
+GND+                         : T9        :        :                   :         : 4         :                
+data_RRFA1[13]               : T10       : output : 2.5 V             :         : 4         : N              
+data_RRFB2[6]                : T11       : output : 2.5 V             :         : 4         : N              
+data_RRFB2[14]               : T12       : output : 2.5 V             :         : 4         : N              
+data_RRFA2[2]                : T13       : output : 2.5 V             :         : 4         : N              
+data_RRF[2]                  : T14       : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : T15       :        :                   :         : 4         :                
+VCCIO4                       : T16       : power  :                   : 2.5V    : 4         :                
