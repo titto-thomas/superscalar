@@ -32,11 +32,12 @@ signal write_table_en : std_logic;
 signal write_loc : integer range 0 to 15;
 begin
 
-	Predictor : process(reset, Instruction, PC)
+	Predictor : process(clock, reset, Instruction, PC)
 	variable success : std_logic := '0';
 	variable count : Counter;
 	variable lowest,free_loc : integer range 0 to 15;
 	begin
+	if clock'event and clock = '0' then
 		if reset = '1' then
 			PredictedResult <= '0';
 			TableBusy <= x"0000";
@@ -270,6 +271,7 @@ begin
 			PredictedResult <=  '0';
 			write_table_en <= '0';
 		end if;
+	end if;
 	end process Predictor;
 	
 	Updater : process(clock, reset, Address, ActualResult, AddressValid)
