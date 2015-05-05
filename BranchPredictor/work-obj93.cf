@@ -1,7 +1,7 @@
 v 3
-file . "testbench.vhdl" "20150505075226.000" "20150505075228.751":
-  entity testbench at 6( 190) + 0 on 41;
-  architecture behave of testbench at 14( 299) + 0 on 42;
-file . "BranchPredictor.vhdl" "20150505075101.000" "20150505075228.677":
-  entity branchpredictor at 6( 177) + 0 on 39;
-  architecture predict of branchpredictor at 22( 702) + 0 on 40;
+file . "testbench.vhdl" "20150505094839.000" "20150505095813.084":
+  entity testbench at 6( 190) + 0 on 89;
+  architecture behave of testbench at 14( 299) + 0 on 90;
+file . "BranchPredictor.vhdl" "20150505095810.000" "20150505095812.890":
+  entity branchpredictor at 6( 177) + 0 on 87;
+  architecture predict of branchpredictor at 23( 729) + 0 on 88;

@@ -15,6 +15,7 @@ architecture behave of testbench is
 
 component BranchPredictor is
   port (
+  	clock		: in std_logic;	
   	reset		: in std_logic;					-- Reset tables
 	Instruction	: in std_logic_vector(15 downto 0); 		-- Instruction for predicting
 	PC		: in std_logic_vector(15 downto 0); 		-- Program Counter
@@ -25,7 +26,7 @@ component BranchPredictor is
     );
 end component BranchPredictor;
 
-signal reset		: std_logic;					-- Reset tables
+signal clock, reset		: std_logic := '1';					-- Reset tables
 signal Instruction, PC	: std_logic_vector(15 downto 0);	
 signal PredictedResult	: std_logic;		-- Decides to take or do not take the branch
 signal Address		: std_logic_vector(15 downto 0);		-- AddressValid
@@ -33,18 +34,17 @@ signal ActualResult, AddressValid	: std_logic;
 
 begin  -- behave
 
-  DUT : BranchPredictor port map ( reset, Instruction, PC, PredictedResult, Address, ActualResult, AddressValid );		-- Connect the memory for testing
+  DUT : BranchPredictor port map ( clock, reset, Instruction, PC, PredictedResult, Address, ActualResult, AddressValid );		-- Connect the memory for testing
 
   RST : process -- reset signal
   begin
-  reset <= '0';	
-  wait for 1 ns;
   reset <= '1';	
   wait for 9 ns;
   reset <= '0';
   wait ;
   end process RST;
 
+ clock <= not clock after 5 ns;
 
   Main : process	-- Main testbench process
   begin
@@ -75,6 +75,7 @@ begin  -- behave
 	ActualResult <= '0';
 	AddressValid <= '1';
 	wait for 10 ns;
+	PC <= x"002C";
 	Address <= x"0008";
 	ActualResult <= '0';
 	AddressValid <= '1';
