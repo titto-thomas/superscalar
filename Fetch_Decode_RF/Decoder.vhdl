@@ -42,9 +42,9 @@ begin
 		dest <= Instruction(11 downto 9);
 		src1 <= Instruction(8 downto 6);
 		src2 <= Instruction(5 downto 3);
-		dest_valid <= '0';
-		src1_valid <= '0';
-		src2_valid <= '0';
+		dest_valid <= '1';
+		src1_valid <= '1';
+		src2_valid <= '1';
 		Imm_field <= '0' & x"00";
 
 	elsif ( Instruction (15 downto 12) = X"1" ) then	-- ADI
@@ -56,8 +56,8 @@ begin
 		dest <= Instruction(11 downto 9);
 		src1 <= Instruction(8 downto 6);
 		src2 <= "111";
-		dest_valid <= '0';
-		src1_valid <= '0';
+		dest_valid <= '1';
+		src1_valid <= '1';
 		src2_valid <= '0';
 		if (Instruction(5) = '1') then
 			Imm_field <= "111" & Instruction(5 downto 0);
@@ -74,9 +74,9 @@ begin
 		dest <= Instruction(11 downto 9);
 		src1 <= Instruction(8 downto 6);
 		src2 <= Instruction(5 downto 3);
-		dest_valid <= '0';
-		src1_valid <= '0';
-		src2_valid <= '0';
+		dest_valid <= '1';
+		src1_valid <= '1';
+		src2_valid <= '1';
 		Imm_field <= '0' & x"00";
 
 	elsif ( Instruction (15 downto 12) = X"3" ) then	-- LHI
@@ -88,7 +88,7 @@ begin
 		dest <= Instruction(11 downto 9);
 		src1 <= "111";
 		src2 <= "111";
-		dest_valid <= '0';
+		dest_valid <= '1';
 		src1_valid <= '0';
 		src2_valid <= '0';
 		Imm_field <= Instruction(8 downto 0);
@@ -102,8 +102,8 @@ begin
 		dest <= Instruction(11 downto 9);
 		src1 <= Instruction(8 downto 6);
 		src2 <= "111";
-		dest_valid <= '0';
-		src1_valid <= '0';
+		dest_valid <= '1';
+		src1_valid <= '1';
 		src2_valid <= '0';
 		if (Instruction(5) = '1') then
 			Imm_field <= "111" & Instruction(5 downto 0);
@@ -121,8 +121,8 @@ begin
 		src1 <= Instruction(11 downto 9);
 		src2 <= Instruction(8 downto 6);
 		dest_valid <= '0';
-		src1_valid <= '0';
-		src2_valid <= '0';
+		src1_valid <= '1';
+		src2_valid <= '1';
 		if (Instruction(5) = '1') then
 			Imm_field <= "111" & Instruction(5 downto 0);
 		else
@@ -139,7 +139,7 @@ begin
 		src1 <= Instruction(11 downto 9);
 		src2 <= "111";
 		dest_valid <= '0';
-		src1_valid <= '0';
+		src1_valid <= '1';
 		src2_valid <= '0';
 		Imm_field <= '0' & Instruction(7 downto 0);
 
@@ -153,7 +153,7 @@ begin
 		src1 <= Instruction(11 downto 9);
 		src2 <= "111";
 		dest_valid <= '0';
-		src1_valid <= '0';
+		src1_valid <= '1';
 		src2_valid <= '0';
 		Imm_field <= '0' & Instruction(7 downto 0);
 
@@ -167,8 +167,8 @@ begin
 		src1 <= Instruction(11 downto 9);
 		src2 <= Instruction(8 downto 6);
 		dest_valid <= '0';
-		src1_valid <= '0';
-		src2_valid <= '0';
+		src1_valid <= '1';
+		src2_valid <= '1';
 		if (Instruction(5) = '1') then
 			Imm_field <= "111" & Instruction(5 downto 0);
 		else
@@ -184,7 +184,7 @@ begin
 		dest <= Instruction(11 downto 9);
 		src1 <= "111";
 		src2 <= "111";
-		dest_valid <= '0';
+		dest_valid <= '1';
 		src1_valid <= '0';
 		src2_valid <= '0';
 		Imm_field <= Instruction(8 downto 0);
@@ -198,8 +198,8 @@ begin
 		dest <= Instruction(11 downto 9);
 		src1 <= Instruction(8 downto 6);
 		src2 <= "111";
-		dest_valid <= '0';
-		src1_valid <= '0';
+		dest_valid <= '1';
+		src1_valid <= '1';
 		src2_valid <= '0';
 		Imm_field <= '0' & x"00";
 
